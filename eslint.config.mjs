@@ -15,15 +15,14 @@ export default [
   ...tseslint.configs.recommended,
   {
     plugins: {
-      "react": react,
-      "prettier": prettier,
-      "@typescript-eslint": tseslint.plugin
-    }
+      react: react,
+      prettier: prettier,
+      "@typescript-eslint": tseslint.plugin,
+    },
   },
   {
     rules: {
       "react/react-in-jsx-scope": "off",
     },
   },
-  
 ];
