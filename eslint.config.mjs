@@ -10,8 +10,8 @@ export default [
   },
   { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
   {
-    ignores: [".next/", "out/", "node_modules"]
-},
+    ignores: [".next/", "out/", "node_modules"],
+  },
   { files: ["**/*.js"], languageOptions: { sourceType: "commonjs" } },
   { languageOptions: { globals: { ...globals.node } } },
   eslint.configs.recommended,
