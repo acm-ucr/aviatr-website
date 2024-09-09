@@ -1,8 +1,7 @@
 /* eslint-disable new-cap */
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { ReactQueryClientProvider } from "@/utils/ReactQueryProvider";
-// import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { ReactQueryClientProvider } from "@/utils/react-query";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,10 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <ReactQueryClientProvider>
       <html lang="en">
-        <body className={inter.className}>
-          {/* <ReactQueryDevtools/> */}
-          {children}
-        </body>
+        <body className={inter.className}>{children}</body>
       </html>
     </ReactQueryClientProvider>
   );
