@@ -3,6 +3,7 @@ import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import react from "eslint-plugin-react";
 import prettier from "eslint-plugin-prettier/recommended";
+import query from "@tanstack/eslint-plugin-query";
 
 export default [
   {
@@ -21,6 +22,7 @@ export default [
       react: react,
       prettier: prettier,
       "@typescript-eslint": tseslint.plugin,
+      "@tanstack/query": query,
     },
   },
   {
