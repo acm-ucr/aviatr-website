@@ -15,10 +15,10 @@ type LayoutProps = {
 
 export default function RootLayout({ children }: LayoutProps) {
   return (
-    <ReactQueryClientProvider>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
-      </html>
-    </ReactQueryClientProvider>
+    <html lang="en">
+      <body className={inter.className}>
+        <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+      </body>
+    </html>
   );
 }
