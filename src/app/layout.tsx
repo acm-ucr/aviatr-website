@@ -16,7 +16,7 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`bg-black ${inter.className}`}>
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
       </body>
     </html>
