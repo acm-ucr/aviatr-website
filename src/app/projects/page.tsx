@@ -1,11 +1,4 @@
-import Example from "@/components/Example";
-
 const Projects = () => {
-  return (
-    <div className="justify-center">
-      Projects
-      <Example />
-    </div>
-  );
+  return <div className="justify-center">Projects</div>;
 };
 export default Projects;
