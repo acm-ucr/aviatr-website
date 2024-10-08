@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const AboutAviat = () => {
   return (
     <div className="justify-center bg-black px-60 py-16 text-white">
@@ -34,7 +36,13 @@ const AboutAviat = () => {
 
         <div className="ml-2 flex items-center">
           <a href="#">
-            <img src="../img/Arrow_1.png" alt="Arrow" className="h-6 w-auto" />
+            <Image
+              src="/Arrow-1.webp"
+              alt="Arrow"
+              width={50}
+              height={20}
+              className="h-6 w-auto"
+            />
           </a>
         </div>
       </div>
