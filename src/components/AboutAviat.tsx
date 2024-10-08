@@ -1,6 +1,3 @@
-// import React from 'react';
-// import Link from 'next/link';
-
 const AboutAviat = () => {
   return (
     <div className="justify-center bg-black px-60 py-16 text-white">
@@ -31,11 +28,15 @@ const AboutAviat = () => {
       </div>
 
       <div className="mt-8 flex items-center justify-end">
-        <span className="text-md font-sans">LEARN MORE</span>
+        <a href="#" className="text-md font-sans text-white hover:underline">
+          LEARN MORE
+        </a>
+
         <div className="ml-2 flex items-center">
-          <div className="w-60 border-t-2 border-white"></div>
+          <a href="#">
+            <img src="../img/Arrow_1.png" alt="Arrow" className="h-6 w-auto" />
+          </a>
         </div>
-        <span className="pb-1 font-sans text-4xl"> &gt; </span>
       </div>
     </div>
   );
