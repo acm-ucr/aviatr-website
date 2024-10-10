@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import Logo from "../../public/images/Logo.webp";
+import Logo from "@/public/images/Logo.webp";
 
 const Navbar = () => {
   return (
@@ -12,7 +12,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="w-1/2">
-        <ul className="flex py-9 text-sm">
+        <ul className="flex py-9 text-base">
           <li className="w-3/4 px-10 text-center text-black">
             <Link href={"/"}>PROJECTS</Link>
           </li>
