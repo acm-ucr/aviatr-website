@@ -12,7 +12,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="w-1/2">
-        <ul className="flex py-9 text-base">
+        <ul className="flex py-9 text-sm">
           <li className="w-3/4 px-10 text-center text-black">
             <Link href={"/"}>PROJECTS</Link>
           </li>
