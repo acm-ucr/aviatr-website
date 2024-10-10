@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import Logo from "@/public/images/Logo.webp";
+import Logo from "../../public/Images/Logo.webp";
 
 const Navbar = () => {
   return (
