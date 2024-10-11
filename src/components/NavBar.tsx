@@ -14,15 +14,15 @@ const Navbar = () => {
       <div className="w-1/2">
         <ul className="flex py-9 text-lg">
           <li className="w-3/4 px-10 text-center text-black">
-            <Link href={"/projects"}>PROJECTS</Link>
+            <Link href={"/"}>PROJECTS</Link>
           </li>
           <div className="border border-black"></div>
           <li className="w-3/4 px-10 text-center text-black">
-            <Link href={"/events"}>EVENTS</Link>
+            <Link href={"/"}>EVENTS</Link>
           </li>
           <div className="border border-black"></div>
           <li className="w-3/4 px-10 text-center text-black">
-            <Link href={"/about"}>ABOUT US</Link>
+            <Link href={"/"}>ABOUT US</Link>
           </li>
           <div className="border border-black"></div>
           <li className="w-3/4 px-10 text-center text-black">
