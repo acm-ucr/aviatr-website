@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const AboutAviat = () => {
   return (
-    <div className="bg-black text-white justify-center px-60 py-16">
+    <div className="justify-center bg-black px-60 py-16 text-white">
       <h1 className="font-sans text-3xl font-thin">What is Aviat'R? </h1>
-      <div className="border-white mb-6 ml-8 w-1/4 border-b-2 p-1"></div>
+      <div className="mb-6 ml-8 w-1/4 border-b-2 border-white p-1"></div>
 
       <div className="flex flex-col items-start gap-20 pt-8 md:flex-row md:items-center">
         {/* Left side */}
@@ -30,7 +30,7 @@ const AboutAviat = () => {
       </div>
 
       <div className="mt-8 flex items-center justify-end">
-        <a href="#" className="text-md text-white font-sans hover:underline">
+        <a href="#" className="text-md font-sans text-white hover:underline">
           LEARN MORE
         </a>
 

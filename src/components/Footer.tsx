@@ -7,7 +7,7 @@ const Footer = () => {
     <div>
       <hr className="mx-4 mb-4 mt-2 border-t-2 sm:mx-8 sm:mb-6 lg:mx-12 lg:mb-10"></hr>
       <div className="grid grid-cols-2">
-        <div className="text-white grid grid-cols-3 whitespace-nowrap pl-5 sm:pl-12 lg:pl-16">
+        <div className="grid grid-cols-3 whitespace-nowrap pl-5 text-white sm:pl-12 lg:pl-16">
           <div>
             <p className="pb-1 text-2xs sm:text-xs lg:text-xl xl:pb-2">
               PROJECTS
