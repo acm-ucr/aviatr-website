@@ -26,10 +26,7 @@ const Navbar = () => {
           </li>
           <div className="border border-black"></div>
           <li className="w-3/4 px-10 text-center text-black">
-            <Link
-              className="rounded-full bg-blue-100 px-10 py-2"
-              href={"/join"}
-            >
+            <Link className="rounded-full bg-blue-100 px-10 py-2" href={"/"}>
               JOIN
             </Link>
           </li>
