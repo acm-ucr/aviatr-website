@@ -14,19 +14,22 @@ const Navbar = () => {
       <div className="w-1/2">
         <ul className="flex py-9 text-lg">
           <li className="w-3/4 px-10 text-center text-black">
-            <Link href={"/"}>PROJECTS</Link>
+            <Link href={"/projects"}>PROJECTS</Link>
           </li>
           <div className="border border-black"></div>
           <li className="w-3/4 px-10 text-center text-black">
-            <Link href={"/"}>EVENTS</Link>
+            <Link href={"/events"}>EVENTS</Link>
           </li>
           <div className="border border-black"></div>
           <li className="w-3/4 px-10 text-center text-black">
-            <Link href={"/"}>ABOUT US</Link>
+            <Link href={"/about"}>ABOUT US</Link>
           </li>
           <div className="border border-black"></div>
           <li className="w-3/4 px-10 text-center text-black">
-            <Link className="rounded-full bg-blue-100 px-10 py-2" href={"/"}>
+            <Link
+              className="rounded-full bg-blue-100 px-10 py-2"
+              href={"/join"}
+            >
               JOIN
             </Link>
           </li>
