@@ -2,21 +2,21 @@ import Image from "next/image";
 
 const AboutAviat = () => {
   return (
-    <div className="justify-center bg-black px-60 py-16 text-white">
-      <h1 className="font-sans text-3xl font-thin">What is Aviat'R? </h1>
+    <div className="justify-center bg-black px-[15%] py-[5%] text-white">
+      <h1 className="font-metrophobic text-4xl">What is Aviat'R? </h1>
       <div className="mb-6 ml-8 w-1/4 border-b-2 border-white p-1"></div>
 
       <div className="flex flex-col items-start gap-20 pt-8 md:flex-row md:items-center">
         {/* Left side */}
         <div className="flex-shrink-0 md:w-1/4">
-          <h2 className="font-sans text-5xl font-bold">
+          <h2 className="font-metrophobic text-5xl font-bold">
             MISSION<br></br>STATEMENT
           </h2>
         </div>
 
         {/* Right side */}
         <div className="md:w-3/4">
-          <p className="text-md font-sans font-thin leading-relaxed">
+          <p className="text-md font-jost leading-relaxed">
             At Aviat'R, our mission is to empower students with the knowledge,
             skills, and facilities required to fuel their love for aeronautics.
             We strive to pioneer new Unmanned Aerial Systems that encapsulate
@@ -37,7 +37,7 @@ const AboutAviat = () => {
         <div className="ml-2 flex items-center">
           <a href="#">
             <Image
-              src="/Arrow-1.webp"
+              src="/Images/Arrow-1.webp"
               alt="Arrow"
               width={50}
               height={20}
