@@ -30,7 +30,10 @@ const AboutAviat = () => {
       </div>
 
       <div className="mt-8 flex items-center justify-end">
-        <a href="#" className="text-md font-sans text-white hover:underline">
+        <a
+          href="#"
+          className="text-md font-metrophobic text-white hover:underline"
+        >
           LEARN MORE
         </a>
 
