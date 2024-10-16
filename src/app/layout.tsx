@@ -35,13 +35,12 @@ type LayoutProps = {
 };
 
 export default function RootLayout({ children }: LayoutProps) {
-
   return (
     <html lang="en">
       <body
         className={`bg-black ${jost.variable} ${metrophobic.variable} ${bungee_hairline.variable}`}
       >
-        <NavbarWrapper/>
+        <NavbarWrapper />
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
         <Footer />
       </body>
