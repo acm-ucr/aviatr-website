@@ -21,10 +21,6 @@ module.exports = {
         metrophobic: ["var(--font-metrophobic)"],
         "bungee-hairline": ["var(--font-bungee-hairline)"],
       },
-      fontSize: {
-        "2xs": "0.5rem",
-        "3xs": "0.35rem",
-      },
     },
   },
   plugins: [],
