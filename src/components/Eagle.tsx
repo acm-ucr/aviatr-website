@@ -2,14 +2,14 @@ import Image from "next/image";
 
 const Eagle = () => {
   return (
-    <div className="bg-black px-[15%] py-[5%] text-white">
+    <div className="bg-black py-[5%] pl-[8%] text-white">
       <div className="flex flex-col items-start pt-8 md:flex-row md:items-center">
         {/* left side */}
         <div className="md:w-2/6">
           <h1 className="font-metrophobic text-4xl font-bold">Eagle</h1>
           <div className="mb-6 ml-8 w-1/4 border-b-2 border-white p-2"></div>
 
-          <p className="text-md px-8 font-jost leading-relaxed">
+          <p className="px-4 font-jost text-lg leading-relaxed">
             Eagle is a select team that competes with universities in the nation
             and make Aviat’R’s name known. It participates in SUAS, a
             competition aimed at challenging students to make their own unmanned
