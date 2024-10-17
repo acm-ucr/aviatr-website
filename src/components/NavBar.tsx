@@ -1,11 +1,19 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import Logo from "../../public/Images/Logo.webp";
 
+import { usePathname } from "next/navigation";
+
 const Navbar = () => {
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+
   return (
-    <div className="flex h-20 w-full items-center justify-between bg-blue-300">
+    <div
+      className={`flex h-20 w-full items-center justify-between ${isHomePage ? "bg-transparent" : "bg-blue-300"}`}
+    >
       <div className="flex w-1/6 items-center">
         <Link href={"/"}>
           <Image src={Logo} className="ml-10 w-5/6" alt="logo" />
