@@ -6,17 +6,17 @@ const AboutAviat = () => {
       <h1 className="font-metrophobic text-4xl">What is Aviat'R? </h1>
       <div className="mb-6 ml-8 w-1/4 border-b-2 border-white p-1"></div>
 
-      <div className="flex flex-col items-start gap-20 pt-8 md:flex-row md:items-center">
+      <div className="flex flex-col items-start gap-32 pt-8 md:flex-row md:items-center">
         {/* Left side */}
         <div className="flex-shrink-0 md:w-1/4">
-          <h2 className="font-metrophobic text-5xl font-bold">
+          <h2 className="font-outline-4 font-metrophobic text-5xl">
             MISSION<br></br>STATEMENT
           </h2>
         </div>
 
         {/* Right side */}
         <div className="md:w-3/4">
-          <p className="text-md font-jost leading-relaxed">
+          <p className="text-md text-justify font-jost leading-relaxed">
             At Aviat'R, our mission is to empower students with the knowledge,
             skills, and facilities required to fuel their love for aeronautics.
             We strive to pioneer new Unmanned Aerial Systems that encapsulate
@@ -32,7 +32,7 @@ const AboutAviat = () => {
       <div className="mt-8 flex items-center justify-end">
         <a
           href="#"
-          className="text-md font-metrophobic text-white hover:underline"
+          className="font-metrophobic text-xl text-white hover:underline"
         >
           LEARN MORE
         </a>
@@ -44,7 +44,7 @@ const AboutAviat = () => {
               alt="Arrow"
               width={50}
               height={20}
-              className="h-6 w-auto"
+              className="h-7 w-auto"
             />
           </a>
         </div>
