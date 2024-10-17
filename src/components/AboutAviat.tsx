@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AboutAviat = () => {
   return (
-    <div className="justify-center bg-black px-[15%] py-[5%] text-white">
+    <div className="justify-center bg-black px-[8%] py-[5%] text-white">
       <h1 className="font-metrophobic text-4xl">What is Aviat'R? </h1>
       <div className="mb-6 ml-8 w-1/4 border-b-2 border-white p-1"></div>
 
@@ -16,7 +16,7 @@ const AboutAviat = () => {
 
         {/* Right side */}
         <div className="md:w-3/4">
-          <p className="text-md text-justify font-jost leading-relaxed">
+          <p className="text-justify font-jost text-lg leading-relaxed">
             At Aviat'R, our mission is to empower students with the knowledge,
             skills, and facilities required to fuel their love for aeronautics.
             We strive to pioneer new Unmanned Aerial Systems that encapsulate
