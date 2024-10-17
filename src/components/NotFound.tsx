@@ -19,10 +19,10 @@ const NotFound = () => {
           404
         </div>
         <div className="mb-6 w-1/4 border-b-2 border-white p-1"></div>
-        <div className="font-jost mt-0 text-3xl font-normal leading-[43.35px] text-white sm:text-xl">
+        <div className="mt-0 font-jost text-3xl font-normal leading-[43.35px] text-white sm:text-xl">
           PAGE NOT FOUND
         </div>
-        <div className="font-jost mb-4 mt-4 max-w-md text-lg font-normal leading-[28.9px] text-white sm:text-base">
+        <div className="mb-4 mt-4 max-w-md font-jost text-lg font-normal leading-[28.9px] text-white sm:text-base">
           Sorry, the page you're looking for cannot
           <br />
           be found! Go back or return home.
