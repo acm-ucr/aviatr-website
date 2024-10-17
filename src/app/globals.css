@@ -16,3 +16,7 @@
     -webkit-text-stroke: 8px white;
   }
 }
+
+.clip-slope {
+  clip-path: polygon(28% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
