@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Jost, Metrophobic, Bungee_Hairline } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
-import Navbar from "../components/NavBar";
+import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -40,7 +40,7 @@ export default function RootLayout({ children }: LayoutProps) {
       <body
         className={`bg-black ${jost.variable} ${metrophobic.variable} ${bungee_hairline.variable}`}
       >
-        <Navbar />
+        <NavBar />
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
         <Footer />
       </body>
