@@ -1,23 +1,24 @@
 import Image from "next/image";
+import Link from "next/link";
 import ArrowImg from "@/public/home/Arrow.webp";
 
 const AboutAviat = () => {
   return (
-    <div className="justify-center bg-black px-60 py-16 text-white">
-      <h1 className="font-sans text-3xl font-thin">What is Aviat'R? </h1>
+    <div className="justify-center bg-black px-[8%] py-[5%] text-white">
+      <h1 className="font-metrophobic text-4xl">What is Aviat'R? </h1>
       <div className="mb-6 ml-8 w-1/4 border-b-2 border-white p-1"></div>
 
-      <div className="flex flex-col items-start gap-20 pt-8 md:flex-row md:items-center">
+      <div className="flex flex-col items-start gap-32 pt-8 md:flex-row md:items-center">
         {/* Left side */}
         <div className="flex-shrink-0 md:w-1/4">
-          <h2 className="font-sans text-5xl font-bold">
+          <h2 className="font-outline-4 font-metrophobic text-6xl">
             MISSION<br></br>STATEMENT
           </h2>
         </div>
 
         {/* Right side */}
         <div className="md:w-3/4">
-          <p className="text-md font-sans font-thin leading-relaxed">
+          <p className="text-justify font-jost text-xl leading-relaxed">
             At Aviat'R, our mission is to empower students with the knowledge,
             skills, and facilities required to fuel their love for aeronautics.
             We strive to pioneer new Unmanned Aerial Systems that encapsulate
@@ -30,23 +31,18 @@ const AboutAviat = () => {
         </div>
       </div>
 
-      <div className="mt-8 flex items-center justify-end">
-        <a href="#" className="text-md font-sans text-white hover:underline">
+      <Link href="#" className="mt-[4%] flex items-center justify-end">
+        <p className="mr-2 font-metrophobic text-2xl text-white hover:underline">
           LEARN MORE
-        </a>
-
-        <div className="ml-2 flex items-center">
-          <a href="#">
-            <Image
-              src={ArrowImg}
-              alt="Arrow"
-              width={50}
-              height={20}
-              className="h-6 w-auto"
-            />
-          </a>
-        </div>
-      </div>
+        </p>
+        <Image
+          src={ArrowImg}
+          alt="Arrow"
+          width={50}
+          height={20}
+          className="ml-2 h-7 w-auto"
+        />
+      </Link>
     </div>
   );
 };
