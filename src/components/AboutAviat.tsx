@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 const AboutAviat = () => {
   return (
     <div className="justify-center bg-black px-60 py-16 text-white">
