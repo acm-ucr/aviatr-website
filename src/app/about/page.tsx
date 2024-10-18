@@ -1,4 +1,7 @@
+import React from "react";
+import BoardMemberSection from "../../components/about/BoardMemberSection";
+
 const Events = () => {
-  return <div className="justify-center">About Us</div>;
+  return <BoardMemberSection />;
 };
 export default Events;

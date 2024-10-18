@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const BoardMember = ({
   name,
@@ -10,15 +11,13 @@ const BoardMember = ({
   image: string;
 }) => {
   return (
-    <div className="flex flex-col items-center justify-center w-64 p-4 rounded-lg text-center shadow-lg">
-      <img
-        src={image}
-        alt={`${name}'s profile image`}
-        className="w-48 h-56 rounded-lg mb-5 object-cover"
-      />
+    <div className="flex w-64 flex-col items-center justify-center rounded-lg p-4 text-center">
+      <div className="mb-5 h-56 w-48 rounded-lg object-cover">
+        <Image src={image} alt={`${name}'s picture`} width={500} height={500} />
+      </div>
       <div>
-        <div className="text-xl font-bold">{name}</div>
-        <div className="text-lg text-gray-600">{position}</div>
+        <div className="text-xl font-bold text-white">{name}</div>
+        <div className="text-lg text-gray-200">{position}</div>
       </div>
     </div>
   );
