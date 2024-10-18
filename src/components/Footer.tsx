@@ -1,6 +1,7 @@
 import { FaInstagram, FaDiscord, FaYoutube, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import Logo from "@/public/Logo.webp";
 
 const Footer = () => {
   return (
@@ -51,7 +52,7 @@ const Footer = () => {
         <div className="grid grid-cols-9">
           <div className="col-span-4 col-start-6">
             <Image
-              src="/footer/uas-logo-purple-ring.webp"
+              src={Logo}
               alt="Club Logo with Purple Ring"
               className="pr-4 pt-16 sm:pr-8 sm:pt-24 lg:pr-12 lg:pt-32"
               width={1817}

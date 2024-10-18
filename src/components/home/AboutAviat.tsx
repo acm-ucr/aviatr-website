@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import ArrowImg from "@/public/home/Arrow.webp";
 
 const AboutAviat = () => {
   return (
@@ -9,14 +11,14 @@ const AboutAviat = () => {
       <div className="flex flex-col items-start gap-32 pt-8 md:flex-row md:items-center">
         {/* Left side */}
         <div className="flex-shrink-0 md:w-1/4">
-          <h2 className="font-outline-4 font-metrophobic text-5xl">
+          <h2 className="font-outline-4 font-metrophobic text-6xl">
             MISSION<br></br>STATEMENT
           </h2>
         </div>
 
         {/* Right side */}
         <div className="md:w-3/4">
-          <p className="text-justify font-jost text-lg leading-relaxed">
+          <p className="text-justify font-jost text-xl leading-relaxed">
             At Aviat'R, our mission is to empower students with the knowledge,
             skills, and facilities required to fuel their love for aeronautics.
             We strive to pioneer new Unmanned Aerial Systems that encapsulate
@@ -29,26 +31,18 @@ const AboutAviat = () => {
         </div>
       </div>
 
-      <div className="mt-8 flex items-center justify-end">
-        <a
-          href="#"
-          className="font-metrophobic text-xl text-white hover:underline"
-        >
+      <Link href="#" className="mt-[4%] flex items-center justify-end">
+        <p className="mr-2 font-metrophobic text-2xl text-white hover:underline">
           LEARN MORE
-        </a>
-
-        <div className="ml-2 flex items-center">
-          <a href="#">
-            <Image
-              src="/Images/Arrow-1.webp"
-              alt="Arrow"
-              width={50}
-              height={20}
-              className="h-7 w-auto"
-            />
-          </a>
-        </div>
-      </div>
+        </p>
+        <Image
+          src={ArrowImg}
+          alt="Arrow"
+          width={50}
+          height={20}
+          className="ml-2 h-7 w-auto"
+        />
+      </Link>
     </div>
   );
 };
