@@ -1,11 +1,10 @@
 import React from "react";
-import AboutAviat from "@/components/AboutAviat";
-import Eagle from "@/components/Eagle";
+import AboutAviat from "@/components/home/AboutAviat";
+import Eagle from "@/components/home/Eagle";
 
 const Home = () => {
   return (
     <div className="justify-center">
-      Hello World 2
       <AboutAviat />
       <Eagle />
     </div>
