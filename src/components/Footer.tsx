@@ -2,6 +2,7 @@ import { Instagram, Youtube, Mail } from "lucide-react";
 import { SiDiscord } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 import Image from "next/image";
+import Logo from "@/public/Logo.webp";
 
 const Footer = () => {
   return (
@@ -55,7 +56,7 @@ const Footer = () => {
         <div className="sm:grid sm:grid-cols-9">
           <div className="sm:col-span-4 sm:col-start-6">
             <Image
-              src="/footer/uas-logo-purple-ring.webp"
+              src={Logo}
               alt="Club Logo with Purple Ring"
               className="pl-[75%] pr-[3%] sm:pl-0 sm:pr-[13.5%] sm:pt-[82.5%] lg:pt-[50%] 2xl:pt-[30%]"
               width={1817}
