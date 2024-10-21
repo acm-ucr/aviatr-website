@@ -8,20 +8,20 @@ const Footer = () => {
     <div>
       <hr className="mx-[3%] mb-[5%] mt-2 border-t-2 xl:mb-[3%]"></hr>
       <div className="sm:grid sm:grid-cols-2">
-        <div className="mx-[6%] flex justify-between whitespace-nowrap font-jost font-light text-white sm:mx-0 sm:ml-[12%] sm:grid sm:grid-cols-3">
+        <div className="mx-[6%]cflex justify-between whitespace-nowrap font-jost font-light lg:font-normal text-white sm:mx-0 sm:ml-[12%] sm:grid sm:grid-cols-3">
           <div>
             <p className="pb-1.5 text-sm md:pb-2 md:text-xl lg:pb-3 lg:text-3xl">
               PROJECTS
             </p>
-            <p className="text-xs md:text-sm lg:text-xl">PROJECT PUFFIN</p>
-            <p className="text-xs md:text-sm lg:text-xl">HUMMINGBIRD</p>
-            <p className="text-xs md:text-sm lg:text-xl">EAGLE</p>
+            <p className="text-xs md:text-sm lg:text-lg">PROJECT PUFFIN</p>
+            <p className="text-xs md:text-sm lg:text-lg">HUMMINGBIRD</p>
+            <p className="text-xs md:text-sm lg:text-lg">EAGLE</p>
           </div>
           <div>
             <p className="pb-1.5 text-sm md:pb-2 md:text-xl lg:pb-3 lg:text-3xl">
               ABOUT US
             </p>
-            <p className="text-xs md:text-sm lg:text-xl">THE BOARD</p>
+            <p className="text-xs md:text-sm lg:text-lg">THE BOARD</p>
           </div>
           <div>
             <p className="pb-1.5 text-sm md:pb-2 md:text-xl lg:pb-3 lg:text-3xl">
@@ -30,22 +30,22 @@ const Footer = () => {
             <div className="flex flex-row gap-1.5 md:gap-3 lg:gap-5">
               <Link href="/" target="_blank">
                 <Instagram
-                  className="md:h-8 md:w-8 lg:h-12 lg:w-12"
+                  className="md:h-8 md:w-8 lg:h-10 lg:w-10"
                   strokeWidth={1}
                 />
               </Link>
               <Link href="https://discord.gg/87GntrMY" target="_blank">
-                <SiDiscord className="md:h-8 md:w-8 lg:h-12 lg:w-12" />
+                <SiDiscord className="md:h-8 md:w-8 lg:h-10 lg:w-10" />
               </Link>
               <Link href="https://www.youtube.com/@UCRAviatR" target="_blank">
                 <Youtube
-                  className="md:h-8 md:w-8 lg:h-12 lg:w-12"
+                  className="md:h-8 md:w-8 lg:h-10 lg:w-10"
                   strokeWidth={1}
                 />
               </Link>
               <Link href="mailto:ucr.aviatr@gmail.com" target="_blank">
                 <Mail
-                  className="md:h-8 md:w-8 lg:h-12 lg:w-12"
+                  className="md:h-8 md:w-8 lg:h-10 lg:w-10"
                   strokeWidth={1}
                 />
               </Link>
@@ -57,7 +57,7 @@ const Footer = () => {
             <Image
               src="/footer/uas-logo-purple-ring.webp"
               alt="Club Logo with Purple Ring"
-              className="pl-[75%] pr-[3%] sm:pl-0 sm:pr-[13.5%] sm:pt-[82.5%] 2xl:pt-[50%]"
+              className="pl-[75%] pr-[3%] sm:pl-0 sm:pr-[13.5%] sm:pt-[82.5%] lg:pt-[50%] 2xl:pt-[30%]"
               width={1817}
               height={569}
             />
