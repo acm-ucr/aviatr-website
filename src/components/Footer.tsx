@@ -9,7 +9,7 @@ const Footer = () => {
     <div>
       <hr className="mx-[3%] mb-[5%] mt-2 border-t-2 xl:mb-[3%]"></hr>
       <div className="sm:grid sm:grid-cols-2">
-        <div className="mx-[6%]cflex justify-between whitespace-nowrap font-jost font-light text-white sm:mx-0 sm:ml-[12%] sm:grid sm:grid-cols-3 lg:font-normal">
+        <div className="mx-[6%]cflex justify-between whitespace-nowrap font-jost text-white sm:mx-0 sm:ml-[12%] sm:grid sm:grid-cols-3 lg:font-normal">
           <div>
             <p className="pb-1.5 text-sm md:pb-2 md:text-xl lg:pb-3 lg:text-3xl">
               PROJECTS
