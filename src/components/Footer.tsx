@@ -9,14 +9,16 @@ const Footer = () => {
     <div>
       <hr className="mx-[3%] mb-[5%] mt-2 border-t-2 xl:mb-[3%]"></hr>
       <div className="sm:grid sm:grid-cols-2">
-        <div className="mx-[6%]cflex justify-between whitespace-nowrap font-jost text-white sm:mx-0 sm:ml-[12%] sm:grid sm:grid-cols-3 lg:font-normal">
+        <div className="mx-[6%] flex justify-between whitespace-nowrap font-jost text-white sm:mx-0 sm:ml-[12%] sm:grid sm:grid-cols-3 lg:font-normal">
           <div>
             <p className="pb-1.5 text-sm md:pb-2 md:text-xl lg:pb-3 lg:text-3xl">
               PROJECTS
             </p>
-            <p className="text-xs md:text-sm lg:text-lg">PROJECT PUFFIN</p>
-            <p className="text-xs md:text-sm lg:text-lg">HUMMINGBIRD</p>
-            <p className="text-xs md:text-sm lg:text-lg">EAGLE</p>
+            <div className="text-xs md:text-sm lg:text-lg">
+              <p>PROJECT PUFFIN</p>
+              <p>HUMMINGBIRD</p>
+              <p>EAGLE</p>
+            </div>
           </div>
           <div>
             <p className="pb-1.5 text-sm md:pb-2 md:text-xl lg:pb-3 lg:text-3xl">
@@ -58,7 +60,7 @@ const Footer = () => {
             <Image
               src={Logo}
               alt="Club Logo with Purple Ring"
-              className="pl-[75%] pr-[3%] sm:pl-0 sm:pr-[13.5%] sm:pt-[82.5%] lg:pt-[50%] 2xl:pt-[30%]"
+              className="mb-[5%] pl-[75%] pr-[3%] sm:pl-0 sm:pr-[13.5%] sm:pt-[82.5%] lg:pt-[50%] 2xl:pt-[30%]"
               width={1817}
               height={569}
             />
