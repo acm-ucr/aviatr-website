@@ -37,7 +37,7 @@ const HummingbirdHomepage = () => {
       </div>
       <div className="col-span-10 grid content-center md:col-span-4">
         <p className="pb-10 text-center text-white">Title</p>
-        <p className="mx-[10%] font-jost text-xs font-light text-white md:mx-0 md:pl-[24%] lg:text-lg lg:font-normal 2xl:text-xl">
+        <p className="mx-[10%] font-jost text-xs font-light leading-relaxed text-white md:mx-0 md:pl-[24%] lg:text-lg lg:font-normal 2xl:text-xl">
           Project Hummingbird is a research team aimed at improving existing
           systems or creating new processes and mechanisms to pioneer the
           future. With the current team aimed at improving drone swarm/show

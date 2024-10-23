@@ -1,6 +1,6 @@
 import React from "react";
-import HummingBird from "@/components/project/HummingBird";
-import Eagle from "@/components/project/Eagle";
+import HummingBird from "@/components/projects/HummingBird";
+import Eagle from "@/components/projects/Eagle";
 
 const Projects = () => {
   return (
