@@ -1,16 +1,15 @@
 import Image from "next/image";
-import EagleImg1 from "@/public/project/Eagle1.webp";
-import EagleImg2 from "@/public/project/Eagle2.webp";
-import EagleImg3 from "@/public/project/Eagle3.webp";
-// public\project\Eagle1.webp
+import EagleImg1 from "@/public/projects/Eagle1.webp";
+import EagleImg2 from "@/public/projects/Eagle2.webp";
+import EagleImg3 from "@/public/projects/Eagle3.webp";
 
 const Eagle = () => {
   return (
     <div className="justify-center bg-black px-[8%] py-[5%] text-white">
       <h1 className="font-metrophobic text-4xl font-bold">Eagle</h1>
-      <div className="mb-6 ml-8 w-1/4 border-b-2 border-white p-1"></div>
+      <div className="ml-8 w-1/4 border-b-2 border-white p-1"></div>
 
-      <div className="grid grid-cols-3 gap-4 py-8">
+      <div className="grid grid-cols-3 gap-4 py-12">
         <div className="col-span-2">
           <Image
             src={EagleImg1}
@@ -32,7 +31,7 @@ const Eagle = () => {
         </div>
       </div>
 
-      <div className="pl-5 text-justify font-jost text-xl leading-relaxed">
+      <div className="px-8 text-justify font-jost text-xl leading-relaxed">
         <p>
           The Eagle Project is our competitive team dedicated to designing
           Unmanned Aerial Vehicles (UAVs) for global competitions. Participation

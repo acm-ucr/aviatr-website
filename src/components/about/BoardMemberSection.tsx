@@ -1,9 +1,9 @@
 import React from "react";
 import BoardMember from "./BoardMember";
 import Image from "next/image";
-import DefaultBoardMemberImage from "./images/defaultBoardMemberImage.jpeg";
-import BMSLeftBorder from "./images/BMSLeftBorder.png";
-import BMSRightBorder from "./images/BMSRightBorder.png";
+import DefaultBoardMemberImage from "@/public/about/defaultBoardMemberImage.jpeg";
+import BMSLeftBorder from "@/public/about/BMSLeftBorder.png";
+import BMSRightBorder from "@/public/about/BMSRightBorder.png";
 
 const BoardMemberSection = () => {
   return (

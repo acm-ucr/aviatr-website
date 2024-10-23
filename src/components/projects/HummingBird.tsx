@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HummingBirdImg from "@/public/project/HummingBird.webp";
+import HummingBirdImg from "@/public/projects/HummingBird.webp";
 
 const HummingBird = () => {
   return (
@@ -9,7 +9,7 @@ const HummingBird = () => {
         <h1 className="font-metrophobic text-4xl font-bold">HummingBird</h1>
         <div className="mb-6 ml-8 w-1/4 border-b-2 border-white p-2"></div>
 
-        <p className="px-4 text-justify font-jost text-xl leading-normal">
+        <p className="px-4 text-justify font-jost text-xl leading-relaxed">
           The Hummingbird project is a research division within the Aviat'R
           enterprise focused on developing drone swarming technology and
           multi-drone networks. Our objective is to create a functional drone
