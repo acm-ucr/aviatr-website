@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
 module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
@@ -21,7 +22,30 @@ module.exports = {
         metrophobic: ["var(--font-metrophobic)"],
         "bungee-hairline": ["var(--font-bungee-hairline)"],
       },
+      textShadow: {
+        sm: "-1px 1px 0px var(--tw-shadow-color), 1px -1px 0px var(--tw-shadow-color), -1px -1px 0px var(--tw-shadow-color), 1px 1px 0px var(--tw-shadow-color), 0px -1px 0px var(--tw-shadow-color), 0px 1px 0px var(--tw-shadow-color)",
+        DEFAULT:
+          "-2px -2px 0px var(--tw-shadow-color), -1px -1px 0px var(--tw-shadow-color), 1px 1px 0px var(--tw-shadow-color), 2px 2px 0px var(--tw-shadow-color), 2px -2px 0px var(--tw-shadow-color), 1px -1px 0px var(--tw-shadow-color), -1px 1px 0px var(--tw-shadow-color), -2px 2px 0px var(--tw-shadow-color), -1px 2px 0px var(--tw-shadow-color), 0px 2px 0px var(--tw-shadow-color), 1px 2px 0px var(--tw-shadow-color), -1px -2px 0px var(--tw-shadow-color), 0px -2px 0px var(--tw-shadow-color), 1px -2px 0px var(--tw-shadow-color)",
+        lg: "-3px -3px 0px var(--tw-shadow-color), -2px -2px 0px var(--tw-shadow-color), -1px -1px 0px var(--tw-shadow-color), 1px 1px 0px var(--tw-shadow-color), 2px 2px 0px var(--tw-shadow-color), 3px 3px 0px var(--tw-shadow-color), 3px -3px 0px var(--tw-shadow-color), 2px -2px 0px var(--tw-shadow-color), 1px -1px 0px var(--tw-shadow-color), -1px 1px 0px var(--tw-shadow-color), -2px 2px 0px var(--tw-shadow-color), -3px 3px 0px var(--tw-shadow-color), -2px 3px 0px var(--tw-shadow-color), -1px 3px 0px var(--tw-shadow-color), 0px 3px 0px var(--tw-shadow-color), 1px 3px 0px var(--tw-shadow-color), 2px 3px 0px var(--tw-shadow-color), -2px -3px 0px var(--tw-shadow-color), -1px -3px 0px var(--tw-shadow-color), 0px -3px 0px var(--tw-shadow-color), 1px -3px 0px var(--tw-shadow-color), 2px -3px 0px var(--tw-shadow-color)",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({
+      matchUtilities,
+      theme,
+    }: {
+      matchUtilities: any;
+      theme: any;
+    }) {
+      matchUtilities(
+        {
+          "text-shadow": (value: any) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme("textShadow") },
+      );
+    }),
+  ],
 };
