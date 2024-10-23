@@ -1,11 +1,14 @@
 import Image from "next/image";
+import HummingBird3 from "@/public/home/hummingbird-image-3.webp";
+import HummingBird2 from "@/public/home/hummingbird-image-2.webp";
+import HummingBird1 from "@/public/home/hummingbird-image-1.webp";
 
 const HummingbirdHomepage = () => {
   return (
     <div className="mx-[5%] grid grid-cols-10">
       <div className="col-span-10 md:col-span-6">
         <Image
-          src="/homePage/hummingbird-image-1.webp"
+          src={HummingBird1}
           alt="Front View of Drone"
           className="w-full pb-[2%]"
           width={754}
@@ -14,7 +17,7 @@ const HummingbirdHomepage = () => {
         <div className="grid grid-cols-8">
           <div className="col-span-3">
             <Image
-              src="/homePage/hummingbird-image-2.webp"
+              src={HummingBird2}
               alt="Rudder of Drone"
               className="h-full w-full"
               width={294}
@@ -23,7 +26,7 @@ const HummingbirdHomepage = () => {
           </div>
           <div className="col-span-5">
             <Image
-              src="/homePage/hummingbird-image-3.webp"
+              src={HummingBird3}
               alt="Side View of Drone"
               className="w-full pl-[3%]"
               width={444}
