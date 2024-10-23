@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import plugin from "tailwindcss/plugin";
+import { ThemeConfig, PluginUtils } from "tailwindcss/types/config";
 module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
@@ -31,16 +32,10 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function ({
-      matchUtilities,
-      theme,
-    }: {
-      matchUtilities: any;
-      theme: any;
-    }) {
+    plugin(function ({ matchUtilities, theme }) {
       matchUtilities(
         {
-          "text-shadow": (value: any) => ({
+          "text-shadow": (value: string) => ({
             textShadow: value,
           }),
         },
