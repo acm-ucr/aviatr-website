@@ -1,11 +1,14 @@
 import Image from "next/image";
+import HummingBird3 from "@/public/home/hummingbird-image-3.webp";
+import HummingBird2 from "@/public/home/hummingbird-image-2.webp";
+import HummingBird1 from "@/public/home/hummingbird-image-1.webp";
 
 const HummingbirdHomepage = () => {
   return (
     <div className="mx-[5%] grid grid-cols-10">
       <div className="col-span-10 md:col-span-6">
         <Image
-          src="/homePage/hummingbird-image-1.webp"
+          src={HummingBird1}
           alt="Front View of Drone"
           className="w-full pb-[2%]"
           width={754}
@@ -14,7 +17,7 @@ const HummingbirdHomepage = () => {
         <div className="grid grid-cols-8">
           <div className="col-span-3">
             <Image
-              src="/homePage/hummingbird-image-2.webp"
+              src={HummingBird2}
               alt="Rudder of Drone"
               className="h-full w-full"
               width={294}
@@ -23,7 +26,7 @@ const HummingbirdHomepage = () => {
           </div>
           <div className="col-span-5">
             <Image
-              src="/homePage/hummingbird-image-3.webp"
+              src={HummingBird3}
               alt="Side View of Drone"
               className="w-full pl-[3%]"
               width={444}
@@ -34,7 +37,7 @@ const HummingbirdHomepage = () => {
       </div>
       <div className="col-span-10 grid content-center md:col-span-4">
         <p className="pb-10 text-center text-white">Title</p>
-        <p className="mx-[10%] font-jost text-xs font-light text-white md:mx-0 md:pl-[24%] lg:text-lg lg:font-normal 2xl:text-xl">
+        <p className="mx-[10%] font-jost text-xs font-light leading-relaxed text-white md:mx-0 md:pl-[24%] lg:text-lg lg:font-normal 2xl:text-xl">
           Project Hummingbird is a research team aimed at improving existing
           systems or creating new processes and mechanisms to pioneer the
           future. With the current team aimed at improving drone swarm/show

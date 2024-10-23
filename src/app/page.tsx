@@ -1,5 +1,5 @@
 import React from "react";
-import HummingbirdHomepage from "@/components/HummingbirdHomepage";
+import HummingbirdHomepage from "@/components/home/HummingbirdHomepage";
 import AboutAviat from "@/components/home/AboutAviat";
 import Eagle from "@/components/home/Eagle";
 

@@ -31,10 +31,12 @@ const AboutAviat = () => {
         </div>
       </div>
 
-      <Link href="#" className="mt-[4%] flex items-center justify-end">
-        <p className="mr-2 font-metrophobic text-2xl text-white hover:underline">
-          LEARN MORE
-        </p>
+      <div className="mt-[4%] flex items-center justify-end">
+        <Link href="#">
+          <p className="mr-2 font-metrophobic text-2xl text-white hover:underline">
+            LEARN MORE
+          </p>
+        </Link>
         <Image
           src={ArrowImg}
           alt="Arrow"
@@ -42,7 +44,7 @@ const AboutAviat = () => {
           height={20}
           className="ml-2 h-7 w-auto"
         />
-      </Link>
+      </div>
     </div>
   );
 };
