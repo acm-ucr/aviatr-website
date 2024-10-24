@@ -5,13 +5,19 @@ interface TitleProps {
   title: string;
   width: string;
   lineMarginShift: string;
+  textSize: string;
 }
 
-const Title: React.FC<TitleProps> = ({ title, width, lineMarginShift }) => {
+const Title: React.FC<TitleProps> = ({
+  title,
+  width,
+  lineMarginShift,
+  textSize,
+}) => {
   return (
-    <div className={`text-3xl text-white ${width}`}>
+    <div className={`${textSize} text-white ${width} text-nowrap`}>
       {title}
-      <div className={` ${lineMarginShift} border-b-4 border-white`} />
+      <div className={` ${lineMarginShift} mt-6 border-b-2 border-white`} />
     </div>
   );
 };

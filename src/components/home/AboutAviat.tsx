@@ -1,14 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import ArrowImg from "@/public/home/Arrow.webp";
+import Title from "@/components/Title";
 
 const AboutAviat = () => {
   return (
     <div className="justify-center bg-black px-[8%] py-[5%] text-white">
-      <h1 className="font-metrophobic text-4xl">What is Aviat'R? </h1>
-      <div className="mb-6 ml-8 w-1/4 border-b-2 border-white p-1"></div>
+      <div className="mb-[3%]">
+        <Title
+          title="What is Aviat'R?"
+          width="w-[36%]"
+          lineMarginShift="ml-[12%]"
+          textSize="text-5xl"
+        />
+      </div>
 
-      <div className="flex flex-col items-start gap-32 pt-8 md:flex-row md:items-center">
+      <div className="flex flex-col items-start gap-32 pt-8 md:flex-row">
         {/* Left side */}
         <div className="flex-shrink-0 md:w-1/4">
           <h2 className="font-outline-4 font-metrophobic text-6xl">
