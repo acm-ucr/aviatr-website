@@ -1,7 +1,9 @@
 import React from "react";
 import BoardMemberSection from "../../components/about/BoardMemberSection";
 
-const Events = () => {
-  return <BoardMemberSection />;
+const About = () => {
+  return <div>
+    <BoardMemberSection />;
+  </div>
 };
-export default Events;
+export default About;
