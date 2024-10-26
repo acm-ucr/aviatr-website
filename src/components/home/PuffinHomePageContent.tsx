@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import PuffinImg from "@/../public/home/ProjectPuffin.webp";
+import PuffinImg from "@/images/home/ProjectPuffin.webp";
 
 const ProjectPuffin = () => {
   return (
-    <div className="relative my-[8%] flex h-screen items-center justify-center bg-black text-white">
+    <div className="relative mt-[8%] flex h-screen items-center justify-center bg-black text-white">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
