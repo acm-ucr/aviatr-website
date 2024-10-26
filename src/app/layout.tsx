@@ -26,7 +26,7 @@ const bungee_hairline = Bungee_Hairline({
 });
 
 export const metadata = {
-  title: "AVIAT'R Website",
+  title: "AVIAT'R | UCR",
   description: "The official website for the Aviat'r Club @ UCR.",
 };
 
