@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <div className="justify-center">
       <AboutAviat />
-      <HummingbirdHomepage />
       <ProjectPuffin />
+      <HummingbirdHomepage />
       <Eagle />
     </div>
   );
