@@ -1,6 +1,6 @@
 import React from "react";
 
-const BoardMember = () => {
+const WhoWeAre = () => {
   return (
     <div className="mx-auto mt-20 flex h-1/4 w-1/2 flex-col">
       <div className="mb-10 flex w-full flex-col items-center gap-3">
@@ -25,4 +25,4 @@ const BoardMember = () => {
   );
 };
 
-export default BoardMember;
+export default WhoWeAre;
