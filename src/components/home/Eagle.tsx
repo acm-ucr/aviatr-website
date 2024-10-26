@@ -9,7 +9,7 @@ const Eagle = () => {
         <h1 className="font-metrophobic text-4xl font-bold">Eagle</h1>
         <div className="mb-6 ml-8 w-1/4 border-b-2 border-white p-2"></div>
 
-        <p className="px-4 font-jost text-xl leading-normal">
+        <p className="px-4 font-jost text-xl leading-relaxed">
           Eagle is a select team that competes with universities in the nation
           and make Aviat’R’s name known. It participates in SUAS, a competition
           aimed at challenging students to make their own unmanned aerial
