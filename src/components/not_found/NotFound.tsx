@@ -1,4 +1,4 @@
-import drone from "@/images/notFound/drone.svg";
+import drone from "@/images/notFound/drone.webp";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,9 +9,9 @@ const NotFound = () => {
         <Image
           src={drone}
           alt="Drone illustration"
-          width={350}
-          height={106}
-          className="h-auto w-full"
+          width={550}
+          height={406}
+          //className="h-auto w-full"
         />
       </div>
 
