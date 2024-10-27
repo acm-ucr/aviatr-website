@@ -2,11 +2,11 @@ import { Instagram, Youtube, Mail } from "lucide-react";
 import { SiDiscord } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/public/Logo.webp";
+import Logo from "@/images/Logo.webp";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="mt-[4%]">
       <hr className="mx-[3%] mb-[5%] mt-2 border-t-2 xl:mb-[3%]"></hr>
       <div className="sm:grid sm:grid-cols-2">
         <div className="mx-[6%] flex justify-between whitespace-nowrap font-jost text-white sm:mx-0 sm:ml-[12%] sm:grid sm:grid-cols-3 lg:font-normal">

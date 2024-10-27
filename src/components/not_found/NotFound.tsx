@@ -1,4 +1,4 @@
-import drone from "../../public/assets/notFound/drone.svg";
+import drone from "@/images/notFound/drone.svg";
 import Image from "next/image";
 import Link from "next/link";
 
