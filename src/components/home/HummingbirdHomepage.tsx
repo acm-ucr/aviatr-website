@@ -1,11 +1,11 @@
 import Image from "next/image";
-import HummingBird3 from "@/public/home/hummingbird-image-3.webp";
-import HummingBird2 from "@/public/home/hummingbird-image-2.webp";
-import HummingBird1 from "@/public/home/hummingbird-image-1.webp";
+import HummingBird3 from "@/images/home/hummingbird-image-3.webp";
+import HummingBird2 from "@/images/home/hummingbird-image-2.webp";
+import HummingBird1 from "@/images/home/hummingbird-image-1.webp";
 
 const HummingbirdHomepage = () => {
   return (
-    <div className="mx-[5%] grid grid-cols-10">
+    <div className="mx-[5%] mt-[8%] grid grid-cols-10">
       <div className="col-span-10 md:col-span-6">
         <Image
           src={HummingBird1}

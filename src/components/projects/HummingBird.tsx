@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HummingBirdImg from "@/public/projects/HummingBird.webp";
+import HummingBirdImg from "@/images/projects/HummingBird.webp";
 
 const HummingBird = () => {
   return (

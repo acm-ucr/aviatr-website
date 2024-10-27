@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import ArrowImg from "@/public/home/Arrow.webp";
+import ArrowImg from "@/images/home/Arrow.webp";
 import Title from "@/components/Title";
 
-const AboutAviat = () => {
+const MissionStatement = () => {
   return (
-    <div className="justify-center bg-black px-[8%] py-[5%] text-white">
+    <div className="justify-center bg-black px-[8%] pt-[5%] text-white">
       <div className="mb-[3%]">
         <Title
           title="What is Aviat'R?"
@@ -56,4 +56,4 @@ const AboutAviat = () => {
   );
 };
 
-export default AboutAviat;
+export default MissionStatement;

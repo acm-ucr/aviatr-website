@@ -1,8 +1,8 @@
 import "./globals.css";
 import { Jost, Metrophobic, Bungee_Hairline } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
+import NavBar from "@/layouts/NavBar";
+import Footer from "@/layouts/Footer";
 
 // const inter = Inter({ subsets: ["latin"] });
 const jost = Jost({
