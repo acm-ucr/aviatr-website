@@ -1,17 +1,29 @@
-const UpcomingEvent = ({
+// Define the props type
+interface UpcomingEventProps {
+  day: string;
+  dayTextStroke: string;
+  date: string;
+  dateTextColor: string;
+  time: string;
+  title: string;
+  description: string;
+}
+
+const UpcomingEvent: React.FC<UpcomingEventProps> = ({
   day = "",
+  dayTextStroke = "",
   date = "",
+  dateTextColor = "",
   time = "",
   title = "",
   description = "",
-  color = "",
 }) => {
   return (
     <div className="grid grid-cols-7 text-white">
       <div className="col-span-2 grid grid-rows-2 font-bungee-hairline">
         <div className="relative">
           <p
-            className={`absolute bottom-0 left-1/2 -translate-x-1/2 transform text-stroke-${color} text-3xl stroke-weight-[3px] md:text-5xl md:stroke-weight-[5px] lg:text-6xl`}
+            className={`absolute bottom-0 left-1/2 -translate-x-1/2 transform ${dayTextStroke} text-3xl stroke-weight-[3px] md:text-5xl md:stroke-weight-[5px] lg:text-6xl`}
           >
             {day}
           </p>
@@ -20,7 +32,9 @@ const UpcomingEvent = ({
           </p>
         </div>
         <div className="justify-items-center">
-          <p className={`text-${color} -mt-2 text-lg md:text-3xl lg:text-4xl`}>
+          <p
+            className={`${dateTextColor} -mt-2 text-lg md:text-3xl lg:text-4xl`}
+          >
             {date}
           </p>
         </div>
