@@ -31,10 +31,15 @@ module.exports = {
       matchUtilities(
         {
           "text-stroke": (value) => {
-            return { "-webkit-text-stroke": `var(--tw-stroke-weight) ${value}` };
+            return {
+              "-webkit-text-stroke": `var(--tw-stroke-weight) ${value}`,
+            };
           },
         },
-        { values: flattenColorPalette(theme("colors")), type: ["color", "any"] }
+        {
+          values: flattenColorPalette(theme("colors")),
+          type: ["color", "any"],
+        },
       );
     }),
     plugin(function ({ matchUtilities, theme }) {
@@ -44,7 +49,7 @@ module.exports = {
             return { "--tw-stroke-weight": value };
           },
         },
-        { values: theme("spacing") }
+        { values: theme("spacing") },
       );
     }),
   ],
