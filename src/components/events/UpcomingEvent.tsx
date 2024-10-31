@@ -10,13 +10,13 @@ interface UpcomingEventProps {
 }
 
 const UpcomingEvent: React.FC<UpcomingEventProps> = ({
-  day = "",
-  dayTextStroke = "",
-  date = "",
-  dateTextColor = "",
-  time = "",
-  title = "",
-  description = "",
+  day,
+  dayTextStroke,
+  date,
+  dateTextColor,
+  time,
+  title,
+  description,
 }) => {
   return (
     <div className="grid grid-cols-7 text-white">
