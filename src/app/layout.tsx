@@ -3,6 +3,7 @@ import { Jost, Metrophobic, Bungee_Hairline } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import NavBar from "@/layouts/NavBar";
 import Footer from "@/layouts/Footer";
+import favicon from "./favicon.ico"
 
 // const inter = Inter({ subsets: ["latin"] });
 const jost = Jost({
@@ -28,6 +29,9 @@ const bungee_hairline = Bungee_Hairline({
 export const metadata = {
   title: "AVIAT'R | UCR",
   description: "The official website for the Aviat'r Club @ UCR.",
+  icons: {
+    icon: favicon.src,
+  },
 };
 
 type LayoutProps = {
