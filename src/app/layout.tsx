@@ -3,7 +3,7 @@ import { Jost, Metrophobic, Bungee_Hairline } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import NavBar from "@/layouts/NavBar";
 import Footer from "@/layouts/Footer";
-import favicon from "./favicon.ico"
+import favicon from "./favicon.ico";
 
 // const inter = Inter({ subsets: ["latin"] });
 const jost = Jost({
