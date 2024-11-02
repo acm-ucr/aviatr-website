@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+import plugin from "tailwindcss/plugin";
+import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
+
 module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
@@ -21,11 +24,33 @@ module.exports = {
         metrophobic: ["var(--font-metrophobic)"],
         "bungee-hairline": ["var(--font-bungee-hairline)"],
       },
-      fontSize: {
-        "2xs": "0.5rem",
-        "3xs": "0.35rem",
-      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "text-stroke": (value) => {
+            return {
+              "-webkit-text-stroke": `var(--tw-stroke-weight) ${value}`,
+            };
+          },
+        },
+        {
+          values: flattenColorPalette(theme("colors")),
+          type: ["color", "any"],
+        },
+      );
+    }),
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "stroke-weight": (value) => {
+            return { "--tw-stroke-weight": value };
+          },
+        },
+        { values: theme("spacing") },
+      );
+    }),
+  ],
 };

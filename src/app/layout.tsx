@@ -1,8 +1,8 @@
 import "./globals.css";
 import { Jost, Metrophobic, Bungee_Hairline } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
+import NavBar from "@/layouts/NavBar";
+import Footer from "@/layouts/Footer";
 
 // const inter = Inter({ subsets: ["latin"] });
 const jost = Jost({
@@ -26,7 +26,7 @@ const bungee_hairline = Bungee_Hairline({
 });
 
 export const metadata = {
-  title: "AVIAT'R Website",
+  title: "AVIAT'R | UCR",
   description: "The official website for the Aviat'r Club @ UCR.",
 };
 

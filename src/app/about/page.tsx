@@ -1,12 +1,13 @@
 import React from "react";
 import BoardMemberSection from "../../components/about/BoardMemberSection";
-import RecurringLogo from "@/components/RecurringLogo";
+import WhoWeAre from "../../components/about/WhoWeAre";
+import WhatWeDo from "../../components/about/WhatWeDo";
 
 const Events = () => {
   return (
-    <div className="justify-center">
-      About Us
-      <RecurringLogo></RecurringLogo>
+    <div className="flex flex-col gap-24">
+      <WhoWeAre />
+      <WhatWeDo />
       <BoardMemberSection />
     </div>
   );

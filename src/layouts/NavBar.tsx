@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import Logo from "../../public/Logo.webp";
+import Logo from "@/images/Logo.webp";
 
 import { usePathname } from "next/navigation";
 
