@@ -7,7 +7,7 @@ import RecurringLogo from "@/components/RecurringLogo";
 const Events = () => {
   return (
     <div>
-      <div className="p-20">
+      <div className="p-16">
         <RecurringLogo />
       </div>
       <div className="flex flex-col gap-24">
