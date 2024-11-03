@@ -5,12 +5,12 @@ const RecurringLogo = () => {
   return (
     <div className="flex items-center justify-center">
       <div className="flex items-center justify-center rounded-full bg-white py-[4.5%]">
-          <Image
-            src={RecurringImg}
-            alt="RecurringLogo"
-            width={687}
-            height={376}
-          />
+        <Image
+          src={RecurringImg}
+          alt="RecurringLogo"
+          width={687}
+          height={376}
+        />
       </div>
     </div>
   );
