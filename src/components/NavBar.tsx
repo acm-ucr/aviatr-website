@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import Logo from "../../public/Logo.webp";
+
 import Cover from "../../public/homePage/homepage_cover.webp";
 
 import { usePathname } from "next/navigation";
