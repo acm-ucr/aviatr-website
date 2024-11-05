@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Logo from "../../public/Logo.webp";
 
-import Cover from "../../public/homePage/homepage_cover.webp";
+import Cover from "../../public/homePage/homepagecover.webp";
 
 import { usePathname } from "next/navigation";
 
