@@ -7,30 +7,30 @@ import Logo from "@/images/Logo.webp";
 const Footer = () => {
   return (
     <div className="mt-[4%]">
-      <hr className="mx-[3%] mb-[5%] mt-2 border-t-2 xl:mb-[3%]"></hr>
+      <hr className="xl:mb-[3%] mx-[3%] mb-[5%] mt-2 border-t-2"></hr>
       <div className="sm:grid sm:grid-cols-2">
-        <div className="mx-[6%] flex justify-between whitespace-nowrap font-jost text-white sm:mx-0 sm:ml-[12%] sm:grid sm:grid-cols-3 lg:font-normal">
+        <div className="sm:mx-0 sm:ml-[12%] sm:grid sm:grid-cols-3 lg:font-normal mx-[6%] flex justify-between whitespace-nowrap font-jost text-white">
           <div>
-            <p className="pb-1.5 text-sm md:pb-2 md:text-xl lg:pb-3 lg:text-3xl">
+            <p className="md:pb-2 md:text-xl lg:pb-3 lg:text-3xl pb-1.5 text-sm">
               PROJECTS
             </p>
-            <div className="text-xs md:text-sm lg:text-lg">
+            <div className="md:text-sm lg:text-lg text-xs">
               <p>PROJECT PUFFIN</p>
               <p>HUMMINGBIRD</p>
               <p>EAGLE</p>
             </div>
           </div>
           <div>
-            <p className="pb-1.5 text-sm md:pb-2 md:text-xl lg:pb-3 lg:text-3xl">
+            <p className="md:pb-2 md:text-xl lg:pb-3 lg:text-3xl pb-1.5 text-sm">
               ABOUT US
             </p>
-            <p className="text-xs md:text-sm lg:text-lg">THE BOARD</p>
+            <p className="md:text-sm lg:text-lg text-xs">THE BOARD</p>
           </div>
           <div>
-            <p className="pb-1.5 text-sm md:pb-2 md:text-xl lg:pb-3 lg:text-3xl">
+            <p className="md:pb-2 md:text-xl lg:pb-3 lg:text-3xl pb-1.5 text-sm">
               CONTACT US
             </p>
-            <div className="flex flex-row gap-1.5 md:gap-3 lg:gap-5">
+            <div className="md:gap-3 lg:gap-5 flex flex-row gap-1.5">
               <Link href="/" target="_blank">
                 <Instagram
                   className="md:h-8 md:w-8 lg:h-10 lg:w-10"
@@ -60,7 +60,7 @@ const Footer = () => {
             <Image
               src={Logo}
               alt="Club Logo with Purple Ring"
-              className="mb-[5%] pl-[75%] pr-[3%] sm:pl-0 sm:pr-[13.5%] sm:pt-[82.5%] lg:pt-[50%] 2xl:pt-[30%]"
+              className="sm:pl-0 sm:pr-[13.5%] sm:pt-[82.5%] lg:pt-[50%] 2xl:pt-[30%] mb-[5%] pl-[75%] pr-[3%]"
               width={1817}
               height={569}
             />

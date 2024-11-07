@@ -23,17 +23,17 @@ const UpcomingEvent: React.FC<UpcomingEventProps> = ({
       <div className="col-span-2 grid grid-rows-2 font-bungee-hairline">
         <div className="relative">
           <p
-            className={`absolute bottom-0 left-1/2 -translate-x-1/2 transform ${dayTextStroke} text-3xl stroke-weight-[4px] md:text-5xl md:stroke-weight-[5px] lg:text-7xl`}
+            className={`absolute bottom-0 left-1/2 -translate-x-1/2 transform ${dayTextStroke} md:text-5xl md:stroke-weight-[5px] lg:text-7xl text-3xl stroke-weight-[4px]`}
           >
             {day}
           </p>
-          <p className="absolute bottom-0 left-1/2 -translate-x-1/2 transform text-3xl text-white md:text-5xl lg:text-7xl">
+          <p className="md:text-5xl lg:text-7xl absolute bottom-0 left-1/2 -translate-x-1/2 transform text-3xl text-white">
             {day}
           </p>
         </div>
         <div className="justify-items-center">
           <p
-            className={`${dateTextColor} text-lg stroke-weight-[1px] md:text-3xl lg:text-5xl`}
+            className={`${dateTextColor} md:text-3xl lg:text-5xl text-lg stroke-weight-[1px]`}
           >
             {date}
           </p>
@@ -41,18 +41,18 @@ const UpcomingEvent: React.FC<UpcomingEventProps> = ({
       </div>
       <div className="col-span-5 mr-[5%] font-jost">
         <div className="flex items-center">
-          <p className="pb-2 font-metrophobic text-xl text-stroke-white stroke-weight-[1px] sm:pb-4 md:text-3xl lg:pb-6 lg:text-4xl">
+          <p className="sm:pb-4 md:text-3xl lg:pb-6 lg:text-4xl pb-2 font-metrophobic text-xl text-stroke-white stroke-weight-[1px]">
             {title}
           </p>
-          <div className="mb-1 ml-[3%] flex-grow border-t-2 border-white sm:mb-3 lg:mb-4"></div>
-          <div className="mb-1 h-3 w-3 rotate-45 transform bg-white sm:mb-3 lg:mb-4"></div>
+          <div className="sm:mb-3 lg:mb-4 mb-1 ml-[3%] flex-grow border-t-2 border-white"></div>
+          <div className="sm:mb-3 lg:mb-4 mb-1 h-3 w-3 rotate-45 transform bg-white"></div>
         </div>
-        <div className="mx-[5%] sm:mx-[2%]">
-          <p className="pb-1 text-sm lg:text-xl">
+        <div className="sm:mx-[2%] mx-[5%]">
+          <p className="lg:text-xl pb-1 text-sm">
             <span className="font-semibold">Time: </span>
             {time}
           </p>
-          <p className="pb-4 text-xs sm:pb-6 lg:text-base">{description}</p>
+          <p className="sm:pb-6 lg:text-base pb-4 text-xs">{description}</p>
         </div>
         <hr className="border-t-2"></hr>
       </div>

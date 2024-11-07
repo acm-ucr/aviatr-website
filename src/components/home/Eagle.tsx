@@ -3,7 +3,7 @@ import EagleImg from "@/images/home/Eagle.webp";
 
 const Eagle = () => {
   return (
-    <div className="mt-[8%] flex w-full flex-col items-start justify-between pl-[8%] pt-8 text-white md:flex-row md:items-center">
+    <div className="md:flex-row md:items-center mt-[8%] flex w-full flex-col items-start justify-between pl-[8%] pt-8 text-white">
       {/* left side */}
       <div className="md:w-2/6">
         <h1 className="font-metrophobic text-4xl font-bold">Eagle</h1>
