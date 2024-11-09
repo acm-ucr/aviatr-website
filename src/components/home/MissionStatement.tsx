@@ -7,28 +7,20 @@ const MissionStatement = () => {
   return (
     <div className="justify-center bg-black px-[8%] pt-[5%] text-white">
       <div className="mb-[3%]">
-        <div className="max-400px:hidden">
+        <div className="md:text-5xl">
           <Title
             title="What is Aviat'R?"
             width="w-[36%]"
             lineMarginShift="ml-[12%]"
-            textSize="text-5xl"
-          />
-        </div>
-        <div className="min-400px:hidden">
-          <Title
-            title="What is Aviat'R?"
-            width="w-[36%]"
-            lineMarginShift="ml-[12%]"
-            textSize="text-[44px]"
+            textSize="text-[42px]"
           />
         </div>
       </div>
 
-      <div className="md:gap-10 xl:flex-row xl:gap-32 flex flex-col items-start gap-5 pt-8">
+      <div className="flex flex-col items-start gap-5 pt-8 md:gap-10 xl:flex-row xl:gap-32">
         {/* Left side */}
-        <div className="xl:w-1/4 flex-shrink-0">
-          <h2 className="font-outline-4 min-[400px]:text-6xl font-metrophobic text-5xl">
+        <div className="flex-shrink-0 xl:w-1/4">
+          <h2 className="font-outline-4 font-metrophobic text-5xl min-[400px]:text-6xl">
             MISSION<br></br>STATEMENT
           </h2>
         </div>
@@ -50,26 +42,17 @@ const MissionStatement = () => {
 
       <div className="mt-[4%] flex items-center justify-end overflow-hidden">
         <Link href="#">
-          <p className="max-[400px]:w-[30%] sm:mr-2 font-metrophobic text-2xl text-white hover:underline">
+          <p className="font-metrophobic text-2xl text-white hover:underline max-[400px]:w-[30%] sm:mr-2">
             LEARN MORE
           </p>
         </Link>
-        <div className="max-500px:hidden">
+        <div>
           <Image
             src={ArrowImg}
             alt="Arrow"
             width={50}
             height={20}
-            className="ml-2 h-7 w-auto"
-          />
-        </div>
-        <div className="min-500px:hidden">
-          <Image
-            src={ArrowImg}
-            alt="Arrow"
-            width={50}
-            height={20}
-            className="ml-2 w-[94%]"
+            className="ml-2 h-7 w-11/12 md:w-auto"
           />
         </div>
       </div>

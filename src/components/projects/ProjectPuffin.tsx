@@ -7,7 +7,7 @@ const ProjectPuffin = () => {
   return (
     <div className="mx-[8%] font-jost text-white">
       <p className="mb-6">Project Puffin Title</p>
-      <div className="sm:hidden text-justify text-sm">
+      <div className="text-justify text-sm sm:hidden">
         <Image
           src={ProjectPuffin1}
           alt="Aviatr member explaining concepts on a whiteboard to other members in a classroom"
@@ -48,8 +48,8 @@ const ProjectPuffin = () => {
           evaluations.
         </p>
       </div>
-      <div className="sm:block hidden">
-        <p className="text-md xl:text-xl mx-[2%] mb-[5%] text-justify leading-relaxed">
+      <div className="hidden sm:block">
+        <p className="text-md mx-[2%] mb-[5%] text-justify leading-relaxed xl:text-xl">
           A common challenge in many engineering organizations is the lack of
           effective mentorship. Novice members often find themselves assigned to
           complex projects requiring advanced knowledge, which can be

@@ -6,7 +6,7 @@ import HummingBird1 from "@/images/home/hummingbird-image-1.webp";
 const HummingbirdHomepage = () => {
   return (
     <div className="mx-[5%] mt-[8%] grid grid-cols-10">
-      <div className="md:col-span-6 col-span-10">
+      <div className="col-span-10 md:col-span-6">
         <Image
           src={HummingBird1}
           alt="Front View of Drone"
@@ -35,16 +35,16 @@ const HummingbirdHomepage = () => {
           </div>
         </div>
       </div>
-      <div className="md:col-span-4 col-span-10 grid content-center">
+      <div className="col-span-10 grid content-center md:col-span-4">
         <p className="pb-10 text-center text-white">Title</p>
-        <p className="md:mx-0 md:pl-[24%] lg:text-lg lg:font-normal 2xl:text-xl mx-[10%] font-jost text-xs font-light leading-relaxed text-white">
+        <p className="mx-[10%] font-jost text-xs font-light leading-relaxed text-white md:mx-0 md:pl-[24%] lg:text-lg lg:font-normal 2xl:text-xl">
           Project Hummingbird is a research team aimed at improving existing
           systems or creating new processes and mechanisms to pioneer the
           future. With the current team aimed at improving drone swarm/show
           technology, among a number of other projects in the works, Hummingbird
           stands at the forefront to jump from flower to flower of knowledge.
         </p>
-        <p className="md:ml-0 md:pl-[24%] ml-[10%] pt-10 text-white">button</p>
+        <p className="ml-[10%] pt-10 text-white md:ml-0 md:pl-[24%]">button</p>
       </div>
     </div>
   );

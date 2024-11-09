@@ -25,12 +25,6 @@ module.exports = {
         "bungee-hairline": ["var(--font-bungee-hairline)"],
       },
     },
-    screens: {
-      "max-400px": { max: "400px" },
-      "min-400px": { min: "401px" },
-      "max-500px": { max: "500px" },
-      "min-500px": { min: "501px" },
-    },
   },
   plugins: [
     plugin(function ({ matchUtilities, theme }) {

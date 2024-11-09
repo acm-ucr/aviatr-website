@@ -3,7 +3,7 @@ import HummingBirdImg from "@/images/projects/HummingBird.webp";
 
 const HummingBird = () => {
   return (
-    <div className="md:flex-row md:items-center flex w-full flex-col items-start justify-between gap-[8%] px-[8%] py-[5%] text-white">
+    <div className="flex w-full flex-col items-start justify-between gap-[8%] px-[8%] py-[5%] text-white md:flex-row md:items-center">
       {/* left */}
       <div className="md:w-2/4">
         <h1 className="font-metrophobic text-4xl font-bold">HummingBird</h1>

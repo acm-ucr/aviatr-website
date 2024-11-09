@@ -26,7 +26,7 @@ const BoardMemberSection = () => {
         </div>
         <div className="h-0.5 w-1/4 bg-white" />
       </div>
-      <div className="md:grid-cols-2 lg:grid-cols-4 grid grid-cols-1 justify-items-center gap-8">
+      <div className="grid grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
         <BoardMember
           name="Firstname Lastname"
           position="POSITION"

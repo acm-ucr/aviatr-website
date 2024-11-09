@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const NotFound = () => {
   return (
-    <div className="md:flex-row flex min-h-screen flex-col items-center justify-center bg-black p-8">
-      <div className="md:mb-0 md:mr-32 z-10 mb-8">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-black p-8 md:flex-row">
+      <div className="z-10 mb-8 md:mb-0 md:mr-32">
         <Image
           src={drone}
           alt="Drone illustration"
