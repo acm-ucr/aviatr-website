@@ -10,7 +10,7 @@ const WhatWeDo = () => {
         </div>
         <div className="h-0.5 w-1/3 bg-aviatr-blue-500" />
       </div> */}
-      
+
       <TitleComponent text="What We Do" color="text-aviatr-blue-500" />
 
       <div className="text-center font-jost text-lg text-white">
