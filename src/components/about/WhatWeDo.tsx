@@ -1,14 +1,18 @@
 import React from "react";
+import TitleComponent from "@/components/about/TitleCompoent";
 
 const WhatWeDo = () => {
   return (
     <div className="mx-auto flex h-1/4 w-1/2 flex-col">
-      <div className="mb-10 flex w-full flex-col items-center gap-3">
+      {/* <div className="mb-10 flex w-full flex-col items-center gap-3">
         <div className="font-heading mb-2 font-metrophobic text-5xl text-aviatr-blue-500">
           What We Do
         </div>
         <div className="h-0.5 w-1/3 bg-aviatr-blue-500" />
-      </div>
+      </div> */}
+      
+      <TitleComponent text="What We Do" color="text-aviatr-blue-500" />
+
       <div className="text-center font-jost text-lg text-white">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan
         urna nec libero fringilla, ac fermentum purus tempus. Sed et nisi velit.
