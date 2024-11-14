@@ -24,7 +24,7 @@ const MissionStatement = () => {
         </div>
 
         {/* Right side */}
-        <div className="xl:w-3/4">
+        <div className="my-[5%] sm:my-0 xl:w-3/4">
           <p className="text-md font-jost leading-relaxed text-white sm:text-xl">
             At Aviat'R, our mission is to empower students with the knowledge,
             skills, and facilities required to fuel their love for aeronautics.
@@ -44,6 +44,7 @@ const MissionStatement = () => {
             LEARN MORE
           </p>
         </Link>
+
         <div>
           <Image
             src={ArrowImg}
