@@ -6,7 +6,6 @@ import Logo from "@/images/Logo.webp";
 import { useState } from "react";
 import { items } from "@/data/navigation";
 import { Menu } from "lucide-react";
-
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
@@ -19,16 +18,23 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky top-0 z-50">
+    <div className={`sticky top-0 z-50`}>
       <div
-        className={`flex w-full items-center ${isHomePage ? "bg-transparent" : "bg-aviatr-blue-400"}`}
+        className={`flex w-full items-center ${
+          isHomePage 
+          ? nav 
+            ? "bg-aviatr-blue-400" 
+            : "bg-transparent" 
+          : "bg-aviatr-blue-400"
+        } `}
       >
+        
         <div className="ml-5 w-1/6 md:ml-10">
-          <Link href={"/"}>
+          <Link onClick={nav ? handleNav : undefined} href={"/"}>
             <Image src={Logo} alt="logo" />
           </Link>
         </div>
-        <div className="flex w-5/6 justify-end">
+        <div className={`flex w-5/6 justify-end`}>
           <div className="hidden grid-cols-4 divide-x-2 divide-black font-jost text-xs text-black md:grid lg:text-sm xl:text-base 2xl:text-lg">
             {items.map((item, index) => (
               <div
@@ -37,7 +43,7 @@ const Navbar = () => {
               >
                 <Link
                   href={item.link}
-                  className={`${item.name === "JOIN" ? "rounded-full bg-aviatr-blue-100 px-6 py-1 lg:px-8 xl:px-10 xl:py-2" : ""}`}
+                  className={`${(item.name === "JOIN") && "rounded-full bg-aviatr-blue-100 px-6 py-1 lg:px-8 xl:px-10 xl:py-2"}`}
                 >
                   {item.name}
                 </Link>
@@ -50,7 +56,7 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`fixed grid w-full grid-rows-4 justify-items-center gap-y-2 bg-aviatr-blue-400 pb-2 font-jost text-base md:hidden ${nav ? "" : "hidden"}`}
+        className={`fixed grid w-full grid-rows-4 justify-items-center gap-y-2 bg-aviatr-blue-400 pb-2 font-jost text-base md:hidden ${!(nav) && "hidden"}`}
       >
         {items.map((item, index) => (
           <div key={index}>
@@ -65,6 +71,7 @@ const Navbar = () => {
         ))}
       </div>
     </div>
+    
   );
 };
 
