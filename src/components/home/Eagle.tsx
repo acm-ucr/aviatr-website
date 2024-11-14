@@ -1,20 +1,27 @@
 import Image from "next/image";
 import EagleImg from "@/images/home/Eagle.webp";
+import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 
 const Eagle = () => {
   return (
     <div className="mt-[8%] flex w-full flex-col items-start justify-between pl-[8%] pt-8 text-white md:flex-row md:items-center">
       {/* left side */}
       <div className="md:w-2/6">
-        <h1 className="font-metrophobic text-4xl font-bold">Eagle</h1>
-        <div className="mb-6 ml-8 w-1/4 border-b-2 border-white p-2"></div>
+        <div className="mb-[7%] md:mb-[12%]">
+          <ShiftedLineTitle
+            title="Eagle"
+            width="md:w-[200%]"
+            textSize="sm:text-5xl"
+            lineMarginShift="ml-[50%]"
+          />
+        </div>
 
-        <p className="px-4 font-jost text-xl leading-relaxed">
+        <p className="text-md ml-[4%] px-4 font-jost leading-relaxed sm:text-xl">
           Eagle is a select team that competes with universities in the nation
-          and make Aviat’R’s name known. It participates in SUAS, a competition
-          aimed at challenging students to make their own unmanned aerial
-          systems to complete a specific task. This sparks innovation from
-          competition and poses as one of the largest motivations for
+          and make Aviat&apos;R&apos;s name known. It participates in SUAS, a
+          competition aimed at challenging students to make their own unmanned
+          aerial systems to complete a specific task. This sparks innovation
+          from competition and poses as one of the largest motivations for
           improvement in the student world.
         </p>
       </div>

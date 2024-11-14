@@ -16,7 +16,7 @@ const ProjectPuffin = () => {
         />
       </div>
 
-      <div className="text-center text-xl sm:hidden">
+      <div className="text-md text-center sm:hidden sm:text-xl">
         <Image
           src={ProjectPuffin1}
           alt="Aviatr member explaining concepts on a whiteboard to other members in a classroom"
