@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <div className={`sticky top-0 z-50`}>
       <div
-        className={`flex w-full items-center ${
+        className={`flex w-full items-center py-2 ${
           isHomePage
             ? nav
               ? "bg-aviatr-blue-400 md:bg-transparent"
@@ -40,7 +40,7 @@ const Navbar = () => {
             : "bg-aviatr-blue-400"
         } `}
       >
-        <div className="ml-5 w-1/6 md:ml-10">
+        <div className="ml-5 w-1/3 md:ml-10 md:w-1/6">
           <Link onClick={nav ? handleNav : undefined} href={"/"}>
             <Image src={Logo} alt="logo" />
           </Link>
@@ -63,11 +63,11 @@ const Navbar = () => {
           </div>
         </div>
         <div onClick={handleNav}>
-          <Menu className="mr-2 hover:cursor-pointer md:hidden" />
+          <Menu className="mr-6 hover:cursor-pointer md:hidden" size={32} />
         </div>
       </div>
       <div
-        className={`fixed grid w-full grid-rows-4 justify-items-center gap-y-2 bg-aviatr-blue-400 pb-2 font-jost text-base md:hidden ${!nav && "hidden"}`}
+        className={`fixed grid w-full grid-rows-4 justify-items-center gap-y-3 bg-aviatr-blue-400 pb-4 font-jost text-base md:hidden ${!nav && "hidden"}`}
       >
         {items.map((item, index) => (
           <div key={index}>
