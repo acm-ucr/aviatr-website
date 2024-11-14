@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <div className="justify-center">
       <HomePageCover />
-      {/* <AboutAviat />
+      <AboutAviat />
       <ProjectPuffin />
       <HummingbirdHomepage />
-      <Eagle /> */}
+      <Eagle />
     </div>
   );
 };
