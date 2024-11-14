@@ -16,7 +16,7 @@ const HummingBird = () => {
           />
         </div>
 
-        <p className="px-4 text-center font-jost text-xl leading-relaxed sm:text-justify">
+        <p className="text-md px-4 text-center font-jost leading-relaxed sm:text-justify sm:text-xl">
           The Hummingbird project is a research division within the Aviat'R
           enterprise focused on developing drone swarming technology and
           multi-drone networks. Our objective is to create a functional drone

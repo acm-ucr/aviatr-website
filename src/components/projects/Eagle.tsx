@@ -17,7 +17,7 @@ const Eagle = () => {
         />
       </div>
 
-      <div className="text-center text-xl sm:hidden">
+      <div className="text-md text-center sm:hidden sm:text-xl">
         <Image src={EagleImg1} alt="EagleImg1" className="mb-4" />
         <p className="mx-[4%] mb-10 leading-relaxed">
           The Eagle Project is our competitive team dedicated to designing
@@ -51,7 +51,7 @@ const Eagle = () => {
       </div>
 
       <div className="hidden sm:block">
-        <p className="text-md mx-[2%] mb-[5%] text-justify font-jost sm:mb-0 md:text-xl md:leading-relaxed">
+        <p className="text-md mx-[2%] mb-[5%] text-justify font-jost sm:mb-0 sm:text-xl">
           The Eagle Project is our competitive team dedicated to designing
           Unmanned Aerial Vehicles (UAVs) for global competitions. Participation
           in this team is reserved for upper-class members who have demonstrated
