@@ -25,7 +25,7 @@ const MissionStatement = () => {
 
         {/* Right side */}
         <div className="xl:w-3/4">
-          <p className="font-jost text-xs leading-relaxed text-white sm:text-xl">
+          <p className="text-md font-jost leading-relaxed text-white sm:text-xl">
             At Aviat'R, our mission is to empower students with the knowledge,
             skills, and facilities required to fuel their love for aeronautics.
             We strive to pioneer new Unmanned Aerial Systems that encapsulate

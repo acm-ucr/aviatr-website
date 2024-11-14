@@ -2,12 +2,17 @@ import Image from "next/image";
 import EagleImg1 from "@/images/projects/Eagle1.webp";
 import EagleImg2 from "@/images/projects/Eagle2.webp";
 import EagleImg3 from "@/images/projects/Eagle3.webp";
+import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 
 const Eagle = () => {
   return (
-    <div className="justify-center bg-black px-[8%] py-[5%] text-white">
-      <h1 className="font-metrophobic text-4xl font-bold">Eagle</h1>
-      <div className="ml-8 w-1/4 border-b-2 border-white p-1"></div>
+    <div className="mt-[5%] justify-center bg-black px-[8%] text-white">
+      <ShiftedLineTitle
+        title="Eagle"
+        width="md:w-[180%]"
+        textSize="sm:text-5xl"
+        lineMarginShift="ml-[50%]"
+      />
 
       <div className="grid grid-cols-3 gap-4 py-12">
         <div className="col-span-2">

@@ -2,12 +2,21 @@ import Image from "next/image";
 import ProjectPuffin1 from "@/images/projects/project-puffin-1.webp";
 import ProjectPuffin2 from "@/images/projects/project-puffin-2.webp";
 import ProjectPuffin3 from "@/images/projects/project-puffin-3.webp";
+import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 
 const ProjectPuffin = () => {
   return (
-    <div className="mx-[8%] font-jost text-white">
-      <p className="mb-6">Project Puffin Title</p>
-      <div className="text-justify text-sm sm:hidden">
+    <div className="mx-[8%] my-[5%] font-jost text-white">
+      <div className="mb-[3%]">
+        <ShiftedLineTitle
+          title="Project Puffin"
+          width="md:w-[90%]"
+          textSize="sm:text-5xl"
+          lineMarginShift="ml-[30%]"
+        />
+      </div>
+
+      <div className="text-md text-justify sm:hidden">
         <Image
           src={ProjectPuffin1}
           alt="Aviatr member explaining concepts on a whiteboard to other members in a classroom"
@@ -49,7 +58,7 @@ const ProjectPuffin = () => {
         </p>
       </div>
       <div className="hidden sm:block">
-        <p className="text-md mx-[2%] mb-[5%] text-justify leading-relaxed xl:text-xl">
+        <p className="text-md mx-[2%] mb-[5%] text-justify font-jost md:text-xl md:leading-relaxed">
           A common challenge in many engineering organizations is the lack of
           effective mentorship. Novice members often find themselves assigned to
           complex projects requiring advanced knowledge, which can be
