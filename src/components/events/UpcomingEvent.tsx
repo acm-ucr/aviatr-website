@@ -1,5 +1,5 @@
 // Define the props type
-import TitleComponent from "@/components/about/TitleCompoent";
+import TitleComponent from "@/components/CenteredLineTitle";
 
 interface UpcomingEventProps {
   day: string;
@@ -22,7 +22,13 @@ const UpcomingEvent: React.FC<UpcomingEventProps> = ({
 }) => {
   return (
     <>
-      <TitleComponent text="Upcoming Event" color="text-white" />
+      <div className="flex justify-center">
+        <TitleComponent
+          text="Upcoming Event"
+          color="text-white"
+          lineWidth="w-1/2"
+        />
+      </div>
       <div className="grid grid-cols-7 font-jost text-white">
         <div className="col-span-2 grid grid-rows-2 font-bungee-hairline">
           <div className="relative">
