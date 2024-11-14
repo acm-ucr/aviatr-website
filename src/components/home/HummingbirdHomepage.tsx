@@ -7,7 +7,7 @@ import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 const HummingbirdHomepage = () => {
   return (
     <div className="mx-[5%] mt-[8%] grid grid-cols-10">
-      <div className="col-span-10 md:col-span-6">
+      <div className="col-span-10 lg:col-span-6">
         <Image
           src={HummingBird1}
           alt="Front View of Drone"
@@ -38,16 +38,16 @@ const HummingbirdHomepage = () => {
       </div>
 
       <div className="col-span-10 grid content-center md:col-span-4">
-        <div className="mb-[7%] ml-[18%] md:mb-[12%]">
+        <div className="mb-[7%] ml-[4%] mt-[6%] sm:ml-0 md:mb-[12%] lg:ml-[14%] lg:mt-0">
           <ShiftedLineTitle
             title="Hummingbird"
             width="md:w-[90%]"
-            textSize="sm:text-5xl"
+            textSize="lg:text-5xl"
             lineMarginShift="ml-[30%]"
           />
         </div>
 
-        <p className="text-md mx-[10%] font-jost leading-relaxed text-white sm:text-xl md:mx-0 md:pl-[24%]">
+        <p className="text-md mx-[10%] font-jost leading-relaxed text-white sm:text-xl md:mx-0 md:pl-[18%]">
           Project Hummingbird is a research team aimed at improving existing
           systems or creating new processes and mechanisms to pioneer the
           future. With the current team aimed at improving drone swarm/show
