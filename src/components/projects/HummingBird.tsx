@@ -16,14 +16,14 @@ const HummingBird = () => {
           />
         </div>
 
-        <p className="px-4 text-justify font-jost text-xl leading-relaxed">
+        <p className="px-4 text-center font-jost text-xl leading-relaxed sm:text-justify">
           The Hummingbird project is a research division within the Aviat'R
           enterprise focused on developing drone swarming technology and
           multi-drone networks. Our objective is to create a functional drone
           presentation system capable of performing intricate drone shows. These
           shows can be utilized for fundraising and special events, generating
-          revenue to support our team’s ambitious projects. We strive to push
-          the boundaries of innovation by designing a sustainable and
+          revenue to support our team&apos;s ambitious projects. We strive to
+          push the boundaries of innovation by designing a sustainable and
           energy-efficient drone swarm, which will enhance our understanding of
           navigation and aerial device networks.
         </p>
@@ -35,7 +35,7 @@ const HummingBird = () => {
           <Image
             src={HummingBirdImg}
             alt="HummingBirdImg"
-            className="object-cover"
+            className="my-8 object-cover sm:my-0"
           />
         </div>
       </div>

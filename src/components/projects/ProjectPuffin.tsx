@@ -7,7 +7,7 @@ import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 const ProjectPuffin = () => {
   return (
     <div className="mx-[8%] my-[5%] font-jost text-white">
-      <div className="mb-[3%]">
+      <div className="mb-[8%] md:mb-[3%]">
         <ShiftedLineTitle
           title="Project Puffin"
           width="md:w-[90%]"
@@ -16,13 +16,13 @@ const ProjectPuffin = () => {
         />
       </div>
 
-      <div className="text-md text-justify sm:hidden">
+      <div className="text-center text-xl sm:hidden">
         <Image
           src={ProjectPuffin1}
           alt="Aviatr member explaining concepts on a whiteboard to other members in a classroom"
-          className="mb-2"
+          className="mb-4"
         />
-        <p className="mx-[2%] mb-4">
+        <p className="mx-[4%] mb-10 leading-relaxed">
           A common challenge in many engineering organizations is the lack of
           effective mentorship. Novice members often find themselves assigned to
           complex projects requiring advanced knowledge, which can be
@@ -33,9 +33,9 @@ const ProjectPuffin = () => {
         <Image
           src={ProjectPuffin2}
           alt="Aviatr member explaining concepts on a whiteboard to other members in a classroom"
-          className="mb-2"
+          className="mb-4"
         />
-        <p className="mx-[2%] mb-4">
+        <p className="mx-[4%] mb-10 leading-relaxed">
           This program includes a quarter-long ENGR course, taught by Juniors
           and Seniors from our club, where participants will receive guidance in
           building a personal drone. Throughout the course, members will learn
@@ -45,9 +45,9 @@ const ProjectPuffin = () => {
         <Image
           src={ProjectPuffin3}
           alt="Aviatr member explaining concepts on a whiteboard to other members in a classroom"
-          className="mb-2"
+          className="mb-4"
         />
-        <p className="mx-[2%]">
+        <p className="mx-[4%] leading-relaxed">
           Successfully finishing the Puffin project will equip members with
           drone theory knowledge and teamwork experience. Freshmen and
           Sophomores at UCR can join the Aviat'R team only after completing one

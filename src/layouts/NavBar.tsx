@@ -22,7 +22,9 @@ const Navbar = () => {
         <div className="flex w-1/6 items-center">
           <Link href={"/"}>
             <Image src={Logo} className="ml-10 w-5/6" alt="logo" />
-            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black to-transparent"></div>
+            {isHomePage && (
+              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black to-transparent"></div>
+            )}
           </Link>
         </div>
         <div className="w-1/2">
