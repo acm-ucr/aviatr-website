@@ -17,40 +17,7 @@ const Eagle = () => {
         />
       </div>
 
-      {/* <div className="text-md text-center sm:hidden sm:text-xl">
-        <Image src={EagleImg1} alt="EagleImg1" className="mb-4" />
-        <p className="mx-[4%] mb-10 leading-relaxed">
-          The Eagle Project is our competitive team dedicated to designing
-          Unmanned Aerial Vehicles (UAVs) for global competitions.
-        </p>
-        <Image src={EagleImg2} alt="EagleImg2" className="mb-4" />
-        <p className="mx-[4%] mb-10 leading-relaxed">
-          Participation in this team is reserved for upper-class members who
-          have demonstrated exceptional dedication and commitment. Interested
-          candidates should be aware that the competition entails time-sensitive
-          assignments and strict deadlines. Due to limited space, priority will
-          be given to members with high attendance records and those in Junior
-          or Senior class levels.
-        </p>
-        <Image src={EagleImg3} alt="EagleImg3" className="mb-4" />
-        <p className="mx-[4%] leading-relaxed">
-          For more information about the SUAS competition, please visit
-          the&nbsp;
-          <Link
-            href="https://suas-competition.org/"
-            target="_blank"
-            className="hover:cursor underline hover:underline"
-          >
-            SUAS website
-          </Link>
-          . Even if you are not selected for the competition team the year you
-          intended to, you will still be allowed to work alongside SUAS members
-          through our other research projects like Hummingbird. For further
-          questions feel free to ask board members via discord or email.
-        </p>
-      </div> */}
-
-      <div className="">
+      <div>
         <div className="mb-[5%] grid grid-cols-3 gap-2 sm:gap-4">
           <div className="col-span-2">
             <Image
