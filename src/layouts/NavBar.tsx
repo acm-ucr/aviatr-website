@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import Logo from "@/images/Logo.webp";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { items } from "@/data/navigation";
 import { Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
@@ -17,13 +17,25 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  // Close menu on medium screens or larger
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768 && nav) {
+        setNav(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [nav]);
+
   return (
     <div className={`sticky top-0 z-50`}>
       <div
         className={`flex w-full items-center ${
           isHomePage
             ? nav
-              ? "bg-aviatr-blue-400"
+              ? "bg-aviatr-blue-400 md:bg-transparent"
               : "bg-transparent"
             : "bg-aviatr-blue-400"
         } `}
