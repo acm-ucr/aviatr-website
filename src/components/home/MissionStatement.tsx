@@ -39,7 +39,7 @@ const MissionStatement = () => {
       </div>
 
       <div className="mt-[4%] flex items-center justify-end overflow-hidden">
-        <Link href="#">
+        <Link href="/about">
           <p className="text-nowrap font-metrophobic text-sm leading-tight text-white hover:underline sm:mr-2 sm:text-2xl sm:leading-normal">
             LEARN MORE
           </p>
