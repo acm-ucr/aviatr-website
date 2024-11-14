@@ -1,9 +1,12 @@
 import UpcomingEvent from "@/components/events/UpcomingEvent";
+import RecurringLogo from "@/components/RecurringLogo";
 
 const Events = () => {
   return (
     <div>
-      <div className="justify-center text-white">Events</div>;
+      <div className="p-16">
+        <RecurringLogo />
+      </div>
       <UpcomingEvent
         day="MON"
         dayTextStroke="text-stroke-aviatr-pink-200"

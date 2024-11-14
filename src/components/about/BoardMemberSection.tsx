@@ -4,6 +4,7 @@ import Image from "next/image";
 import DefaultBoardMemberImage from "@/images/about/defaultBoardMemberImage.webp";
 import BMSLeftBorder from "@/images/about/BMSLeftBorder.webp";
 import BMSRightBorder from "@/images/about/BMSRightBorder.webp";
+import CenteredLineTitle from "@/components/CenteredLineTitle";
 
 const BoardMemberSection = () => {
   return (
@@ -20,12 +21,15 @@ const BoardMemberSection = () => {
       <div className="h-50 w-50 absolute left-0 top-0 rotate-180 transform">
         <Image src={BMSLeftBorder} alt="Border" />
       </div>
-      <div className="mb-10 flex w-full flex-col items-center gap-3">
-        <div className="font-heading mb-2 text-5xl font-medium text-white">
-          The Board
-        </div>
-        <div className="h-0.5 w-1/4 bg-white" />
+
+      <div className="mb-10 flex justify-center">
+        <CenteredLineTitle
+          text="The Board"
+          color="text-white"
+          lineWidth="w-[110%]"
+        />
       </div>
+
       <div className="grid grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
         <BoardMember
           name="Firstname Lastname"
