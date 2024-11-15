@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import Logo from "@/../public/images/Logo.webp";
+import Logo from "@/../public/Logo.webp";
 import { useEffect, useState } from "react";
 import { items } from "@/data/navigation";
 import { Menu } from "lucide-react";

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import EagleImg1 from "@/../public/images/projects/Eagle1.webp";
-import EagleImg2 from "@/../public/images/projects/Eagle2.webp";
-import EagleImg3 from "@/../public/images/projects/Eagle3.webp";
+import EagleImg1 from "@/../public/projects/Eagle1.webp";
+import EagleImg2 from "@/../public/projects/Eagle2.webp";
+import EagleImg3 from "@/../public/projects/Eagle3.webp";
 import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 import Link from "next/link";
 
