@@ -12,9 +12,7 @@ const LearnMoreButton = ({ color }: { color: string }) => {
       <div
         className={`flex h-10 w-10 items-center justify-center rounded-full ${color}`}
       >
-        <div className="overflow-hidden">
-          <MoveRight color="black" size={24} />
-        </div>
+        <MoveRight color="black" size={24} />
       </div>
     </div>
   );
