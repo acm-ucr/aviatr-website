@@ -1,4 +1,4 @@
-import drone from "@/../public/images/notFound/drone.webp";
+import drone from "@/../public/notFound/drone.webp";
 import Image from "next/image";
 import Link from "next/link";
 

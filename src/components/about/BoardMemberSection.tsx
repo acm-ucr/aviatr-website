@@ -1,9 +1,9 @@
 import React from "react";
 import BoardMember from "./BoardMember";
 import Image from "next/image";
-import DefaultBoardMemberImage from "@/../public/images/about/defaultBoardMemberImage.webp";
-import BMSLeftBorder from "@/../public/images/about/BMSLeftBorder.webp";
-import BMSRightBorder from "@/../public/images/about/BMSRightBorder.webp";
+import DefaultBoardMemberImage from "@/../public/about/defaultBoardMemberImage.webp";
+import BMSLeftBorder from "@/../public/about/BMSLeftBorder.webp";
+import BMSRightBorder from "@/../public/about/BMSRightBorder.webp";
 import CenteredLineTitle from "@/components/CenteredLineTitle";
 
 const BoardMemberSection = () => {

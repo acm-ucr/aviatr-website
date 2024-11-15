@@ -1,5 +1,5 @@
 import Image from "next/image";
-import EagleImg from "@/../public/images/home/Eagle.webp";
+import EagleImg from "@/../public/home/Eagle.webp";
 import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 import LearnMoreButton from "./LearnMoreButton";
 
