@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HummingBirdImg from "@/images/projects/HummingBird.webp";
+import HummingBirdImg from "@/../public/projects/HummingBird.webp";
 import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 
 const HummingBird = () => {

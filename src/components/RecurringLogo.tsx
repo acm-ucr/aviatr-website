@@ -1,5 +1,5 @@
 import Image from "next/image";
-import RecurringImg from "@/images/Logo.webp";
+import RecurringImg from "@/../public/Logo.webp";
 
 const RecurringLogo = () => {
   return (

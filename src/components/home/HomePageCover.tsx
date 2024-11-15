@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Cover from "@/images/home/homepagecover.webp";
+import Cover from "@/../public/home/homepagecover.webp";
 
 const HomePageCover = () => {
   return (
