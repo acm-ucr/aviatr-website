@@ -1,4 +1,4 @@
-import DefaultBoardMemberImage from "@/images/about/defaultBoardMemberImage.webp";
+import DefaultBoardMemberImage from "@/../public/about/defaultBoardMemberImage.webp";
 
 const List = [
   {

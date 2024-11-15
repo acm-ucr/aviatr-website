@@ -2,7 +2,7 @@ import { Instagram, Youtube, Mail } from "lucide-react";
 import { SiDiscord } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/images/Logo.webp";
+import Logo from "@/../public/Logo.webp";
 
 const Footer = () => {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
 import BoardMember from "./BoardMember";
-import boardMemberList from "@/app/boardMemberList.js";
+import boardMemberList from "@/data/boardMemberList";
 import Image from "next/image";
-import BMSLeftBorder from "@/images/about/BMSLeftBorder.webp";
-import BMSRightBorder from "@/images/about/BMSRightBorder.webp";
+import BMSLeftBorder from "@/../public/about/BMSLeftBorder.webp";
+import BMSRightBorder from "@/../public/about/BMSRightBorder.webp";
 import CenteredLineTitle from "@/components/CenteredLineTitle";
 
 const BoardMemberSection = () => {
@@ -31,8 +31,9 @@ const BoardMemberSection = () => {
       </div>
 
       <div className="grid grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
-        {boardMemberList.map((member) => (
+        {boardMemberList.map((member, index) => (
           <BoardMember
+            key={index}
             name={member.name}
             position={member.position}
             image={member.image}
