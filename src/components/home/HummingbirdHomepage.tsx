@@ -56,7 +56,7 @@ const HummingbirdHomepage = () => {
             Hummingbird stands at the forefront to jump from flower to flower of
             knowledge.
           </p>
-          <LearnMoreButton color="bg-[#AC9BDE]" />
+          <LearnMoreButton color="bg-aviatr-purple-100" link="/projects" />
         </div>
       </div>
     </div>

@@ -25,7 +25,7 @@ const Eagle = () => {
             from competition and poses as one of the largest motivations for
             improvement in the student world.
           </p>
-          <LearnMoreButton color="bg-[#7E95C9]" />
+          <LearnMoreButton color="bg-aviatr-blue-300" link="/projects" />
         </div>
       </div>
 

@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
 
-const LearnMoreButton = ({ color }: { color: string }) => {
+const LearnMoreButton = ({ color, link }: { color: string; link: string }) => {
   return (
-    <div className="flex gap-3">
-      <Link href="#">
+    <div className="flex items-center gap-3">
+      <Link href={`${link}`}>
         <p className="mr-2 font-metrophobic text-2xl text-white hover:underline">
           LEARN MORE
         </p>
