@@ -1,7 +1,7 @@
 import React from "react";
 import BoardMember from "./BoardMember";
+import boardMemberList from "@/app/boardMemberList.js";
 import Image from "next/image";
-import DefaultBoardMemberImage from "@/images/about/defaultBoardMemberImage.webp";
 import BMSLeftBorder from "@/images/about/BMSLeftBorder.webp";
 import BMSRightBorder from "@/images/about/BMSRightBorder.webp";
 import CenteredLineTitle from "@/components/CenteredLineTitle";
@@ -31,46 +31,13 @@ const BoardMemberSection = () => {
       </div>
 
       <div className="grid grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
+        {boardMemberList.map((member) => (
+          <BoardMember
+            name={member.name}
+            position={member.position}
+            image={member.image}
+          />
+        ))}
       </div>
     </div>
   );
