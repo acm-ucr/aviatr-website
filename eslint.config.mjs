@@ -31,4 +31,7 @@ export default [
       "@typescript-eslint/no-unused-expressions": "error",
     },
   },
+  {
+    ignores: ["eslint.config.mjs"],
+  },
 ];
