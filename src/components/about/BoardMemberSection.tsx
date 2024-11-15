@@ -1,7 +1,7 @@
 import React from "react";
 import BoardMember from "./BoardMember";
+import boardMemberList from "@/data/boardMemberList";
 import Image from "next/image";
-import DefaultBoardMemberImage from "@/../public/about/defaultBoardMemberImage.webp";
 import BMSLeftBorder from "@/../public/about/BMSLeftBorder.webp";
 import BMSRightBorder from "@/../public/about/BMSRightBorder.webp";
 import CenteredLineTitle from "@/components/CenteredLineTitle";
@@ -31,46 +31,14 @@ const BoardMemberSection = () => {
       </div>
 
       <div className="grid grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
-        <BoardMember
-          name="Firstname Lastname"
-          position="POSITION"
-          image={DefaultBoardMemberImage.src}
-        />
+        {boardMemberList.map((member, index) => (
+          <BoardMember
+            key={index}
+            name={member.name}
+            position={member.position}
+            image={member.image}
+          />
+        ))}
       </div>
     </div>
   );
