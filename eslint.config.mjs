@@ -32,6 +32,6 @@ export default [
     },
   },
   {
-    ignores: ["eslint.config.mjs"],
+    ignores: ["*.config.*js"],
   },
 ];
