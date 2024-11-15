@@ -1,7 +1,7 @@
 import Image from "next/image";
-import HummingBird3 from "@/images/home/hummingbird-image-3.webp";
-import HummingBird2 from "@/images/home/hummingbird-image-2.webp";
-import HummingBird1 from "@/images/home/hummingbird-image-1.webp";
+import HummingBird3 from "@/../public/images/home/hummingbird-image-3.webp";
+import HummingBird2 from "@/../public/images/home/hummingbird-image-2.webp";
+import HummingBird1 from "@/../public/images/home/hummingbird-image-1.webp";
 import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 import LearnMoreButton from "./LearnMoreButton";
 

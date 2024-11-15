@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ArrowImg from "@/images/home/Arrow.webp";
+import ArrowImg from "@/../public/images/home/Arrow.webp";
 import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 
 const MissionStatement = () => {

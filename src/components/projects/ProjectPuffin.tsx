@@ -1,7 +1,7 @@
 import Image from "next/image";
-import ProjectPuffin1 from "@/images/projects/project-puffin-1.webp";
-import ProjectPuffin2 from "@/images/projects/project-puffin-2.webp";
-import ProjectPuffin3 from "@/images/projects/project-puffin-3.webp";
+import ProjectPuffin1 from "@/../public/images/projects/project-puffin-1.webp";
+import ProjectPuffin2 from "@/../public/images/projects/project-puffin-2.webp";
+import ProjectPuffin3 from "@/../public/images/projects/project-puffin-3.webp";
 import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 
 const ProjectPuffin = () => {

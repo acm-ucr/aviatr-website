@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import PuffinImg from "@/images/home/ProjectPuffin.webp";
+import PuffinImg from "@/../public/images/home/ProjectPuffin.webp";
 import LearnMoreButton from "./LearnMoreButton";
 
 const ProjectPuffin = () => {
