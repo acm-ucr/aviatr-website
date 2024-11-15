@@ -3,6 +3,7 @@ import HummingBird3 from "@/images/home/hummingbird-image-3.webp";
 import HummingBird2 from "@/images/home/hummingbird-image-2.webp";
 import HummingBird1 from "@/images/home/hummingbird-image-1.webp";
 import ShiftedLineTitle from "@/components/ShiftedLineTitle";
+import LearnMoreButton from "./LearnMoreButton";
 
 const HummingbirdHomepage = () => {
   return (
@@ -46,15 +47,17 @@ const HummingbirdHomepage = () => {
             lineMarginShift="ml-[30%]"
           />
         </div>
-
-        <p className="text-md mx-[10%] font-jost leading-relaxed text-white sm:text-xl md:mx-0 md:pl-[18%]">
-          Project Hummingbird is a research team aimed at improving existing
-          systems or creating new processes and mechanisms to pioneer the
-          future. With the current team aimed at improving drone swarm/show
-          technology, among a number of other projects in the works, Hummingbird
-          stands at the forefront to jump from flower to flower of knowledge.
-        </p>
-        <p className="ml-[10%] pt-10 text-white md:ml-0 md:pl-[24%]">button</p>
+        <div className="text-md mx-[10%] flex flex-col gap-8 font-jost leading-relaxed text-white sm:text-xl md:mx-0 md:pl-[18%]">
+          <p>
+            Project Hummingbird is a research team aimed at improving existing
+            systems or creating new processes and mechanisms to pioneer the
+            future. With the current team aimed at improving drone swarm/show
+            technology, among a number of other projects in the works,
+            Hummingbird stands at the forefront to jump from flower to flower of
+            knowledge.
+          </p>
+          <LearnMoreButton color="bg-[#AC9BDE]" />
+        </div>
       </div>
     </div>
   );

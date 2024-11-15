@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import PuffinImg from "@/images/home/ProjectPuffin.webp";
-import ShiftedLineTitle from "@/components/ShiftedLineTitle";
+import LearnMoreButton from "./LearnMoreButton";
 
 const ProjectPuffin = () => {
   return (
@@ -20,27 +20,17 @@ const ProjectPuffin = () => {
 
       {/* Content */}
       <div className="relative z-10 ml-[-60%] max-w-lg p-8">
-        <div className="mb-[7%] md:mb-[14%]">
-          <ShiftedLineTitle
-            title="Project Puffin"
-            width="md:w-[90%]"
-            textSize="sm:text-5xl"
-            lineMarginShift="ml-[30%]"
-          />
-        </div>
-
-        <p className="text-md mb-6 ml-[8%] font-jost leading-relaxed sm:text-xl">
+        <h1 className="mb-4 font-metrophobic text-6xl font-bold">
+          Project Puffin
+        </h1>
+        <div className="w-1/1.5 mb-6 ml-20 border-b-2 border-white p-1"></div>
+        <p className="mb-6 font-jost text-xl leading-relaxed">
           Project Puffin aims at giving those interested in but without a
           background in aeronautics the general know-how of drones. By the end
           of the 2 unit class, students will be able to assemble their own
           drones and understand the parts and basic theory behind them.
         </p>
-        <a
-          href="#"
-          className="ml-[8%] mr-2 flex items-center font-metrophobic text-2xl text-white"
-        >
-          LEARN MORE
-        </a>
+        <LearnMoreButton color="bg-[#E4AEF6]" />
       </div>
     </div>
   );

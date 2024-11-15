@@ -1,6 +1,7 @@
 import Image from "next/image";
 import EagleImg from "@/images/home/Eagle.webp";
 import ShiftedLineTitle from "@/components/ShiftedLineTitle";
+import LearnMoreButton from "./LearnMoreButton";
 
 const Eagle = () => {
   return (
@@ -15,15 +16,17 @@ const Eagle = () => {
             lineMarginShift="ml-[50%]"
           />
         </div>
-
-        <p className="text-md ml-[4%] px-4 font-jost leading-relaxed sm:text-xl">
-          Eagle is a select team that competes with universities in the nation
-          and make Aviat&apos;R&apos;s name known. It participates in SUAS, a
-          competition aimed at challenging students to make their own unmanned
-          aerial systems to complete a specific task. This sparks innovation
-          from competition and poses as one of the largest motivations for
-          improvement in the student world.
-        </p>
+        <div className="text-md ml-[4%] flex flex-col gap-6 px-4 font-jost leading-relaxed sm:text-xl">
+          <p>
+            Eagle is a select team that competes with universities in the nation
+            and make Aviat&apos;R&apos;s name known. It participates in SUAS, a
+            competition aimed at challenging students to make their own unmanned
+            aerial systems to complete a specific task. This sparks innovation
+            from competition and poses as one of the largest motivations for
+            improvement in the student world.
+          </p>
+          <LearnMoreButton color="bg-[#7E95C9]" />
+        </div>
       </div>
 
       {/* right side */}
