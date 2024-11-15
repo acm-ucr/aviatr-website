@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { items } from "@/data/navigation";
 import { Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
+import HomePageCover from "@/components/home/HomePageCover";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -30,9 +31,10 @@ const Navbar = () => {
   }, [nav]);
 
   return (
-    <div className={`sticky top-0 z-50`}>
+    <div className={``}>
+      
       <div
-        className={`flex w-full items-center py-2 ${
+        className={`flex w-full items-center py-2 absolute top-0 z-50 ${
           isHomePage
             ? nav
               ? "bg-aviatr-blue-400 md:bg-transparent"
@@ -40,6 +42,7 @@ const Navbar = () => {
             : "bg-aviatr-blue-400"
         } `}
       >
+        
         <div className="ml-5 w-1/3 md:ml-10 md:w-1/6">
           <Link onClick={nav ? handleNav : undefined} href={"/"}>
             <Image src={Logo} alt="logo" />
@@ -81,6 +84,7 @@ const Navbar = () => {
           </div>
         ))}
       </div>
+      {isHomePage && <HomePageCover />}
     </div>
   );
 };
