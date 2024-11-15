@@ -32,9 +32,8 @@ const Navbar = () => {
 
   return (
     <div className={``}>
-      
       <div
-        className={`flex w-full items-center py-2 absolute top-0 z-50 ${
+        className={`sticky top-0 z-50 flex w-full items-center py-2 ${
           isHomePage
             ? nav
               ? "bg-aviatr-blue-400 md:bg-transparent"
@@ -42,7 +41,6 @@ const Navbar = () => {
             : "bg-aviatr-blue-400"
         } `}
       >
-        
         <div className="ml-5 w-1/3 md:ml-10 md:w-1/6">
           <Link onClick={nav ? handleNav : undefined} href={"/"}>
             <Image src={Logo} alt="logo" />
