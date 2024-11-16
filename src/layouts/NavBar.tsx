@@ -112,7 +112,7 @@ const Navbar = () => {
         className={`fixed grid w-full grid-rows-4 justify-items-center gap-y-3 bg-aviatr-blue-400 pb-4 font-jost text-base md:hidden ${!nav && "hidden"}`}
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: nav ? 1 : 0, y: nav ? 0 : -20 }}
-        transition={{ type: "spring", stiffness: 200, damping: 30 }} // Smooth transition
+        transition={{ type: "spring", stiffness: 200, damping: 30 }}
       >
         {items.map((item, index) => (
           <motion.div
