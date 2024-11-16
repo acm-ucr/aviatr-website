@@ -29,9 +29,9 @@ const Navbar = () => {
     show: { opacity: 1, x: 0 },
   };
 
-  const animateTopIn = {
-    hidden: { opacity: 0, y: -50 },
-    show: { opacity: 1, y: 0 },
+  const animationScale = {
+    hidden: { opacity: 0, scale: 0.5 },
+    show: { opacity: 1, scale: 1 },
   };
 
   const transition = {
@@ -82,7 +82,7 @@ const Navbar = () => {
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  variants={animateTopIn}
+                  variants={animationScale}
                   transition={{ ...transition, delay: 0.2 }}
                   initial="hidden"
                   whileInView="show"
