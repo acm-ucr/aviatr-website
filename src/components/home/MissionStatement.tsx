@@ -1,31 +1,80 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import ArrowImg from "@/images/home/Arrow.webp";
+import ArrowImg from "@/../public/home/Arrow.webp";
 import ShiftedLineTitle from "@/components/ShiftedLineTitle";
+
+import { motion } from "motion/react";
+
+const animationY = {
+  hidden: { opacity: 0, y: 50 },
+  show: {
+    opacity: 1,
+    y: 0,
+  },
+};
+const animationScale = {
+  hidden: {
+    opacity: 0,
+    scale: 0.5,
+  },
+  show: {
+    opacity: 1,
+    scale: 1,
+  },
+};
+const animationX = {
+  hidden: { opacity: 0, x: -50 },
+  show: {
+    opacity: 1,
+    x: 0,
+  },
+};
+const transition = {
+  duration: 0.7,
+};
 
 const MissionStatement = () => {
   return (
     <div className="justify-center bg-black px-[8%] pt-[5%] text-white">
-      <div className="sm:mb-[3%]">
+      <motion.div
+        className="sm:mb-[3%]"
+        variants={animationX}
+        transition={{ ...transition, delay: 0.2 }}
+        initial="hidden"
+        whileInView="show"
+      >
         <ShiftedLineTitle
           title="What is Aviat'R?"
           width="md:w-[120%]" // default: w-[60%]
           lineMarginShift="ml-[28%]"
           textSize="sm:text-5xl" // default: text-xl
         />
-      </div>
+      </motion.div>
 
       <div className="flex flex-col items-start gap-5 pt-8 md:gap-10 xl:flex-row xl:gap-32">
         {/* Left side */}
         <div className="flex-shrink-0 xl:w-1/4">
-          <h2 className="font-outline-2 sm:font-outline-4 font-metrophobic text-4xl sm:text-5xl">
+          <motion.h2
+            className="font-outline-2 sm:font-outline-4 font-metrophobic text-4xl sm:text-5xl"
+            variants={animationScale}
+            transition={{ ...transition, delay: 0.2 }}
+            initial="hidden"
+            whileInView="show"
+          >
             MISSION<br></br>STATEMENT
-          </h2>
+          </motion.h2>
         </div>
 
         {/* Right side */}
         <div className="my-[5%] sm:my-0 xl:w-3/4">
-          <p className="text-md font-jost leading-relaxed text-white sm:text-xl">
+          <motion.p
+            className="text-md font-jost leading-relaxed text-white sm:text-xl"
+            variants={animationY}
+            transition={{ ...transition, delay: 0.2 }}
+            initial="hidden"
+            whileInView="show"
+          >
             At Aviat'R, our mission is to empower students with the knowledge,
             skills, and facilities required to fuel their love for aeronautics.
             We strive to pioneer new Unmanned Aerial Systems that encapsulate
@@ -34,15 +83,19 @@ const MissionStatement = () => {
             Our commitment to excellence, edgenuity, and intelligence drives us
             to continuously innovate and lead the way in new and improved
             systems.
-          </p>
+          </motion.p>
         </div>
       </div>
 
       <div className="mt-[4%] flex items-center justify-end overflow-hidden">
         <Link href="/about">
-          <p className="text-nowrap font-metrophobic text-sm leading-tight text-white hover:underline sm:mr-2 sm:text-2xl sm:leading-normal">
+          <motion.p
+            className="text-nowrap font-metrophobic text-sm leading-tight text-white hover:underline sm:mr-2 sm:text-2xl sm:leading-normal"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
             LEARN MORE
-          </p>
+          </motion.p>
         </Link>
 
         <div>

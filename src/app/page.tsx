@@ -8,7 +8,9 @@ import HomePageCover from "@/components/home/HomePageCover";
 const Home = () => {
   return (
     <div className="justify-center">
-      <HomePageCover />
+      <div className="mt-[-16%] md:mt-[-10%]">
+        <HomePageCover />
+      </div>
       <AboutAviat />
       <ProjectPuffin />
       <HummingbirdHomepage />
