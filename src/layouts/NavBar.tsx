@@ -80,12 +80,18 @@ const Navbar = () => {
                 className="content-center px-6 text-center lg:px-8 2xl:px-12"
               >
                 <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileHover={{
+                    scale: 1.05,
+                    transition: { duration: 0.1, delay: 0 },
+                  }}
+                  whileTap={{
+                    scale: 0.95,
+                    transition: { duration: 0.1, delay: 0 },
+                  }}
                   variants={animationScale}
                   transition={{ ...transition, delay: 0.2 }}
                   initial="hidden"
-                  whileInView="show"
+                  animate="show"
                 >
                   <Link
                     href={item.link}
@@ -102,8 +108,11 @@ const Navbar = () => {
           <Menu className="mr-6 hover:cursor-pointer md:hidden" size={32} />
         </div>
       </div>
-      <div
+      <motion.div
         className={`fixed grid w-full grid-rows-4 justify-items-center gap-y-3 bg-aviatr-blue-400 pb-4 font-jost text-base md:hidden ${!nav && "hidden"}`}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: nav ? 1 : 0, y: nav ? 0 : -20 }}
+        transition={{ type: "spring", stiffness: 200, damping: 30 }} // Smooth transition
       >
         {items.map((item, index) => (
           <motion.div
@@ -120,7 +129,7 @@ const Navbar = () => {
             </Link>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
