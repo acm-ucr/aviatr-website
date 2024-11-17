@@ -21,7 +21,7 @@ const MemberDetail: React.FC<MemberDetailProps> = ({
   setPopup,
 }) => {
   return (
-    <div className="text-accent relative mx-auto mb-10 w-[60%] rounded-3xl bg-slate-800 p-10">
+    <div className="text-accent relative mx-auto mb-10 rounded-3xl bg-black p-10">
       {/* Close button */}
       <div
         onClick={() => setPopup(false)}

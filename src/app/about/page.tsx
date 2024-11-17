@@ -3,7 +3,6 @@ import BoardMemberSection from "../../components/about/BoardMemberSection";
 import WhoWeAre from "../../components/about/WhoWeAre";
 import WhatWeDo from "../../components/about/WhatWeDo";
 import RecurringLogo from "@/components/RecurringLogo";
-import MemberDetail from "@/components/MemberDetail";
 
 const Events = () => {
   return (
@@ -15,12 +14,6 @@ const Events = () => {
         <WhoWeAre />
         <WhatWeDo />
         <BoardMemberSection />
-        <MemberDetail
-          hobby="Hobby"
-          major="Major"
-          year="Year"
-          description="DescriptionDescriptionDescriptionDescriptionDeriptionDescriptioescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription"
-        />
       </div>
     </div>
   );
