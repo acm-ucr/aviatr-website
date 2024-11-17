@@ -1,0 +1,78 @@
+import DefaultBoardMemberImage from "@/../public/about/defaultBoardMemberImage.webp";
+
+const List = [
+  {
+    name: "Firstname Lastname",
+    position: "POSITION",
+    image: DefaultBoardMemberImage.src,
+    hobby: "lorem ipsum",
+    year: "lorem ipsum",
+    major: "lorem ipsum",
+    description: "lorem ipsum",
+  },
+  {
+    name: "Firstname Lastname",
+    position: "POSITION",
+    image: DefaultBoardMemberImage.src,
+    hobby: "lorem ipsum",
+    year: "lorem ipsum",
+    major: "lorem ipsum",
+    description: "lorem ipsum",
+  },
+  {
+    name: "Firstname Lastname",
+    position: "POSITION",
+    image: DefaultBoardMemberImage.src,
+    hobby: "lorem ipsum",
+    year: "lorem ipsum",
+    major: "lorem ipsum",
+    description: "lorem ipsum",
+  },
+  {
+    name: "Firstname Lastname",
+    position: "POSITION",
+    image: DefaultBoardMemberImage.src,
+    hobby: "lorem ipsum",
+    year: "lorem ipsum",
+    major: "lorem ipsum",
+    description: "lorem ipsum",
+  },
+  {
+    name: "Firstname Lastname",
+    position: "POSITION",
+    image: DefaultBoardMemberImage.src,
+    hobby: "lorem ipsum",
+    year: "lorem ipsum",
+    major: "lorem ipsum",
+    description: "lorem ipsum",
+  },
+  {
+    name: "Firstname Lastname",
+    position: "POSITION",
+    image: DefaultBoardMemberImage.src,
+    hobby: "lorem ipsum",
+    year: "lorem ipsum",
+    major: "lorem ipsum",
+    description: "lorem ipsum",
+  },
+  {
+    name: "Firstname Lastname",
+    position: "POSITION",
+    image: DefaultBoardMemberImage.src,
+    hobby: "lorem ipsum",
+    year: "lorem ipsum",
+    major: "lorem ipsum",
+    description: "lorem ipsum",
+  },
+  {
+    name: "Firstname Lastname",
+    position: "POSITION",
+    image: DefaultBoardMemberImage.src,
+    hobby: "lorem ipsum",
+    year: "lorem ipsum",
+    major: "lorem ipsum",
+    description: "lorem ipsum",
+  },
+];
+
+export default List;

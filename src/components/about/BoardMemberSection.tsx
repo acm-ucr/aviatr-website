@@ -1,9 +1,8 @@
 "use client";
-
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import BoardMember from "./BoardMember";
+import boardMemberList from "@/data/boardMemberList";
 import Image from "next/image";
-import DefaultBoardMemberImage from "@/../public/about/defaultBoardMemberImage.webp";
 import BMSLeftBorder from "@/../public/about/BMSLeftBorder.webp";
 import BMSRightBorder from "@/../public/about/BMSRightBorder.webp";
 import CenteredLineTitle from "@/components/CenteredLineTitle";
@@ -21,25 +20,22 @@ const BoardMemberSection = () => {
     image: string;
   };
 
-  const [selectedMember, setSelectedMember] = useState<BoardMemberType | null>(null);
+  const [selectedMember, setSelectedMember] = useState<BoardMemberType | null>(
+    null,
+  );
+  const [popup, setPopup] = useState<boolean>(true);
 
   // Function to handle clicking on a board member
   const handleMemberClick = (member: BoardMemberType) => {
     setSelectedMember(member);
   };
 
-  // Sample board members data
-  const boardMembers = [
-    { name: "Firstname Lastname", position: "POSITION", hobby: "Hobby", major: "Major", year: "Year", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", image: DefaultBoardMemberImage.src },
-    { name: "Firstname Lastname", position: "POSITION", hobby: "Hobby", major: "Major", year: "Year", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", image: DefaultBoardMemberImage.src },
-    { name: "Firstname Lastname", position: "POSITION", hobby: "Hobby", major: "Major", year: "Year", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", image: DefaultBoardMemberImage.src },
-    { name: "Firstname Lastname", position: "POSITION", hobby: "Hobby", major: "Major", year: "Year", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", image: DefaultBoardMemberImage.src },
-    { name: "Firstname Lastname", position: "POSITION", hobby: "Hobby", major: "Major", year: "Year", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", image: DefaultBoardMemberImage.src },
-    { name: "Firstname Lastname", position: "POSITION", hobby: "Hobby", major: "Major", year: "Year", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", image: DefaultBoardMemberImage.src },
-    { name: "Firstname Lastname", position: "POSITION", hobby: "Hobby", major: "Major", year: "Year", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", image: DefaultBoardMemberImage.src },
-    { name: "Firstname Lastname", position: "POSITION", hobby: "Hobby", major: "Major", year: "Year", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", image: DefaultBoardMemberImage.src },
-
-  ];
+  useEffect(() => {
+    if (popup == false) {
+      setSelectedMember(null);
+      setPopup(true);
+    }
+  }, [popup]);
 
   return (
     <div className="text-accent relative mx-auto mb-10 max-w-[80%] p-48 py-10 text-center">
@@ -59,16 +55,30 @@ const BoardMemberSection = () => {
 
       {/* Title Section */}
       <div className="mb-10 flex justify-center">
-        <CenteredLineTitle text="The Board" color="text-white" lineWidth="w-[110%]" />
+        <CenteredLineTitle
+          text="The Board"
+          color="text-white"
+          lineWidth="w-[110%]"
+        />
       </div>
 
       {/* Board Members Grid */}
       <div className="grid grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
-        {boardMembers.map((member, index) => (
+        {boardMemberList.map((member, index) => (
           <div
+            onClick={() =>
+              handleMemberClick({
+                name: member.name,
+                position: member.position,
+                image: member.image,
+                hobby: member.hobby,
+                major: member.major,
+                year: member.year,
+                description: member.description,
+              })
+            }
             key={index}
-            onClick={() => handleMemberClick(member)}
-            className="cursor-pointer"
+            className="hover:cursor"
           >
             <BoardMember
               name={member.name}
@@ -81,15 +91,15 @@ const BoardMemberSection = () => {
 
       {/* Pop-Up with Member Details */}
       {selectedMember && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50">
-          <div className="relative p-10 bg-slate-900 rounded-3xl w-[90%] max-w-[600px] text-center text-white">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
+          <div className="relative w-[90%] max-w-[600px] rounded-3xl bg-slate-900 p-10 text-center text-white">
             {/* Member Detail Component */}
             <MemberDetail
               hobby={selectedMember.hobby}
               major={selectedMember.major}
               year={selectedMember.year}
               description={selectedMember.description}
-              closePopup={() => setSelectedMember(null)}
+              setPopup={setPopup}
             />
           </div>
         </div>

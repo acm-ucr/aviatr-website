@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { items } from "@/data/navigation";
 import { Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -15,6 +16,26 @@ const Navbar = () => {
 
   const handleNav = () => {
     setNav(!nav);
+  };
+
+  const delayClick = () => {
+    setTimeout(() => {
+      handleNav();
+    }, 200);
+  };
+
+  const animateLeftIn = {
+    hidden: { opacity: 0, x: -50 },
+    show: { opacity: 1, x: 0 },
+  };
+
+  const animationScale = {
+    hidden: { opacity: 0, scale: 0.5 },
+    show: { opacity: 1, scale: 1 },
+  };
+
+  const transition = {
+    duration: 0.7,
   };
 
   // Close menu on medium screens or larger
@@ -40,11 +61,17 @@ const Navbar = () => {
             : "bg-aviatr-blue-400"
         } `}
       >
-        <div className="ml-5 w-1/3 md:ml-10 md:w-1/6">
+        <motion.div
+          className="ml-5 w-1/3 md:ml-10 md:w-1/6"
+          variants={animateLeftIn}
+          transition={{ ...transition, delay: 0.2 }}
+          initial="hidden"
+          whileInView="show"
+        >
           <Link onClick={nav ? handleNav : undefined} href={"/"}>
             <Image src={Logo} alt="logo" />
           </Link>
-        </div>
+        </motion.div>
         <div className={`flex w-5/6 justify-end`}>
           <div className="hidden grid-cols-4 divide-x-2 divide-black font-jost text-xs text-black md:grid lg:text-sm xl:text-base 2xl:text-lg">
             {items.map((item, index) => (
@@ -52,12 +79,27 @@ const Navbar = () => {
                 key={index}
                 className="content-center px-6 text-center lg:px-8 2xl:px-12"
               >
-                <Link
-                  href={item.link}
-                  className={`${item.name === "JOIN" && "rounded-full bg-aviatr-blue-100 px-6 py-1 lg:px-8 xl:px-10 xl:py-2"}`}
+                <motion.div
+                  whileHover={{
+                    scale: 1.05,
+                    transition: { duration: 0.1, delay: 0 },
+                  }}
+                  whileTap={{
+                    scale: 0.95,
+                    transition: { duration: 0.1, delay: 0 },
+                  }}
+                  variants={animationScale}
+                  transition={{ ...transition, delay: 0.2 }}
+                  initial="hidden"
+                  animate="show"
                 >
-                  {item.name}
-                </Link>
+                  <Link
+                    href={item.link}
+                    className={`hover:underline ${item.name === "JOIN" && "rounded-full bg-aviatr-blue-100 px-6 py-1 lg:px-8 xl:px-10 xl:py-2"}`}
+                  >
+                    {item.name}
+                  </Link>
+                </motion.div>
               </div>
             ))}
           </div>
@@ -66,21 +108,28 @@ const Navbar = () => {
           <Menu className="mr-6 hover:cursor-pointer md:hidden" size={32} />
         </div>
       </div>
-      <div
+      <motion.div
         className={`fixed grid w-full grid-rows-4 justify-items-center gap-y-3 bg-aviatr-blue-400 pb-4 font-jost text-base md:hidden ${!nav && "hidden"}`}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: nav ? 1 : 0, y: nav ? 0 : -20 }}
+        transition={{ type: "spring", stiffness: 200, damping: 30 }}
       >
         {items.map((item, index) => (
-          <div key={index}>
+          <motion.div
+            key={index}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
             <Link
               className="border-b border-black"
-              onClick={handleNav}
+              onClick={delayClick}
               href={item.link}
             >
               {item.name}
             </Link>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
