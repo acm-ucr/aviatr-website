@@ -1,7 +1,9 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import PuffinImg from "@/../public/home/ProjectPuffin.webp";
 import LearnMoreButton from "./LearnMoreButton";
+//import { motion } from "motion/react";
 
 const ProjectPuffin = () => {
   return (
