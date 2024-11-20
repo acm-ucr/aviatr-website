@@ -1,9 +1,8 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Logo from "@/../public/Logo.webp";
-import { useEffect, useState } from "react";
 import { items } from "@/data/navigation";
 import { Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
@@ -13,6 +12,7 @@ const Navbar = () => {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
   const [nav, setNav] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
@@ -38,6 +38,23 @@ const Navbar = () => {
     duration: 0.7,
   };
 
+  // Detect scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   // Close menu on medium screens or larger
   useEffect(() => {
     const handleResize = () => {
@@ -53,13 +70,11 @@ const Navbar = () => {
   return (
     <div className={`sticky top-0 z-50`}>
       <div
-        className={`flex w-full items-center py-2 ${
-          isHomePage
-            ? nav
-              ? "bg-aviatr-blue-400 md:bg-transparent"
-              : "bg-transparent"
+        className={`flex w-full items-center py-2 transition-all duration-300 ${
+          isHomePage && !isScrolled && !nav
+            ? "bg-transparent"
             : "bg-aviatr-blue-400"
-        } `}
+        }`}
       >
         <motion.div
           className="ml-5 w-1/3 md:ml-10 md:w-1/6"
@@ -95,7 +110,10 @@ const Navbar = () => {
                 >
                   <Link
                     href={item.link}
-                    className={`hover:underline ${item.name === "JOIN" && "rounded-full bg-aviatr-blue-100 px-6 py-1 lg:px-8 xl:px-10 xl:py-2"}`}
+                    className={`hover:underline ${
+                      item.name === "JOIN" &&
+                      "rounded-full bg-aviatr-blue-100 px-6 py-1 lg:px-8 xl:px-10 xl:py-2"
+                    }`}
                   >
                     {item.name}
                   </Link>
@@ -109,7 +127,9 @@ const Navbar = () => {
         </div>
       </div>
       <motion.div
-        className={`fixed grid w-full grid-rows-4 justify-items-center gap-y-3 bg-aviatr-blue-400 pb-4 font-jost text-base md:hidden ${!nav && "hidden"}`}
+        className={`fixed grid w-full grid-rows-4 justify-items-center gap-y-3 bg-aviatr-blue-400 pb-4 font-jost text-base md:hidden ${
+          !nav && "hidden"
+        }`}
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: nav ? 1 : 0, y: nav ? 0 : -20 }}
         transition={{ type: "spring", stiffness: 200, damping: 30 }}
