@@ -4,6 +4,8 @@ import Image from "next/image";
 import BMSLeftBorder from "@/../public/about/BMSLeftBorder.webp";
 import DefaultBoardMemberImage from "@/../public/about/defaultBoardMemberImage.webp";
 
+import { motion } from "motion/react";
+
 interface MemberDetailProps {
   hobby: string;
   major: string;
@@ -19,16 +21,30 @@ const MemberDetail: React.FC<MemberDetailProps> = ({
   description,
   setPopup,
 }) => {
+  // animation for popup
+  const animateScaleUp = {
+    hidden: { opacity: 0, scale: 0.4, y: 50 },
+    show: { opacity: 1, scale: 1, y: 0 },
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-500 bg-opacity-70">
-      <div className="text-accent relative flex h-[50%] w-[70%] rounded-3xl bg-black py-[8%] md:py-[10%] lg:w-[90%] xl:h-[60%] xl:w-[50%] xl:py-[5%]">
+      <motion.div
+        className="text-accent relative flex h-[50%] w-[70%] rounded-3xl bg-black py-[8%] md:py-[10%] lg:w-[90%] xl:h-[60%] xl:w-[50%] xl:py-[5%]"
+        variants={animateScaleUp}
+        transition={{ duration: 0.2 }}
+        initial="hidden"
+        whileInView="show"
+        exit={{ scale: [1, 0.93, 0.98], opacity: 0.75 }}
+      >
         {/* Close button */}
-        <div
+        <motion.div
           onClick={() => setPopup(false)}
           className="hover:cursor absolute right-[10%] top-[8%] cursor-pointer font-bungee-hairline text-xl text-white text-stroke-white stroke-weight-[2px] md:right-[10%] md:text-2xl md:stroke-weight-[3px] lg:top-[12%]"
+          whileHover={{ scale: 1.08 }}
         >
           CLOSE
-        </div>
+        </motion.div>
 
         {/* Left & Right decorative borders */}
         <div className="absolute left-[8%] top-[4%] hidden h-[20%] w-[20%] rotate-180 md:block lg:top-[12%]">
@@ -78,7 +94,7 @@ const MemberDetail: React.FC<MemberDetailProps> = ({
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
