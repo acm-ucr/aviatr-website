@@ -21,59 +21,61 @@ const MemberDetail: React.FC<MemberDetailProps> = ({
 }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-500 bg-opacity-70">
-      <div className="text-accent relative flex h-[50%] w-[90%] rounded-3xl bg-black px-[8%] py-[7%] xl:h-[60%] xl:w-[50%]">
+      <div className="text-accent relative flex h-[50%] w-[70%] rounded-3xl bg-black py-[8%] md:py-[10%] lg:w-[90%] xl:h-[60%] xl:w-[50%] xl:py-[5%]">
         {/* Close button */}
         <div
           onClick={() => setPopup(false)}
-          className="hover:cursor absolute right-[10%] top-[8%] cursor-pointer font-bungee-hairline text-xl font-bold text-white text-stroke-white stroke-weight-[2px] md:right-[10%] md:top-[12%] md:text-2xl lg:stroke-weight-[3px]"
+          className="hover:cursor absolute right-[10%] top-[8%] cursor-pointer font-bungee-hairline text-xl text-white text-stroke-white stroke-weight-[2px] md:right-[10%] md:text-2xl md:stroke-weight-[3px] lg:top-[12%]"
         >
           CLOSE
         </div>
+
         {/* Left & Right decorative borders */}
-        <div className="absolute left-[8%] top-0 h-[20%] w-[20%] rotate-180 md:top-[12%]">
+        <div className="absolute left-[8%] top-[4%] hidden h-[20%] w-[20%] rotate-180 md:block lg:top-[12%]">
           <Image src={BMSLeftBorder} alt="Border" />
         </div>
-        <div className="absolute bottom-0 right-[8%] h-[20%] w-[20%] md:bottom-[12%]">
+        <div className="absolute bottom-[4%] right-[8%] hidden h-[20%] w-[20%] md:block lg:bottom-[12%]">
           <Image src={BMSLeftBorder} alt="Border" />
         </div>
 
         {/* Main content */}
-        <div className="flex w-full flex-col gap-2 lg:gap-10">
-          {/* Upper section: Image and Labels */}
-          <div className="flex flex-col justify-center gap-4 md:flex-row md:items-center md:gap-10">
-            {/* Image section */}
+        <div className="mx-auto flex max-h-[100%] w-[75%] flex-col gap-2 md:gap-5 lg:gap-10">
+          <div className="overflow-y-auto overflow-x-hidden">
+            {/* Upper section: Image and Labels */}
+            <div className="flex flex-col justify-center gap-4 md:flex-row md:items-center">
+              {/* Image section */}
 
-            <Image
-              src={DefaultBoardMemberImage}
-              alt="Member Image"
-              className="h-auto rounded-2xl xl:w-[30%]"
-            />
+              <Image
+                src={DefaultBoardMemberImage}
+                alt="Member Image"
+                className="h-auto w-[40%] rounded-2xl md:w-[30%]"
+              />
 
-            {/* Details section */}
-            <div className="text-md flex w-[67%] flex-col text-nowrap text-left font-jost text-white md:text-xl">
-              <p className="mb-1 md:mb-4">
-                <strong className="text-aviatr-blue-500">Hobbies:</strong>{" "}
-                {hobby}
-              </p>
-              <p className="mb-1 md:mb-4">
-                <strong className="text-aviatr-purple-100">Major:</strong>{" "}
-                {major}
-              </p>
-              <p className="mb-4 md:mb-4">
-                <strong className="text-aviatr-pink-200">Year:</strong> {year}
-              </p>
-              {/* <Image src={LineImage} alt="Line" className="mt-2 w-full" /> */}
-              <div className="mt-4 flex flex-row items-center">
-                <div className="mb-1 h-2 w-2 rotate-45 transform bg-white sm:mb-3 md:h-3 md:w-3 lg:mb-4"></div>
-                <div className="mb-1 flex-grow border-t-2 border-white sm:mb-3 lg:mb-4"></div>
-                <div className="mb-1 h-2 w-2 rotate-45 transform bg-white sm:mb-3 md:h-3 md:w-3 lg:mb-4"></div>
+              {/* Details section */}
+              <div className="text-md flex w-[67%] flex-col text-nowrap text-left font-jost text-white md:ml-4 md:text-xl">
+                <p className="mb-1 md:mb-4">
+                  <strong className="text-aviatr-blue-500">Hobbies:</strong>{" "}
+                  {hobby}
+                </p>
+                <p className="mb-1 md:mb-4">
+                  <strong className="text-aviatr-purple-100">Major:</strong>{" "}
+                  {major}
+                </p>
+                <p className="mb-4 md:mb-4">
+                  <strong className="text-aviatr-pink-200">Year:</strong> {year}
+                </p>
+                <div className="mt-1 flex flex-row items-center md:mt-4">
+                  <div className="mb-1 h-2 w-2 rotate-45 transform bg-white sm:mb-3 md:h-3 md:w-3 lg:mb-4"></div>
+                  <div className="mb-1 flex-grow border-t-2 border-white sm:mb-3 lg:mb-4"></div>
+                  <div className="mb-1 h-2 w-2 rotate-45 transform bg-white sm:mb-3 md:h-3 md:w-3 lg:mb-4"></div>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Lower section: Description */}
-          <div className="text-md overflow-hidden break-words text-left font-jost text-white md:text-xl">
-            <p>{description}</p>
+            {/* Lower section: Description */}
+            <div className="text-md mt-2 text-left font-jost text-white md:mt-10 md:text-xl">
+              <p>{description}</p>
+            </div>
           </div>
         </div>
       </div>
