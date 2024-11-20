@@ -91,18 +91,13 @@ const BoardMemberSection = () => {
 
       {/* Pop-Up with Member Details */}
       {selectedMember && (
-        <div className="fixed inset-0 z-50 flex justify-center bg-gray-500 bg-opacity-70">
-          {/* //   <div className="relative max-w-[600px] rounded-3xl bg-slate-900 p-10 text-center text-white">  */}
-          <div className="my-[10%] w-[90%] lg:w-[50%]">
-            <MemberDetail
-              hobby={selectedMember.hobby}
-              major={selectedMember.major}
-              year={selectedMember.year}
-              description={selectedMember.description}
-              setPopup={setPopup}
-            />
-          </div>
-        </div>
+        <MemberDetail
+          hobby={selectedMember.hobby}
+          major={selectedMember.major}
+          year={selectedMember.year}
+          description={selectedMember.description}
+          setPopup={setPopup}
+        />
       )}
     </div>
   );
