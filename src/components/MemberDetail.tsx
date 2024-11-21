@@ -30,7 +30,7 @@ const MemberDetail: React.FC<MemberDetailProps> = ({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-500 bg-opacity-70">
       <motion.div
-        className="text-accent relative flex h-[50%] w-[70%] rounded-3xl bg-black py-[8%] md:py-[10%] lg:w-[90%] xl:h-[60%] xl:w-[50%] xl:py-[5%]"
+        className="text-accent relative flex h-[50%] min-h-[400px] w-[70%] rounded-3xl bg-black py-[8%] md:py-[10%] lg:w-[90%] xl:h-[60%] xl:w-[50%] xl:py-[5%]"
         variants={animateScaleUp}
         transition={{ duration: 0.2 }}
         initial="hidden"
@@ -47,15 +47,15 @@ const MemberDetail: React.FC<MemberDetailProps> = ({
         </motion.div>
 
         {/* Left & Right decorative borders */}
-        <div className="absolute left-[8%] top-[4%] hidden h-[20%] w-[20%] rotate-180 md:block lg:top-[12%]">
+        <div className="absolute left-[8%] top-[4%] hidden h-[20%] w-[20%] rotate-180 lg:top-[12%] xl:block">
           <Image src={BMSLeftBorder} alt="Border" />
         </div>
-        <div className="absolute bottom-[4%] right-[8%] hidden h-[20%] w-[20%] md:block lg:bottom-[12%]">
+        <div className="absolute bottom-[4%] right-[8%] hidden h-[20%] w-[20%] lg:bottom-[12%] xl:block">
           <Image src={BMSLeftBorder} alt="Border" />
         </div>
 
         {/* Main content */}
-        <div className="mx-auto flex max-h-[100%] w-[75%] flex-col gap-2 md:gap-5 lg:gap-10">
+        <div className="mx-auto flex max-h-[100%] min-h-[80%] w-[75%] flex-col gap-2 md:gap-5 lg:gap-10">
           <div className="overflow-y-auto overflow-x-hidden">
             {/* Upper section: Image and Labels */}
             <div className="flex flex-col justify-center gap-4 md:flex-row md:items-center">
