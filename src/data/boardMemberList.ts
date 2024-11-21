@@ -1,10 +1,10 @@
-import Christian from "@/../public/about/Christian_Kim.png";
-import Salem from "@/../public/about/Salem_Guevara_Moctezuma.jpg";
-import Brian from "@/../public/about/Brian_Altamirano.jpg";
-import Evan from "@/../public/about/Evan_Goldman.png";
-import Nicholas from "@/../public/about/Nicholas.jpg";
-import Unknown from "@/../public/about/Unknown.jpg";
-import Wayman from "@/../public/about/Wayman_Mathis.jpg";
+import Christian from "@/../public/about/Christian_Kim.webp";
+import Salem from "@/../public/about/Salem_Guevara_Moctezuma.webp";
+import Brian from "@/../public/about/Brian_Altamirano.webp";
+import Evan from "@/../public/about/Evan_Goldman.webp";
+import Nicholas from "@/../public/about/Nicholas.webp";
+import Unknown from "@/../public/about/Unknown.webp";
+import Wayman from "@/../public/about/Wayman_Mathis.webp";
 
 const List = [
   {
