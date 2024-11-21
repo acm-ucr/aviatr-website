@@ -37,8 +37,8 @@ const WhoWeAre = () => {
           className="text-md text-white sm:text-xl"
           variants={animationY}
           transition={{ ...transition, delay: 0.2 }}
-          initial="hidden"
           whileInView="show"
+          initial="hidden"
         >
           AviatR is UCR&apos;s dedicated UAS research club specializing in drone
           manufacturing and autonomous devices. Our mission is to create an
