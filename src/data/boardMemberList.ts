@@ -1,4 +1,3 @@
-import DefaultBoardMemberImage from "@/../public/about/defaultBoardMemberImage.webp";
 import Christian from "@/../public/about/Christian_Kim.png";
 import Salem from "@/../public/about/Salem_Guevara_Moctezuma.jpg";
 import Brian from "@/../public/about/Brian_Altamirano.jpg";
