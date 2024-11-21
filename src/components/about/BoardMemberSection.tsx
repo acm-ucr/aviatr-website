@@ -38,32 +38,33 @@ const BoardMemberSection = () => {
   }, [popup]);
 
   return (
-    <div className="text-accent relative mx-auto mb-10 max-w-[80%] p-48 py-10 text-center">
+    <div className="text-accent relative mx-auto mb-10 max-w-[80%] lg:max-w-[90%] xl:max-w-[80%] px-4 sm:px-10 md:px-24 lg:px-8 xl:px-20 2xl:px-48 py-10 text-center">
       {/* Decorative Borders */}
-      <div className="h-50 w-50 absolute bottom-0 left-0">
+      <div className="h-28 w-28 sm:h-48 sm:w-48 absolute bottom-0 left-0">
         <Image src={BMSRightBorder} alt="Border" />
       </div>
-      <div className="h-50 w-50 absolute bottom-0 right-0">
+      <div className="h-28 w-28 sm:h-48 sm:w-48 absolute bottom-0 right-0">
         <Image src={BMSLeftBorder} alt="Border" />
       </div>
-      <div className="h-50 w-50 absolute right-0 top-0 rotate-180 transform">
+      <div className="h-28 w-28 sm:h-48 sm:w-48 absolute right-0 top-0 rotate-180 transform">
         <Image src={BMSRightBorder} alt="Border" />
       </div>
-      <div className="h-50 w-50 absolute left-0 top-0 rotate-180 transform">
+      <div className="h-28 w-28 sm:h-48 sm:w-48 absolute left-0 top-0 rotate-180 transform">
         <Image src={BMSLeftBorder} alt="Border" />
       </div>
 
       {/* Title Section */}
-      <div className="mb-10 flex justify-center">
+      <div className="mt-4 sm:mt-12 flex justify-center ">
         <CenteredLineTitle
           text="The Board"
-          color="text-white"
+          textColor="text-white"
+          lineColor="bg-white"
           lineWidth="w-[110%]"
         />
       </div>
 
       {/* Board Members Grid */}
-      <div className="grid grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid mb-14 justify-items-center sm:gap-8 grid-cols-2 lg:grid-cols-4">
         {boardMemberList.map((member, index) => (
           <div
             onClick={() =>
@@ -77,8 +78,8 @@ const BoardMemberSection = () => {
                 description: member.description,
               })
             }
+            
             key={index}
-            className="hover:cursor"
           >
             <BoardMember
               name={member.name}
