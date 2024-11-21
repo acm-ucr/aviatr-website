@@ -6,7 +6,7 @@ import Image from "next/image";
 import BMSLeftBorder from "@/../public/about/BMSLeftBorder.webp";
 import BMSRightBorder from "@/../public/about/BMSRightBorder.webp";
 import CenteredLineTitle from "@/components/CenteredLineTitle";
-import MemberDetail from "@/components/MemberDetail";
+import MemberDetail from "@/components/about/MemberDetail";
 
 import { AnimatePresence } from "motion/react";
 
@@ -99,6 +99,7 @@ const BoardMemberSection = () => {
             major={selectedMember.major}
             year={selectedMember.year}
             description={selectedMember.description}
+            image={selectedMember.image}
             setPopup={setPopup}
           />
         )}
