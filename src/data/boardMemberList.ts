@@ -2,8 +2,8 @@ import Christian from "@/../public/about/Christian_Kim.webp";
 import Salem from "@/../public/about/Salem_Guevara_Moctezuma.webp";
 import Brian from "@/../public/about/Brian_Altamirano.webp";
 import Evan from "@/../public/about/Evan_Goldman.webp";
-import Nicholas from "@/../public/about/Nicholas.webp";
-import Unknown from "@/../public/about/Unknown.webp";
+import Nicholas from "@/../public/about/Nicholas_Poon.webp";
+import Jonathan from "@/../public/about/Jonathan_Setiabudi.webp";
 import Wayman from "@/../public/about/Wayman_Mathis.webp";
 
 const List = [
@@ -49,7 +49,7 @@ const List = [
       "My name is Evan, and I'm currently a second-year graduate student in Electrical Engineering at the University of California, Riverside, with a focus on intelligent systems. My primary interest lies in the development of autonomous systems, and I am excited to gain experience within the realm of unmanned aerial vehicles (UAVs). I am keen to explore the intricate aspects of UAV technology, including advanced computer vision techniques and reinforcement learning algorithms that enable autonomous decision-making. With a solid foundation in software development, I bring expertise across various domains, including embedded systems, full-stack development, and machine learning. I am eager to apply my skills to the cutting-edge challenges in UAV technology, driving innovation in autonomous aerial systems.",
   },
   {
-    name: "Nicholas",
+    name: "Nicholas Poon",
     position: "POSITION",
     image: Nicholas.src,
     hobby: "Avionics, Automated Vehicles",
@@ -61,7 +61,7 @@ const List = [
   {
     name: "Jonathan Setiabudi",
     position: "POSITION",
-    image: Unknown.src,
+    image: Jonathan.src,
     hobby: "Badminton, Video Games",
     year: "Sophomore",
     major: "Computer Engineering",
