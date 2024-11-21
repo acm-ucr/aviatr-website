@@ -4,7 +4,7 @@ import CenteredLineTitle from "@/components/CenteredLineTitle";
 
 const WhatWeDo = () => {
   return (
-    <div className="mx-auto mb-10 md:mb-16 flex h-1/4 w-4/5 lg:w-3/5 flex-col">
+    <div className="mx-auto mb-10 flex h-1/4 w-4/5 flex-col md:mb-16 lg:w-3/5">
       <div className="flex justify-center">
         <CenteredLineTitle
           text="What We Do"
@@ -13,7 +13,7 @@ const WhatWeDo = () => {
           lineWidth="w-[110%]"
         />
       </div>
-      <div className="text-center font-jost text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl leading-relaxed text-white">
+      <div className="text-center font-jost text-sm leading-relaxed text-white sm:text-base md:text-lg lg:text-xl 2xl:text-2xl">
         As a drone enterprise conglomerate, we are dedicated to three distinct
         missions. Our first initiative, Project Puffin, focuses on novice
         training for first and second-year students, who will receive mentorship

@@ -38,23 +38,23 @@ const BoardMemberSection = () => {
   }, [popup]);
 
   return (
-    <div className="text-accent relative mx-auto mb-10 max-w-[80%] lg:max-w-[90%] xl:max-w-[80%] px-4 sm:px-10 md:px-24 lg:px-8 xl:px-20 2xl:px-48 py-10 text-center">
+    <div className="text-accent relative mx-auto mb-10 max-w-[80%] px-4 py-10 text-center sm:px-10 md:px-24 lg:max-w-[90%] lg:px-8 xl:max-w-[80%] xl:px-20 2xl:px-48">
       {/* Decorative Borders */}
-      <div className="h-28 w-28 sm:h-48 sm:w-48 absolute bottom-0 left-0">
+      <div className="absolute bottom-0 left-0 h-28 w-28 sm:h-48 sm:w-48">
         <Image src={BMSRightBorder} alt="Border" />
       </div>
-      <div className="h-28 w-28 sm:h-48 sm:w-48 absolute bottom-0 right-0">
+      <div className="absolute bottom-0 right-0 h-28 w-28 sm:h-48 sm:w-48">
         <Image src={BMSLeftBorder} alt="Border" />
       </div>
-      <div className="h-28 w-28 sm:h-48 sm:w-48 absolute right-0 top-0 rotate-180 transform">
+      <div className="absolute right-0 top-0 h-28 w-28 rotate-180 transform sm:h-48 sm:w-48">
         <Image src={BMSRightBorder} alt="Border" />
       </div>
-      <div className="h-28 w-28 sm:h-48 sm:w-48 absolute left-0 top-0 rotate-180 transform">
+      <div className="absolute left-0 top-0 h-28 w-28 rotate-180 transform sm:h-48 sm:w-48">
         <Image src={BMSLeftBorder} alt="Border" />
       </div>
 
       {/* Title Section */}
-      <div className="mt-4 sm:mt-12 flex justify-center ">
+      <div className="mt-4 flex justify-center sm:mt-12">
         <CenteredLineTitle
           text="The Board"
           textColor="text-white"
@@ -64,7 +64,7 @@ const BoardMemberSection = () => {
       </div>
 
       {/* Board Members Grid */}
-      <div className="grid mb-14 justify-items-center sm:gap-8 grid-cols-2 lg:grid-cols-4">
+      <div className="mb-14 grid grid-cols-2 justify-items-center sm:gap-8 lg:grid-cols-4">
         {boardMemberList.map((member, index) => (
           <div
             onClick={() =>
@@ -78,7 +78,6 @@ const BoardMemberSection = () => {
                 description: member.description,
               })
             }
-            
             key={index}
           >
             <BoardMember

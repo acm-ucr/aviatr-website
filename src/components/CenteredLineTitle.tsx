@@ -16,7 +16,7 @@ const TitleCompoent: React.FC<TitleComponentProps> = ({
   return (
     <div className="mb-10 flex w-fit flex-col items-center gap-3">
       <div
-        className={`font-heading mb-2 text-ellipsis text-center font-metrophobic text-4xl sm:text-5xl 2xl:text-6xl font-bold ${textColor}`}
+        className={`font-heading mb-2 text-ellipsis text-center font-metrophobic text-4xl font-bold sm:text-5xl 2xl:text-6xl ${textColor}`}
       >
         {text}
       </div>
