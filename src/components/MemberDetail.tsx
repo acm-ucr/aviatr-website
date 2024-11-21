@@ -68,7 +68,7 @@ const MemberDetail: React.FC<MemberDetailProps> = ({
               />
 
               {/* Details section */}
-              <div className="text-md flex w-[67%] flex-col text-nowrap text-left font-jost text-white md:ml-4 md:text-xl">
+              <div className="text-md flex w-[67%] flex-col text-wrap text-left font-jost text-white md:ml-4 md:text-xl">
                 <p className="mb-1 md:mb-4">
                   <strong className="text-aviatr-blue-500">Hobbies:</strong>{" "}
                   {hobby}
