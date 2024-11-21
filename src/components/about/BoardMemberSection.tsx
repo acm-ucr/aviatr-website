@@ -8,6 +8,8 @@ import BMSRightBorder from "@/../public/about/BMSRightBorder.webp";
 import CenteredLineTitle from "@/components/CenteredLineTitle";
 import MemberDetail from "@/components/MemberDetail";
 
+import { AnimatePresence } from "motion/react";
+
 const BoardMemberSection = () => {
   // State to manage which member is selected
   type BoardMemberType = {
@@ -90,20 +92,17 @@ const BoardMemberSection = () => {
       </div>
 
       {/* Pop-Up with Member Details */}
-      {selectedMember && (
-        <div className="fixed inset-0 z-50 flex justify-center bg-gray-500 bg-opacity-70">
-          {/* //   <div className="relative max-w-[600px] rounded-3xl bg-slate-900 p-10 text-center text-white">  */}
-          <div className="my-[10%] w-[90%] lg:w-[50%]">
-            <MemberDetail
-              hobby={selectedMember.hobby}
-              major={selectedMember.major}
-              year={selectedMember.year}
-              description={selectedMember.description}
-              setPopup={setPopup}
-            />
-          </div>
-        </div>
-      )}
+      <AnimatePresence>
+        {selectedMember && (
+          <MemberDetail
+            hobby={selectedMember.hobby}
+            major={selectedMember.major}
+            year={selectedMember.year}
+            description={selectedMember.description}
+            setPopup={setPopup}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 };
