@@ -46,8 +46,8 @@ const WhoWeAre = () => {
         collaborate on cutting-edge technology. We aim to empower UCR students
         to participate in the SUAS competition, where they can showcase their
         skills and creativity. Founded to unite individuals who share a passion
-        for aviation, AviatR offers a platform for learning, innovation, and
-        teamwork, encouraging members to explore various aspects of drone
+        for aviation, Aviat&apos;R offers a platform for learning, innovation,
+        and teamwork, encouraging members to explore various aspects of drone
         technology and development. Whether you&apos;re a beginner or have
         experience in the field, there&apos;s a place for you in our club as we
         work together on exciting drone-related projects.

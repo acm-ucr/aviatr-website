@@ -1,10 +1,10 @@
-import Christian from "@/../public/about/Christian_Kim.webp";
-import Salem from "@/../public/about/Salem_Guevara_Moctezuma.webp";
-import Brian from "@/../public/about/Brian_Altamirano.webp";
-import Evan from "@/../public/about/Evan_Goldman.webp";
-import Nicholas from "@/../public/about/Nicholas_Poon.webp";
-import Jonathan from "@/../public/about/Jonathan_Setiabudi.webp";
-import Wayman from "@/../public/about/Wayman_Mathis.webp";
+import Christian from "@/../public/about/board_members/Christian_Kim.webp";
+import Salem from "@/../public/about/board_members/Salem_Guevara_Moctezuma.webp";
+import Brian from "@/../public/about/board_members/Brian_Altamirano.webp";
+import Evan from "@/../public/about/board_members/Evan_Goldman.webp";
+import Nicholas from "@/../public/about/board_members/Nicholas_Poon.webp";
+import Jonathan from "@/../public/about/board_members/Jonathan_Setiabudi.webp";
+import Wayman from "@/../public/about/board_members/Wayman_Mathis.webp";
 
 const List = [
   {
