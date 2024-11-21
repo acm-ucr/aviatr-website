@@ -3,15 +3,16 @@ import CenteredLineTitle from "@/components/CenteredLineTitle";
 
 const WhoWeAre = () => {
   return (
-    <div className="mx-auto mt-20 flex h-1/4 w-1/2 flex-col">
+    <div className="mx-auto my-10 flex h-1/4 w-4/5 flex-col md:my-16 lg:w-3/5">
       <div className="flex justify-center">
         <CenteredLineTitle
           text="Who We Are"
-          color="text-aviatr-pink-200"
+          textColor="text-aviatr-pink-200"
+          lineColor="bg-aviatr-pink-200"
           lineWidth="w-[110%]"
         />
       </div>
-      <div className="text-center font-jost text-xl leading-relaxed text-white">
+      <div className="text-center font-jost text-sm leading-relaxed text-white sm:text-base md:text-lg lg:text-xl 2xl:text-2xl">
         AviatR is UCR&apos;s dedicated UAS research club specializing in drone
         manufacturing and autonomous devices. Our mission is to create an
         inclusive and welcoming environment for students interested in avionics,
