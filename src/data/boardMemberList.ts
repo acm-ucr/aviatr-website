@@ -59,7 +59,7 @@ const List = [
       "My name is Nicholas, and I am a sophomore studying Electrical Engineering at the University of California, Riverside. I specialize in machine learning and robotic integrations, with a keen interest in avionics and automated vehicles. My passion for unmanned aerial vehicles (UAVs) has been a driving force in my academic journey, particularly stemming from my prior experience with RC drones. I recognize that this endeavor will be challenging, but I am excited to embrace it and look forward to the journey ahead.",
   },
   {
-    name: "Mysterious Noname",
+    name: "Jonathan Setiabudi",
     position: "POSITION",
     image: Unknown.src,
     hobby: "Badminton, Video Games",
