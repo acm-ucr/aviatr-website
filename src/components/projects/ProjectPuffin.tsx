@@ -38,8 +38,8 @@ const ProjectPuffin = () => {
           />
           <motion.p className="mx-[4%] mb-10 leading-relaxed">
             A common challenge in many engineering organizations is the lack of
-            effective mentorship. Novice members often find themselves assigned to
-            complex projects requiring advanced knowledge, which can be
+            effective mentorship. Novice members often find themselves assigned
+            to complex projects requiring advanced knowledge, which can be
             overwhelming. To address this issue, the Puffin division offers a
             program designed for newer members to "get their feet wet" and grasp
             the fundamentals of aeronautical engineering and drone design.
@@ -51,7 +51,10 @@ const ProjectPuffin = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+          >
             <Image
               src={ProjectPuffin2}
               alt="Aviatr member explaining concepts on a whiteboard to other members in a classroom"
@@ -60,10 +63,10 @@ const ProjectPuffin = () => {
           </motion.div>
           <p className="mx-[4%] mb-10 leading-relaxed">
             This program includes a quarter-long ENGR course, taught by Juniors
-            and Seniors from our club, where participants will receive guidance in
-            building a personal drone. Throughout the course, members will learn
-            basic circuit design, CAD, and fundamental physics to complete their
-            drone by the end of the quarter.
+            and Seniors from our club, where participants will receive guidance
+            in building a personal drone. Throughout the course, members will
+            learn basic circuit design, CAD, and fundamental physics to complete
+            their drone by the end of the quarter.
           </p>
         </motion.div>
 
@@ -80,11 +83,11 @@ const ProjectPuffin = () => {
           <p className="mx-[4%] leading-relaxed">
             Successfully finishing the Puffin project will equip members with
             drone theory knowledge and teamwork experience. Freshmen and
-            Sophomores at UCR can join the Aviat'R team only after completing one
-            quarter of the Puffin project and building a functional quadcopter.
-            Alternatively, students who believe their skills exceed the program’s
-            requirements may join through sub-team intro projects and in-person
-            evaluations.
+            Sophomores at UCR can join the Aviat'R team only after completing
+            one quarter of the Puffin project and building a functional
+            quadcopter. Alternatively, students who believe their skills exceed
+            the program’s requirements may join through sub-team intro projects
+            and in-person evaluations.
           </p>
         </motion.div>
       </div>

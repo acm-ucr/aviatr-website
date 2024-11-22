@@ -7,8 +7,7 @@ import DividingLine from "@/components/projects/DividingLine";
 const Projects = () => {
   return (
     <div className="justify-center">
-  
-        <ProjectPuffin />
+      <ProjectPuffin />
       <DividingLine />
       <HummingBird />
       <DividingLine />
