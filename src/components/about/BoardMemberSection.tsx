@@ -9,7 +9,6 @@ import CenteredLineTitle from "@/components/CenteredLineTitle";
 import MemberDetail from "@/components/about/MemberDetail";
 import { motion } from "motion/react";
 
-
 import { AnimatePresence } from "motion/react";
 
 const BoardMemberSection = () => {
@@ -43,12 +42,24 @@ const BoardMemberSection = () => {
 
   const animateScaleUp = {
     hidden: { opacity: 0, scale: 0, y: 100 },
-    show: { opacity: 1, scale: 1, y: 0, rotateY: 0, transition: { duration: .4 } },
+    show: {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      rotateY: 0,
+      transition: { duration: 0.4 },
+    },
   };
 
   const slideIn = {
     hidden: { opacity: 0, scale: 1, x: 200 },
-    show: { opacity: 1, scale: 1, x: 0, rotateY: 0, transition: { duration: .8 } },
+    show: {
+      opacity: 1,
+      scale: 1,
+      x: 0,
+      rotateY: 0,
+      transition: { duration: 0.8 },
+    },
   };
 
   const transition = {
@@ -89,7 +100,7 @@ const BoardMemberSection = () => {
         </div>
       </motion.div>
 
-      <div className="flex flex-wrap justify-center w-full pb-6">
+      <div className="flex w-full flex-wrap justify-center pb-6">
         {boardMemberList.map((member, index) => (
           <div
             onClick={() =>
@@ -106,17 +117,17 @@ const BoardMemberSection = () => {
             key={index}
           >
             <motion.div
-        className="flex justify-center"
-        variants={slideIn}
-        transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-        initial="hidden"
-        whileInView="show"
-      >
-            <BoardMember
-              name={member.name}
-              position={member.position}
-              image={member.image}
-            />
+              className="flex justify-center"
+              variants={slideIn}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+              initial="hidden"
+              whileInView="show"
+            >
+              <BoardMember
+                name={member.name}
+                position={member.position}
+                image={member.image}
+              />
             </motion.div>
           </div>
         ))}
