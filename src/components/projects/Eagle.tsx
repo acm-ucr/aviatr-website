@@ -23,7 +23,7 @@ const Eagle = () => {
   };
 
   const animateFadeUp = {
-    hidden: { opacity: 0, y: 100 },
+    hidden: { opacity: 0, y: 50 },
     show: { opacity: 1, y: 0 },
   };
 
@@ -94,7 +94,7 @@ const Eagle = () => {
         <motion.p
           className="text-md mx-[2%] mb-[5%] text-center font-jost sm:mb-0 sm:text-justify sm:text-xl"
           variants={animateFadeUp}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.6 }}
           initial="hidden"
           whileInView="show"
         >

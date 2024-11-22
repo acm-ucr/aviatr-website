@@ -120,6 +120,7 @@ const BoardMemberSection = () => {
               className="flex justify-center"
               variants={slideIn}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+              whileHover={{ scale: 1.04 }}
               initial="hidden"
               whileInView="show"
             >
