@@ -5,7 +5,7 @@ import EagleImg2 from "@/../public/projects/Eagle2.webp";
 import EagleImg3 from "@/../public/projects/Eagle3.webp";
 import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 import Link from "next/link";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 
 const Eagle = () => {
@@ -17,16 +17,32 @@ const Eagle = () => {
     visible: { opacity: 1, scale: 1, y: 0 },
   };
 
+  const animateFadeRight = {
+    hidden: { opacity: 0, x: -100 },
+    show: { opacity: 1, x: 0 },
+  };
+
+  const animateFadeUp = {
+    hidden: { opacity: 0, y: 100 },
+    show: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="mx-[8%] my-[5%] font-jost text-white">
-      <div className="mb-[8%] sm:mb-[6%]">
+      <motion.div
+        className="mb-[8%] sm:mb-[6%]"
+        variants={animateFadeRight}
+        transition={{ duration: 0.6, delay: 0.4 }}
+        initial="hidden"
+        whileInView="show"
+      >
         <ShiftedLineTitle
           title="Eagle"
           width="md:w-[180%]"
           textSize="sm:text-5xl"
           lineMarginShift="ml-[50%]"
         />
-      </div>
+      </motion.div>
 
       <div ref={ref}>
         <motion.div
@@ -75,7 +91,13 @@ const Eagle = () => {
             </motion.div>
           </div>
         </motion.div>
-        <p className="text-md mx-[2%] mb-[5%] text-center font-jost sm:mb-0 sm:text-justify sm:text-xl">
+        <motion.p
+          className="text-md mx-[2%] mb-[5%] text-center font-jost sm:mb-0 sm:text-justify sm:text-xl"
+          variants={animateFadeUp}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          initial="hidden"
+          whileInView="show"
+        >
           The Eagle Project is our competitive team dedicated to designing
           Unmanned Aerial Vehicles (UAVs) for global competitions. Participation
           in this team is reserved for upper-class members who have demonstrated
@@ -96,7 +118,7 @@ const Eagle = () => {
           intended to, you will still be allowed to work alongside SUAS members
           through our other research projects like Hummingbird. For further
           questions feel free to ask board members via discord or email.
-        </p>
+        </motion.p>
       </div>
     </div>
   );
