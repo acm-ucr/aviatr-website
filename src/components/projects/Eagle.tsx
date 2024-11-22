@@ -84,7 +84,7 @@ const Eagle = () => {
           strict deadlines. Due to limited space, priority will be given to
           members with high attendance records and those in Junior or Senior
           class levels. For more information about the SUAS competition, please
-          visit the &nbsp;
+          visit the&nbsp;
           <Link
             href="https://suas-competition.org/"
             target="_blank"
