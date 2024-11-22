@@ -55,7 +55,7 @@ const HummingBird = () => {
           </motion.div>
         </div>
 
-        <div className="text-md px-4 text-center font-jost leading-relaxed sm:text-justify sm:text-xl">
+        <div className="text-md px-4 text-center font-jost leading-relaxed sm:px-6 sm:text-justify sm:text-xl">
           <motion.div
             className="text-md font-jost leading-relaxed text-white sm:text-xl"
             variants={animationY}
@@ -89,7 +89,7 @@ const HummingBird = () => {
             <Image
               src={HummingBirdImg}
               alt="HummingBirdImg"
-              className="my-8 object-cover sm:my-0"
+              className="my-8 object-cover sm:mx-2 sm:my-0 sm:p-2"
             />
           </motion.div>
         </div>
