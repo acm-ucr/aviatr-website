@@ -7,6 +7,8 @@ import BMSLeftBorder from "@/../public/about/BMSLeftBorder.webp";
 import BMSRightBorder from "@/../public/about/BMSRightBorder.webp";
 import CenteredLineTitle from "@/components/CenteredLineTitle";
 import MemberDetail from "@/components/about/MemberDetail";
+import { motion } from "motion/react";
+
 
 import { AnimatePresence } from "motion/react";
 
@@ -39,8 +41,22 @@ const BoardMemberSection = () => {
     }
   }, [popup]);
 
+  const animateScaleUp = {
+    hidden: { opacity: 0, scale: 0, y: 100 },
+    show: { opacity: 1, scale: 1, y: 0, rotateY: 0, transition: { duration: .4 } },
+  };
+
+  const slideIn = {
+    hidden: { opacity: 0, scale: 1, x: 200 },
+    show: { opacity: 1, scale: 1, x: 0, rotateY: 0, transition: { duration: .8 } },
+  };
+
+  const transition = {
+    duration: 0.7,
+  };
+
   return (
-    <div className="text-accent relative mx-auto mb-10 max-w-[80%] px-4 py-10 text-center sm:px-10 md:px-24 lg:max-w-[90%] lg:px-8 xl:max-w-[80%] xl:px-20 2xl:px-48">
+    <div className="text-accent relative mx-auto mb-10 w-5/6 px-4 py-10 text-center sm:px-10 md:px-24 lg:px-8 xl:px-20 2xl:px-48">
       {/* Decorative Borders */}
       <div className="absolute bottom-0 left-0 h-28 w-28 sm:h-48 sm:w-48">
         <Image src={BMSRightBorder} alt="Border" />
@@ -56,17 +72,24 @@ const BoardMemberSection = () => {
       </div>
 
       {/* Title Section */}
-      <div className="mt-4 flex justify-center sm:mt-12">
-        <CenteredLineTitle
-          text="The Board"
-          textColor="text-white"
-          lineColor="bg-white"
-          lineWidth="w-[110%]"
-        />
-      </div>
+      <motion.div
+        className="flex justify-center"
+        variants={animateScaleUp}
+        transition={{ ...transition, delay: 0.2 }}
+        initial="hidden"
+        whileInView="show"
+      >
+        <div className="mt-4 flex justify-center sm:mt-12">
+          <CenteredLineTitle
+            text="The Board"
+            textColor="text-white"
+            lineColor="bg-white"
+            lineWidth="w-[110%]"
+          />
+        </div>
+      </motion.div>
 
-      {/* Board Members Grid */}
-      <div className="mb-14 grid grid-cols-2 justify-items-center sm:gap-8 lg:grid-cols-4">
+      <div className="flex flex-wrap justify-center w-full pb-6">
         {boardMemberList.map((member, index) => (
           <div
             onClick={() =>
@@ -82,11 +105,19 @@ const BoardMemberSection = () => {
             }
             key={index}
           >
+            <motion.div
+        className="flex justify-center"
+        variants={slideIn}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+        initial="hidden"
+        whileInView="show"
+      >
             <BoardMember
               name={member.name}
               position={member.position}
               image={member.image}
             />
+            </motion.div>
           </div>
         ))}
       </div>
