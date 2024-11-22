@@ -6,7 +6,7 @@ import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 
 const ProjectPuffin = () => {
   return (
-    <div className="relative mt-[8%] flex lg:h-screen items-center justify-center bg-black text-white">
+    <div className="relative mt-[8%] flex items-center justify-center bg-black text-white lg:h-screen">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -20,7 +20,7 @@ const ProjectPuffin = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 md:ml-[-35%] xl:ml-[-50%] max-w-lg p-8 ">
+      <div className="relative z-10 max-w-lg p-8 md:ml-[-35%] xl:ml-[-50%]">
         <div className="mb-[7%] mr-[4%] mt-[6%] sm:mr-0 md:mb-[12%] lg:mr-[14%] lg:mt-0">
           <ShiftedLineTitle
             title="Project Puffin"

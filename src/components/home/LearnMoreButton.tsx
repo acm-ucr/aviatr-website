@@ -5,7 +5,7 @@ const LearnMoreButton = ({ color, link }: { color: string; link: string }) => {
   return (
     <div className="flex items-center gap-3">
       <Link href={`${link}`}>
-        <p className="mr-2 font-metrophobic text-2xl text-white hover:underline whitespace-nowrap">
+        <p className="mr-2 whitespace-nowrap font-metrophobic text-2xl text-white hover:underline">
           LEARN MORE
         </p>
       </Link>

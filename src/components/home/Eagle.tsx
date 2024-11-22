@@ -5,9 +5,9 @@ import LearnMoreButton from "./LearnMoreButton";
 
 const Eagle = () => {
   return (
-    <div className="mt-[8%] flex w-full flex-col justify-between lg:pl-[8%] pt-8 text-white lg:flex-row items-center">
+    <div className="mt-[8%] flex w-full flex-col items-center justify-between pt-8 text-white lg:flex-row lg:pl-[8%]">
       {/* left side */}
-      <div className="w-[90%] lg:w-2/6 mb-7 lg:mb-0">
+      <div className="mb-7 w-[90%] lg:mb-0 lg:w-2/6">
         <div className="mb-[7%] lg:mb-[12%]">
           <ShiftedLineTitle
             title="Eagle"
@@ -30,7 +30,7 @@ const Eagle = () => {
       </div>
 
       {/* right side */}
-      <div className="clip-slope relative flex lg:h-[800px] overflow-hidden">
+      <div className="clip-slope relative flex overflow-hidden lg:h-[800px]">
         <Image
           src={EagleImg}
           alt="Eagle"
