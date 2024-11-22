@@ -15,7 +15,7 @@ const animationY = {
 const animationScale = {
   hidden: {
     opacity: 0,
-    scale: 0.5,
+    scale: 0.8,
   },
   show: {
     opacity: 1,
