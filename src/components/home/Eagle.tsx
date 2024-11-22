@@ -5,14 +5,14 @@ import LearnMoreButton from "./LearnMoreButton";
 
 const Eagle = () => {
   return (
-    <div className="mt-[8%] flex w-full flex-col items-start justify-between pl-[8%] pt-8 text-white md:flex-row md:items-center">
+    <div className="mt-[8%] flex w-full flex-col justify-between lg:pl-[8%] pt-8 text-white lg:flex-row items-center">
       {/* left side */}
-      <div className="md:w-2/6">
-        <div className="mb-[7%] md:mb-[12%]">
+      <div className="w-[90%] lg:w-2/6 mb-7 lg:mb-0">
+        <div className="mb-[7%] lg:mb-[12%]">
           <ShiftedLineTitle
             title="Eagle"
-            width="md:w-[200%]"
-            textSize="sm:text-5xl"
+            width="w-[200%]"
+            textSize="lg:text-5xl"
             lineMarginShift="ml-[50%]"
           />
         </div>
@@ -30,7 +30,7 @@ const Eagle = () => {
       </div>
 
       {/* right side */}
-      <div className="clip-slope relative flex h-[800px] overflow-hidden">
+      <div className="clip-slope relative flex lg:h-[800px] overflow-hidden">
         <Image
           src={EagleImg}
           alt="Eagle"
