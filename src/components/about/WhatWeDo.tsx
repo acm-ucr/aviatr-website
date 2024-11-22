@@ -49,8 +49,8 @@ const WhatWeDo = () => {
         competition team, tasked with building a drone from the ground up to
         execute advanced autonomous tasks for the national SUAS competition. We
         look forward to getting to know you better and hope you will join us
-        soon. If you're interested in becoming a part of our team, please visit
-        our recruitment survey&nbsp;
+        soon. If you&apos;re interested in becoming a part of our team, please
+        visit our recruitment survey&nbsp;
         <Link href="#" className="hover:cursor underline">
           here
         </Link>

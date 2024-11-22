@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import BMSLeftBorder from "@/../public/about/BMSLeftBorder.webp";
-import DefaultBoardMemberImage from "@/../public/about/defaultBoardMemberImage.webp";
 
 import { motion } from "motion/react";
 
@@ -11,6 +10,7 @@ interface MemberDetailProps {
   major: string;
   year: string;
   description: string;
+  image: string;
   setPopup: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
@@ -19,6 +19,7 @@ const MemberDetail: React.FC<MemberDetailProps> = ({
   major,
   year,
   description,
+  image,
   setPopup,
 }) => {
   // animation for popup
@@ -62,9 +63,11 @@ const MemberDetail: React.FC<MemberDetailProps> = ({
               {/* Image section */}
 
               <Image
-                src={DefaultBoardMemberImage}
+                src={image}
                 alt="Member Image"
                 className="h-auto w-[40%] rounded-2xl md:w-[30%]"
+                height={20}
+                width={20}
               />
 
               {/* Details section */}
