@@ -52,11 +52,11 @@ const BoardMemberSection = () => {
   };
 
   const slideIn = {
-    hidden: { opacity: 0, scale: 1, x: 200 },
+    hidden: { opacity: 0, scale: 1, y: 200 },
     show: {
       opacity: 1,
       scale: 1,
-      x: 0,
+      y: 0,
       rotateY: 0,
       transition: { duration: 0.8 },
     },
