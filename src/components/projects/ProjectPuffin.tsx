@@ -58,7 +58,7 @@ const ProjectPuffin = () => {
         </p>
       </div>
       <div className="hidden sm:block">
-        <p className="text-md mx-[2%] mb-[5%] font-jost sm:text-left md:text-xl md:leading-relaxed lg:text-justify">
+        <p className="text-md mx-[2%] mb-[5%] font-jost sm:text-justify md:text-xl md:leading-relaxed">
           A common challenge in many engineering organizations is the lack of
           effective mentorship. Novice members often find themselves assigned to
           complex projects requiring advanced knowledge, which can be

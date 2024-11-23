@@ -54,7 +54,7 @@ const HummingBird = () => {
         </motion.div>
 
         <motion.div
-          className="text-md mb-[5%] text-center font-jost leading-relaxed text-white sm:px-6 sm:text-left sm:text-xl lg:mb-0"
+          className="text-md mb-[5%] text-center font-jost leading-relaxed text-white sm:px-6 sm:text-justify sm:text-xl lg:mb-0"
           variants={animationY}
           transition={{ ...transition, delay: 0.2 }}
           initial="hidden"
