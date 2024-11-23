@@ -30,7 +30,7 @@ const HummingbirdHomepage = () => {
       {isMobile ? (
         <div className="mx-[5%] mt-[12%] grid grid-cols-10">
           <div className="col-span-10 grid content-center lg:col-span-4">
-            <div className="mb-[7%] ml-[4%] mt-[6%] sm:ml-0 lg:mb-[12%] lg:ml-[14%] lg:mt-0">
+            <div className="mb-[7%] ml-[4%] sm:ml-0 lg:mb-[12%] lg:ml-[14%]">
               <ShiftedLineTitle
                 title="Hummingbird"
                 width="md:w-[90%]"
