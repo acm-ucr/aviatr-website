@@ -1,8 +1,8 @@
 import React from "react";
-import HummingbirdHomepage from "@/components/home/HummingbirdHomepage";
+import HummingbirdHomepage from "@/components/home/Hummingbird";
 import AboutAviat from "@/components/home/MissionStatement";
 import Eagle from "@/components/home/Eagle";
-import ProjectPuffin from "@/components/home/PuffinHomePageContent";
+import ProjectPuffin from "@/components/home/ProjectPuffin";
 import HomePageCover from "@/components/home/HomePageCover";
 
 const Home = () => {
