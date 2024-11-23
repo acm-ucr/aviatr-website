@@ -33,7 +33,7 @@ const transition = {
   duration: 0.7,
 };
 
-const HummingBird = () => {
+const Hummingbird = () => {
   return (
     <div className="my-[5%] flex w-full flex-col items-start justify-between gap-[8%] px-[8%] text-white md:flex-row md:items-center">
       {/* left */}
@@ -97,4 +97,5 @@ const HummingBird = () => {
     </div>
   );
 };
-export default HummingBird;
+
+export default Hummingbird;

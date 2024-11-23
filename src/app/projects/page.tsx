@@ -1,5 +1,5 @@
 import React from "react";
-import HummingBird from "@/components/projects/Hummingbird";
+import Hummingbird from "@/components/projects/Hummingbird";
 import Eagle from "@/components/projects/Eagle";
 import ProjectPuffin from "@/components/projects/ProjectPuffin";
 import DividingLine from "@/components/projects/DividingLine";
@@ -9,7 +9,7 @@ const Projects = () => {
     <div className="justify-center">
       <ProjectPuffin />
       <DividingLine />
-      <HummingBird />
+      <Hummingbird />
       <DividingLine />
       <Eagle />
     </div>
