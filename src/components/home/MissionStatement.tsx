@@ -36,7 +36,7 @@ const transition = {
 
 const MissionStatement = () => {
   return (
-    <div className="justify-center bg-black px-[8%] mt-[12%] text-white">
+    <div className="mt-[12%] justify-center bg-black px-[8%] text-white">
       <motion.div
         className="sm:mb-[3%]"
         variants={animationX}
