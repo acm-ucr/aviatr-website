@@ -28,7 +28,7 @@ const HummingbirdHomepage = () => {
   return (
     <>
       {isMobile ? (
-        <div className="mx-[5%] mt-[12%] grid grid-cols-10">
+        <div className="mx-[5%] mt-[18%] grid grid-cols-10">
           <div className="col-span-10 grid content-center">
             <div className="mb-[7%] ml-[4%] sm:ml-0">
               <ShiftedLineTitle
@@ -68,7 +68,7 @@ const HummingbirdHomepage = () => {
               </div>
             </div>
 
-            <div className="text-md mx-[10%] mb-[8%] mt-[8%] flex flex-col gap-8 font-jost leading-relaxed text-white sm:text-xl lg:mx-0 lg:pl-[10%]">
+            <div className="text-md mx-[10%] mt-[8%] flex flex-col gap-8 font-jost leading-relaxed text-white sm:text-xl lg:mx-0 lg:pl-[10%]">
               <p>
                 Project Hummingbird is a research team aimed at improving
                 existing systems or creating new processes and mechanisms to
@@ -82,7 +82,7 @@ const HummingbirdHomepage = () => {
           </div>
         </div>
       ) : (
-        <div className="mx-[5%] mt-[8%] grid grid-cols-10">
+        <div className="mx-[5%] mt-[12%] grid grid-cols-10">
           <div className="col-span-5 self-center lg:col-span-6">
             <Image
               src={HummingBird1}
