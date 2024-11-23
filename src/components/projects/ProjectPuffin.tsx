@@ -50,15 +50,15 @@ const ProjectPuffin = () => {
         <p className="mx-[4%] font-jost leading-relaxed">
           Successfully finishing the Puffin project will equip members with
           drone theory knowledge and teamwork experience. Freshmen and
-          Sophomores at UCR can join the Aviat'R team only after completing one
-          quarter of the Puffin project and building a functional quadcopter.
-          Alternatively, students who believe their skills exceed the program’s
-          requirements may join through sub-team intro projects and in-person
-          evaluations.
+          Sophomores at UCR can join the Aviat&apos;R team only after completing
+          one quarter of the Puffin project and building a functional
+          quadcopter. Alternatively, students who believe their skills exceed
+          the program&apos;s requirements may join through sub-team intro
+          projects and in-person evaluations.
         </p>
       </div>
       <div className="hidden sm:block">
-        <p className="text-md mx-[2%] mb-[5%] text-justify font-jost md:text-xl md:leading-relaxed">
+        <p className="text-md mx-[2%] mb-[5%] font-jost sm:text-justify md:text-xl md:leading-relaxed">
           A common challenge in many engineering organizations is the lack of
           effective mentorship. Novice members often find themselves assigned to
           complex projects requiring advanced knowledge, which can be
@@ -74,8 +74,8 @@ const ProjectPuffin = () => {
           experience. Freshmen and Sophomores at UCR can join the Aviat'R team
           only after completing one quarter of the Puffin project and building a
           functional quadcopter. Alternatively, students who believe their
-          skills exceed the program’s requirements may join through sub-team
-          intro projects and in-person evaluations.
+          skills exceed the program&apos;s requirements may join through
+          sub-team intro projects and in-person evaluations.
         </p>
         <div className="sm:grid sm:grid-cols-3 sm:gap-4">
           <Image
