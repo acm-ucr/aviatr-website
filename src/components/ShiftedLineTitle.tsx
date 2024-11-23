@@ -5,7 +5,7 @@ interface TitleProps {
   title: string;
   width: string;
   lineMarginShift: string;
-  textSize: string;
+  textSize?: string;
 }
 
 const Title: React.FC<TitleProps> = ({
