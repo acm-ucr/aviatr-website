@@ -35,7 +35,7 @@ const transition = {
 
 const NotFound = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-black p-8 md:flex-row">
+    <div className="mt-[4%] flex flex-col items-center justify-center bg-black p-8 md:flex-row">
       <div className="z-10 mb-8 md:mb-0 md:mr-32">
         <motion.div
           className="sm:mb-[3%]"
