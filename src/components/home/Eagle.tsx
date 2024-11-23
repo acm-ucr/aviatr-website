@@ -5,7 +5,7 @@ import LearnMoreButton from "./LearnMoreButton";
 
 const Eagle = () => {
   return (
-    <div className="mt-[8%] flex w-full flex-col items-center justify-between pt-8 text-white lg:flex-row lg:pl-[8%]">
+    <div className="mt-[14%] flex w-full flex-col items-center justify-between text-white lg:mt-[8%] lg:flex-row lg:pl-[8%]">
       {/* left side */}
       <div className="mb-7 w-[90%] lg:mb-0 lg:w-2/6">
         <div className="mb-[7%] lg:mb-[12%]">
