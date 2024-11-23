@@ -6,7 +6,7 @@ import Logo from "@/../public/Logo.webp";
 
 const Footer = () => {
   return (
-    <div className="mt-[12%] md:mt-[10%] lg:mt-[4%]">
+    <div className="mt-[12%] md:mt-[10%]">
       <hr className="mx-[3%] mb-[5%] mt-2 border-t-2 xl:mb-[3%]"></hr>
       <div className="sm:grid sm:grid-cols-2">
         <div className="mx-[6%] flex justify-between whitespace-nowrap font-jost text-white sm:mx-0 sm:ml-[12%] sm:grid sm:grid-cols-3 lg:font-normal">
