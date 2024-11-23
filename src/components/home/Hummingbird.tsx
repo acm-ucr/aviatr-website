@@ -6,7 +6,7 @@ import HummingBird2 from "@/../public/home/hummingbird-image-2.webp";
 import HummingBird1 from "@/../public/home/hummingbird-image-1.webp";
 import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 import LearnMoreButton from "./LearnMoreButton";
-// fix build commit
+
 const HummingbirdHomepage = () => {
   const [isMobile, setIsMobile] = useState<true | false | null>(null);
 
