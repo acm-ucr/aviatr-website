@@ -1,18 +1,44 @@
+"use client";
 import Image from "next/image";
 import EagleImg from "@/../public/home/Eagle.webp";
 import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 import LearnMoreButton from "./LearnMoreButton";
+import { motion } from "motion/react";
+
+const animationRight = {
+  hidden: { opacity: 0, x: -50 },
+  show: {
+    opacity: 1,
+    x: 0,
+  },
+};
+const animationLeft = {
+  hidden: { opacity: 0, x: 50 },
+  show: {
+    opacity: 1,
+    x: 0,
+  },
+};
+const transition = {
+  duration: 0.7,
+};
 
 const Eagle = () => {
   return (
-    <div className="mt-[8%] flex w-full flex-col items-start justify-between pl-[8%] pt-8 text-white md:flex-row md:items-center">
+    <div className="mt-[18%] flex w-full flex-col items-center justify-between text-white md:mt-[12%] lg:flex-row lg:pl-[8%]">
       {/* left side */}
-      <div className="md:w-2/6">
-        <div className="mb-[7%] md:mb-[12%]">
+      <motion.div
+        className="mb-7 w-[90%] lg:mb-0 lg:w-2/6"
+        variants={animationRight}
+        transition={{ ...transition, delay: 0.2 }}
+        initial="hidden"
+        whileInView="show"
+      >
+        <div className="mb-[7%] lg:mb-[12%]">
           <ShiftedLineTitle
             title="Eagle"
-            width="md:w-[200%]"
-            textSize="sm:text-5xl"
+            width="w-[200%]"
+            textSize="lg:text-5xl"
             lineMarginShift="ml-[50%]"
           />
         </div>
@@ -27,10 +53,16 @@ const Eagle = () => {
           </p>
           <LearnMoreButton color="bg-aviatr-blue-300" link="/projects" />
         </div>
-      </div>
+      </motion.div>
 
       {/* right side */}
-      <div className="clip-slope relative flex h-[800px] overflow-hidden">
+      <motion.div
+        className="clip-slope relative flex overflow-hidden lg:h-[800px]"
+        variants={animationLeft}
+        transition={{ ...transition, delay: 0.2 }}
+        initial="hidden"
+        whileInView="show"
+      >
         <Image
           src={EagleImg}
           alt="Eagle"
@@ -38,7 +70,7 @@ const Eagle = () => {
           height={800}
           className="object-cover"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

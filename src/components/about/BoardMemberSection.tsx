@@ -6,7 +6,8 @@ import Image from "next/image";
 import BMSLeftBorder from "@/../public/about/BMSLeftBorder.webp";
 import BMSRightBorder from "@/../public/about/BMSRightBorder.webp";
 import CenteredLineTitle from "@/components/CenteredLineTitle";
-import MemberDetail from "@/components/MemberDetail";
+import MemberDetail from "@/components/about/MemberDetail";
+import { motion } from "motion/react";
 
 import { AnimatePresence } from "motion/react";
 
@@ -39,33 +40,67 @@ const BoardMemberSection = () => {
     }
   }, [popup]);
 
+  const animateScaleUp = {
+    hidden: { opacity: 0, scale: 0, y: 100 },
+    show: {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      rotateY: 0,
+      transition: { duration: 0.4 },
+    },
+  };
+
+  const slideIn = {
+    hidden: { opacity: 0, scale: 1, y: 200 },
+    show: {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      rotateY: 0,
+      transition: { duration: 0.8 },
+    },
+  };
+
+  const transition = {
+    duration: 0.7,
+  };
+
   return (
-    <div className="text-accent relative mx-auto mb-10 max-w-[80%] p-48 py-10 text-center">
+    <div className="text-accent relative mx-auto mb-10 w-5/6 px-4 py-10 text-center sm:px-10 md:px-24 lg:px-8 xl:px-20 2xl:px-48">
       {/* Decorative Borders */}
-      <div className="h-50 w-50 absolute bottom-0 left-0">
+      <div className="absolute bottom-0 left-0 h-28 w-28 sm:h-48 sm:w-48">
         <Image src={BMSRightBorder} alt="Border" />
       </div>
-      <div className="h-50 w-50 absolute bottom-0 right-0">
+      <div className="absolute bottom-0 right-0 h-28 w-28 sm:h-48 sm:w-48">
         <Image src={BMSLeftBorder} alt="Border" />
       </div>
-      <div className="h-50 w-50 absolute right-0 top-0 rotate-180 transform">
+      <div className="absolute right-0 top-0 h-28 w-28 rotate-180 transform sm:h-48 sm:w-48">
         <Image src={BMSRightBorder} alt="Border" />
       </div>
-      <div className="h-50 w-50 absolute left-0 top-0 rotate-180 transform">
+      <div className="absolute left-0 top-0 h-28 w-28 rotate-180 transform sm:h-48 sm:w-48">
         <Image src={BMSLeftBorder} alt="Border" />
       </div>
 
       {/* Title Section */}
-      <div className="mb-10 flex justify-center">
-        <CenteredLineTitle
-          text="The Board"
-          color="text-white"
-          lineWidth="w-[110%]"
-        />
-      </div>
+      <motion.div
+        className="flex justify-center"
+        variants={animateScaleUp}
+        transition={{ ...transition, delay: 0.2 }}
+        initial="hidden"
+        whileInView="show"
+      >
+        <div className="mt-4 flex justify-center sm:mt-12">
+          <CenteredLineTitle
+            text="The Board"
+            textColor="text-white"
+            lineColor="bg-white"
+            lineWidth="w-[110%]"
+          />
+        </div>
+      </motion.div>
 
-      {/* Board Members Grid */}
-      <div className="grid grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div className="flex w-full flex-wrap justify-center pb-6">
         {boardMemberList.map((member, index) => (
           <div
             onClick={() =>
@@ -80,13 +115,21 @@ const BoardMemberSection = () => {
               })
             }
             key={index}
-            className="hover:cursor"
           >
-            <BoardMember
-              name={member.name}
-              position={member.position}
-              image={member.image}
-            />
+            <motion.div
+              className="flex justify-center"
+              variants={slideIn}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+              whileHover={{ scale: 1.04 }}
+              initial="hidden"
+              whileInView="show"
+            >
+              <BoardMember
+                name={member.name}
+                position={member.position}
+                image={member.image}
+              />
+            </motion.div>
           </div>
         ))}
       </div>
@@ -99,6 +142,7 @@ const BoardMemberSection = () => {
             major={selectedMember.major}
             year={selectedMember.year}
             description={selectedMember.description}
+            image={selectedMember.image}
             setPopup={setPopup}
           />
         )}

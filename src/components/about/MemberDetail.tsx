@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import BMSLeftBorder from "@/../public/about/BMSLeftBorder.webp";
-import DefaultBoardMemberImage from "@/../public/about/defaultBoardMemberImage.webp";
 
 import { motion } from "motion/react";
 
@@ -11,6 +10,7 @@ interface MemberDetailProps {
   major: string;
   year: string;
   description: string;
+  image: string;
   setPopup: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
@@ -19,28 +19,35 @@ const MemberDetail: React.FC<MemberDetailProps> = ({
   major,
   year,
   description,
+  image,
   setPopup,
 }) => {
   // animation for popup
   const animateScaleUp = {
-    hidden: { opacity: 0, scale: 0.4, y: 50 },
-    show: { opacity: 1, scale: 1, y: 0 },
+    hidden: { opacity: 0, scale: 0, y: 100, rotateY: 150 },
+    show: {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      rotateY: 0,
+      transition: { duration: 0.4 },
+    },
   };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-500 bg-opacity-70">
       <motion.div
-        className="text-accent relative flex h-[50%] min-h-[400px] w-[70%] rounded-3xl bg-black py-[8%] md:py-[10%] lg:w-[90%] xl:h-[60%] xl:w-[50%] xl:py-[5%]"
+        className="text-accent transform-style-preserve-3d relative flex h-[50%] min-h-[400px] w-[70%] rounded-3xl bg-black py-[8%] md:py-[10%] lg:w-[90%] xl:h-[60%] xl:w-[50%] xl:py-[5%]"
         variants={animateScaleUp}
-        transition={{ duration: 0.2 }}
+        transition={{ duration: 0.5 }}
         initial="hidden"
         whileInView="show"
-        exit={{ scale: [1, 0.93, 0.98], opacity: 0.75 }}
+        exit={{ scale: 0, y: 600, opacity: 0, transition: { duration: 0.4 } }}
       >
         {/* Close button */}
         <motion.div
           onClick={() => setPopup(false)}
-          className="hover:cursor absolute right-[10%] top-[8%] cursor-pointer font-bungee-hairline text-xl text-white text-stroke-white stroke-weight-[2px] md:right-[10%] md:text-2xl md:stroke-weight-[3px] lg:top-[12%]"
+          className="hover:cursor absolute right-[10%] cursor-pointer font-bungee-hairline text-xl text-white text-stroke-white stroke-weight-[2px] md:right-[10%] md:text-2xl md:stroke-weight-[3px] lg:top-[5%]"
           whileHover={{ scale: 1.08 }}
         >
           CLOSE
@@ -62,13 +69,15 @@ const MemberDetail: React.FC<MemberDetailProps> = ({
               {/* Image section */}
 
               <Image
-                src={DefaultBoardMemberImage}
+                src={image}
                 alt="Member Image"
                 className="h-auto w-[40%] rounded-2xl md:w-[30%]"
+                height={20}
+                width={20}
               />
 
               {/* Details section */}
-              <div className="text-md flex w-[67%] flex-col text-nowrap text-left font-jost text-white md:ml-4 md:text-xl">
+              <div className="text-md flex w-[67%] flex-col text-wrap text-left font-jost text-white md:ml-4 md:text-xl">
                 <p className="mb-1 md:mb-4">
                   <strong className="text-aviatr-blue-500">Hobbies:</strong>{" "}
                   {hobby}
@@ -83,13 +92,13 @@ const MemberDetail: React.FC<MemberDetailProps> = ({
                 <div className="mt-1 flex flex-row items-center md:mt-4">
                   <div className="mb-1 h-2 w-2 rotate-45 transform bg-white sm:mb-3 md:h-3 md:w-3 lg:mb-4"></div>
                   <div className="mb-1 flex-grow border-t-2 border-white sm:mb-3 lg:mb-4"></div>
-                  <div className="mb-1 h-2 w-2 rotate-45 transform bg-white sm:mb-3 md:h-3 md:w-3 lg:mb-4"></div>
+                  <div className="mb-1 mr-5 h-2 w-2 rotate-45 transform bg-white sm:mb-3 md:h-3 md:w-3 lg:mb-4"></div>
                 </div>
               </div>
             </div>
 
             {/* Lower section: Description */}
-            <div className="text-md mt-2 text-left font-jost text-white md:mt-10 md:text-xl">
+            <div className="text-md mt-2 px-3 text-center font-jost text-white md:mt-10 md:text-xl">
               <p>{description}</p>
             </div>
           </div>

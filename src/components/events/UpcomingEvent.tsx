@@ -25,7 +25,8 @@ const UpcomingEvent: React.FC<UpcomingEventProps> = ({
       <div className="mt-20 flex justify-center">
         <TitleComponent
           text="Upcoming Event"
-          color="text-white"
+          textColor="text-white"
+          lineColor="bg-white"
           lineWidth="w-1/2"
         />
       </div>
