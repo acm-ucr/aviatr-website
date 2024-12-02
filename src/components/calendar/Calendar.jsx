@@ -45,18 +45,21 @@ const CalendarEvent = () => {
         const offset = new Date().getTimezoneOffset() * 60000;
         const data = await response.json();
         console.log(data);
+
         const items = data.items.map((item) => {
           item.allDay = !item.start.dateTime;
-          (item.start = item.start.dateTime
+
+          item.start = item.start.dateTime
             ? new Date(item.start.dateTime)
-            : new Date(new Date(item.start.date).getTime() + offset)),
-            (item.end = new Date(
-              item.end.dateTime || new Date(item.end.date).getTime() + offset,
-            )),
-            (item.hidden = false);
+            : new Date(new Date(item.start.date).getTime() + offset);
+          item.end = new Date(
+            item.end.dateTime || new Date(item.end.date).getTime() + offset,
+          );
+          item.hidden = false;
 
           return item;
         });
+
         setEvents(items);
       } catch (error) {
         console.error("Error fetching data: ", error);
