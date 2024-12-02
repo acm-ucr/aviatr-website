@@ -1,0 +1,48 @@
+body {
+  font-family: "Jost", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* Calendar Customization */
+.rbc-calendar {
+  background-color: #000000;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.rbc-header {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.rbc-day-bg {
+  background-color: #333;
+}
+
+.rbc-day-cell {
+  cursor: pointer;
+}
+
+.rbc-day-cell:hover {
+  background-color: #444;
+}
+
+.rbc-event {
+  background-color: #5e5e5e;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.rbc-event:hover {
+  background-color: #444;
+}
+
+.rbc-btn-group {
+  background-color: #2c2c2c;
+}
+
+.rbc-toolbar {
+  background-color: #2c2c2c;
+  color: white;
+}

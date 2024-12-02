@@ -1,4 +1,5 @@
-// Define the props type
+// UpcomingEvent.tsx
+import React from "react";
 import TitleComponent from "@/components/CenteredLineTitle";
 
 interface UpcomingEventProps {

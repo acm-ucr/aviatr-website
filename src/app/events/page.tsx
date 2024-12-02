@@ -1,5 +1,6 @@
 import UpcomingEvent from "@/components/events/UpcomingEvent";
 import RecurringLogo from "@/components/RecurringLogo";
+import Calendar from "@/components/calendar/Calendar";
 
 const Events = () => {
   return (
@@ -7,6 +8,7 @@ const Events = () => {
       <div className="p-16">
         <RecurringLogo />
       </div>
+      <Calendar />
       <UpcomingEvent
         day="MON"
         dayTextStroke="text-stroke-aviatr-pink-200"

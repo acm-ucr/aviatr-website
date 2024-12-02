@@ -6,7 +6,7 @@ interface TitleComponentProps {
   lineWidth: string;
 }
 
-const TitleCompoent: React.FC<TitleComponentProps> = ({
+const TitleComponent: React.FC<TitleComponentProps> = ({
   text,
   color,
   lineWidth,
@@ -23,4 +23,4 @@ const TitleCompoent: React.FC<TitleComponentProps> = ({
   );
 };
 
-export default TitleCompoent;
+export default TitleComponent;
