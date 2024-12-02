@@ -9,7 +9,9 @@ import CustomToolbar from "./CustomToolbar.jsx";
 import CustomEvent from "./CustomEvents.jsx";
 import CustomHeader from "./CustomHeader.jsx";
 import Modal from "./Modal.jsx";
-import UpcomingEvent from "../events/UpcomingEvent";
+import { motion } from "framer-motion";
+import Events from "../events/Events.jsx";
+// import UpcomingEvent from "../events/UpcomingEvent";
 
 const localizer = momentLocalizer(moment);
 
@@ -17,6 +19,14 @@ const CalendarEvent = () => {
   const [event, setEvent] = useState(null);
   const [events, setEvents] = useState([]);
   const [date, setDate] = useState(new Date());
+
+  const animation = {
+    hidden: { opacity: 0, y: 30 },
+    show: {
+      opacity: 1,
+      y: 0,
+    },
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,9 +42,6 @@ const CalendarEvent = () => {
           ).toISOString()}`,
         );
 
-        if (!response.ok) {
-          throw new Error("Failed to fetch calendar events.");
-        }
         const offset = new Date().getTimezoneOffset() * 60000;
         const data = await response.json();
         console.log(data);
@@ -60,51 +67,61 @@ const CalendarEvent = () => {
   }, []);
 
   return (
-    <section className="mx-auto flex w-3/4 flex-col items-center justify-center font-jost">
-      <div
-        style={{ width: "80vw", height: "80vh" }}
-        className="relative z-0 rounded-xl font-jost shadow-[10px_10px_10px_0px] shadow-aviatr-blue-500"
+    <section className="relative mx-auto w-3/4 flex-col items-center justify-center font-jost">
+      <motion.div
+        className="flex w-10/12 items-center justify-center"
+        variants={animation}
+        transition={{ delay: 0.3 }}
+        initial="hidden"
+        whileInView="show"
       >
-        <Calendar
-          date={date}
-          className="m-0 w-full p-0 text-sm md:text-2xl"
-          allDayAccessor="allDay"
-          showAllEvents={true}
-          events={events}
-          localizer={localizer}
-          defaultView="month"
-          views={["month"]}
-          components={{
-            event: CustomEvent,
-            toolbar: CustomToolbar,
-            header: CustomHeader,
-          }}
-          onNavigate={(newDate) => {
-            return setDate(newDate);
-          }}
-          eventPropGetter={() => {
-            return {
-              className: `p-0 active:ring-0 focus:outline-0`,
-            };
-          }}
-          onSelectEvent={(event) => setEvent(event)}
-          dayPropGetter={(event) => {
-            return {
-              className: `${
-                new Date(event).toLocaleDateString() ===
-                new Date().toLocaleDateString()
-                  ? "!bg-opacity-10 !bg-white"
-                  : "!bg-transparent"
-              }`,
-              style: {
-                margin: 0,
-                padding: 0,
-              },
-            };
-          }}
-        />
-      </div>
-      {event && <Modal event={event} setEvent={setEvent} />}
+        <div
+          style={{ width: "70vw", height: "90vh" }}
+          className="relative z-0 font-jost"
+        >
+          {/* <div className="absolute right-[20%] w-full h-full bg-black border-4 border-white rounded-lg"/> */}
+          <Calendar
+            date={date}
+            className="m-0 w-full rounded-xl p-0 text-sm md:text-2xl"
+            allDayAccessor="allDay"
+            showAllEvents={true}
+            events={events}
+            localizer={localizer}
+            defaultView="month"
+            views={["month"]}
+            components={{
+              event: CustomEvent,
+              toolbar: CustomToolbar,
+              header: CustomHeader,
+            }}
+            onNavigate={(newDate) => {
+              return setDate(newDate);
+            }}
+            eventPropGetter={() => {
+              return {
+                className: `p-0 active:ring-0 focus:outline-0`,
+              };
+            }}
+            onSelectEvent={(event) => setEvent(event)}
+            dayPropGetter={(date) => {
+              const TodaysDate =
+                new Date(date).toLocaleDateString() ===
+                new Date().toLocaleDateString();
+
+              return {
+                className: "",
+                style: {
+                  margin: 0,
+                  padding: 0,
+                  backgroundColor: TodaysDate ? "#93c5fd" : "#ffffff",
+                },
+              };
+            }}
+          />
+        </div>
+        {event && <Modal event={event} setEvent={setEvent} />}
+      </motion.div>
+      <Events events={events} />
     </section>
   );
 };

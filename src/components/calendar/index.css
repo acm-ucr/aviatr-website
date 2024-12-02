@@ -1,48 +1,37 @@
-body {
-  font-family: "Jost", sans-serif;
-  background-color: black;
-  color: white;
-}
-
-/* Calendar Customization */
 .rbc-calendar {
   background-color: #000000;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .rbc-header {
-  background-color: #2c2c2c;
-  color: white;
+  background-color: #ffffff;
+  border-color: black;
+  padding: 10px;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #000000;
+  border-bottom: 5px solid #000000;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.rbc-header:last-child {
+  border-right: 2px solid transparent;
 }
 
 .rbc-day-bg {
-  background-color: #333;
+  border-right: 2px solid #000000;
+  border-left: 2px solid #ffffff;
+  border-top: transparent;
+  border-bottom: 2px solid #000000;
 }
 
-.rbc-day-cell {
-  cursor: pointer;
-}
-
-.rbc-day-cell:hover {
-  background-color: #444;
+.rbc-day-bg:last-child {
+  border-right: 2px solid transparent;
 }
 
 .rbc-event {
-  background-color: #5e5e5e;
+  background-color: #ffffff;
+  color: #000000;
   border-radius: 5px;
-  padding: 4px;
-}
-
-.rbc-event:hover {
-  background-color: #444;
-}
-
-.rbc-btn-group {
-  background-color: #2c2c2c;
-}
-
-.rbc-toolbar {
-  background-color: #2c2c2c;
-  color: white;
+  padding: 4px 8px;
+  text-align: left;
 }

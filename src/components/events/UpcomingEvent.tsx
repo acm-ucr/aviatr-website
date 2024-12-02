@@ -1,4 +1,3 @@
-// UpcomingEvent.tsx
 import React from "react";
 import TitleComponent from "@/components/CenteredLineTitle";
 
@@ -23,7 +22,7 @@ const UpcomingEvent: React.FC<UpcomingEventProps> = ({
 }) => {
   return (
     <>
-      <div className="flex justify-center">
+      <div className="mt-20 flex justify-center">
         <TitleComponent
           text="Upcoming Event"
           color="text-white"
