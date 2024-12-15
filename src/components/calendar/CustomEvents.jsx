@@ -1,40 +1,45 @@
-import { FaComputer } from "react-icons/fa6";
+import { motion } from "motion/react";
 
 const CustomEvent = ({ event }) => {
-  const Icon = FaComputer;
-  const startTime = event.start
-    ? new Date(event.start).toLocaleTimeString(navigator.language, {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: false,
-      })
-    : "N/A";
-
-  const endTime = event.end
-    ? new Date(event.end).toLocaleTimeString(navigator.language, {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: true,
-      })
-    : "N/A";
-
   return (
-    <div className="flex justify-start rounded-lg bg-white font-jost text-xs">
-      <div className="relative hidden items-center pl-1 md:block">
-        <Icon className="absolute top-0.5 mr-1 text-inherit" />
-      </div>
-      <div className="flex flex-col pl-1 md:pl-4">
-        <div className="inline-flex items-start text-wrap">{event.summary}</div>
-        <div className="mt-1 hidden md:block">
-          {!event.allDay && (
-            <p>
-              {startTime}-{endTime} - {event.location}
-            </p>
-          )}
-          {event.allDay && <p>{event.location}</p>}
+    <>
+      <motion.div
+        whileHover={{
+          scale: 1.03,
+          transition: { duration: 0.1, delay: 0 },
+        }}
+      >
+        <style>
+          {`
+            .responsive-font {
+              font-size: 7px;
+            }
+
+            @media (min-width: 640px) {
+              .responsive-font {
+                font-size: 7px;
+              }
+            }
+
+            @media (min-width: 768px) {
+              .responsive-font {
+                font-size: 12px;
+              }
+            }
+          `}
+        </style>
+
+        <div
+          className="responsive-font mx-auto w-5/6 overflow-hidden text-ellipsis px-2 font-jost"
+          style={{
+            border: "1px solid black",
+            borderRadius: "5px",
+          }}
+        >
+          {event.summary}
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </>
   );
 };
 
