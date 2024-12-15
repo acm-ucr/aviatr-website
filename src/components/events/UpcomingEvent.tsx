@@ -1,5 +1,4 @@
 import React from "react";
-import TitleComponent from "@/components/CenteredLineTitle";
 
 interface UpcomingEventProps {
   day: string;

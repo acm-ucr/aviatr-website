@@ -1,4 +1,3 @@
-import UpcomingEvent from "@/components/events/UpcomingEvent";
 import RecurringLogo from "@/components/RecurringLogo";
 import Calendar from "@/components/calendar/Calendar";
 

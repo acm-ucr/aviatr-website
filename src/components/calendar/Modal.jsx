@@ -1,8 +1,5 @@
 import { AiOutlinePlus } from "react-icons/ai";
 import reactHtmlParser from "html-react-parser";
-import Image from "next/image";
-import BMSLeftBorder from "@/../public/about/BMSLeftBorder.webp";
-import BMSRightBorder from "@/../public/about/BMSRightBorder.webp";
 
 import { motion } from "motion/react";
 
