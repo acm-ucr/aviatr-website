@@ -29,7 +29,7 @@ const Eagle = () => {
       {/* left side */}
       <motion.div
         className="mb-7 w-[90%] lg:mb-0 lg:w-2/6"
-        variants={animationRight}
+        variants={animationLeft}
         transition={{ ...transition, delay: 0.2 }}
         initial="hidden"
         whileInView="show"
@@ -58,7 +58,7 @@ const Eagle = () => {
       {/* right side */}
       <motion.div
         className="clip-slope relative flex overflow-hidden lg:h-[800px]"
-        variants={animationLeft}
+        variants={animationRight}
         transition={{ ...transition, delay: 0.2 }}
         initial="hidden"
         whileInView="show"
