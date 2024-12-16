@@ -47,7 +47,7 @@ const MemberDetail: React.FC<MemberDetailProps> = ({
         {/* Close button */}
         <motion.div
           onClick={() => setPopup(false)}
-          className="hover:cursor absolute right-[10%] cursor-pointer font-bungee-hairline text-xl text-white text-stroke-white stroke-weight-[2px] md:right-[10%] md:text-2xl md:stroke-weight-[3px] lg:top-[5%]"
+          className="hover:cursor absolute right-[10%] cursor-pointer font-bungee-hairline text-xl text-white text-stroke-white stroke-weight-[2px] md:text-2xl md:stroke-weight-[3px] top-[5%]"
           whileHover={{ scale: 1.08 }}
         >
           CLOSE
@@ -62,10 +62,10 @@ const MemberDetail: React.FC<MemberDetailProps> = ({
         </div>
 
         {/* Main content */}
-        <div className="mx-auto flex max-h-[100%] min-h-[80%] w-[75%] flex-col gap-2 md:gap-5 lg:gap-10">
+        <div className="mx-auto flex max-h-[100%] min-h-[80%] w-[75%] flex-col gap-2 md:gap-5 lg:gap-10 mt-5 sm:mt-0">
           <div className="overflow-y-auto overflow-x-hidden">
             {/* Upper section: Image and Labels */}
-            <div className="flex flex-col justify-center gap-4 md:flex-row md:items-center">
+            <div className="flex flex-col justify-center gap-4 md:flex-row items-center">
               {/* Image section */}
 
               <Image
@@ -92,7 +92,7 @@ const MemberDetail: React.FC<MemberDetailProps> = ({
                 <div className="mt-1 flex flex-row items-center md:mt-4">
                   <div className="mb-1 h-2 w-2 rotate-45 transform bg-white sm:mb-3 md:h-3 md:w-3 lg:mb-4"></div>
                   <div className="mb-1 flex-grow border-t-2 border-white sm:mb-3 lg:mb-4"></div>
-                  <div className="mb-1 mr-5 h-2 w-2 rotate-45 transform bg-white sm:mb-3 md:h-3 md:w-3 lg:mb-4"></div>
+                  <div className="mb-1 sm:mr-5 h-2 w-2 rotate-45 transform bg-white sm:mb-3 md:h-3 md:w-3 lg:mb-4"></div>
                 </div>
               </div>
             </div>
