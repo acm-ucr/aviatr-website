@@ -204,7 +204,7 @@ const HummingbirdHomepage = () => {
               </p>
               <LearnMoreButton
                 color="bg-aviatr-purple-100"
-                link="/projects#hummingbird"
+                link="/projects#hummingBird"
               />
             </motion.div>
           </div>
