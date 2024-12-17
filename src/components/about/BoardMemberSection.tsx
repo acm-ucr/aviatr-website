@@ -101,7 +101,7 @@ const BoardMemberSection = () => {
         </div>
       </motion.div>
 
-      <div className="flex grid w-full grid-cols-2 justify-center pb-6 lg:grid-cols-3">
+      <div className="flex w-full justify-center pb-6 lg:col-span-3 place-items-center flex-wrap">
         {boardMemberList.map((member, index) => (
           <div
             onClick={() =>
