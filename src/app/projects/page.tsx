@@ -6,7 +6,6 @@ import ProjectPuffin from "@/components/projects/ProjectPuffin";
 import DividingLine from "@/components/projects/DividingLine";
 
 const Projects = () => {
-
   return (
     <div className="justify-center">
       <ProjectPuffin />
