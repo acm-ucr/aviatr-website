@@ -29,7 +29,7 @@ const Modal = ({ event, setEvent }) => {
     >
       <motion.div
         key="modal"
-        className="font-russo z-50 mx-auto my-4 h-full rounded-lg border-4 text-white"
+        className="font-russo z-50 mx-auto my-4 h-full rounded-lg border-4 text-white overflow-y-auto overflow-x-hidden"
         style={{ background: "linear-gradient(to right, black, #72A8D1)" }}
         variants={animateScaleUp}
         transition={{ duration: 0.5 }}
