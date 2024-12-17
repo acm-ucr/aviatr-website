@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import EagleImg1 from "@/../public/projects/Eagle1.webp";
 import EagleImg2 from "@/../public/projects/Eagle2.webp";

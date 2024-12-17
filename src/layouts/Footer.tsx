@@ -1,5 +1,5 @@
 "use client";
-import { Instagram, Youtube, Mail } from "lucide-react";
+import { Youtube, Mail } from "lucide-react";
 import { SiDiscord } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 import Image from "next/image";
