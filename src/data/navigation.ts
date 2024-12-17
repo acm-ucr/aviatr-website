@@ -13,6 +13,6 @@ export const items = [
   },
   {
     name: "JOIN",
-    link: "/join",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSerYpQ5bufrCaoheBi_cFsyUo4caJT1ViOLeQ_LqnHROiJCrQ/viewform",
   },
 ];

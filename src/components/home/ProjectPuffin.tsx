@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import Image from "next/image";
 import PuffinImg from "@/../public/home/ProjectPuffin.webp";
 import LearnMoreButton from "./LearnMoreButton";
@@ -45,7 +44,10 @@ const ProjectPuffin = () => {
             of the 2 unit class, students will be able to assemble their own
             drones and understand the parts and basic theory behind them.
           </p>
-          <LearnMoreButton color="bg-aviatr-pink-100" link="/projects" />
+          <LearnMoreButton
+            color="bg-aviatr-pink-100"
+            link="/projects#projectpuffin"
+          />
         </motion.div>
       </div>
 

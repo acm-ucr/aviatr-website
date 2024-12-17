@@ -51,7 +51,7 @@ const Eagle = () => {
             from competition and poses as one of the largest motivations for
             improvement in the student world.
           </p>
-          <LearnMoreButton color="bg-aviatr-blue-300" link="/projects" />
+          <LearnMoreButton color="bg-aviatr-blue-300" link="/projects#eagle" />
         </div>
       </motion.div>
 

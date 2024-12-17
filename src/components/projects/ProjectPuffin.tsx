@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import Image from "next/image";
 import ProjectPuffin1 from "@/../public/projects/project-puffin-1.webp";
 import ProjectPuffin2 from "@/../public/projects/project-puffin-2.webp";
@@ -57,7 +58,10 @@ const animateRightMobileSection = {
 
 const ProjectPuffin = () => {
   return (
-    <div className="mx-[8%] my-[5%] overflow-hidden font-jost text-white">
+    <div
+      className="mx-[8%] my-[5%] overflow-hidden font-jost text-white"
+      id="projectpuffin"
+    >
       <motion.div
         className="mb-[8%] md:mb-[3%]"
         variants={animateTitle}

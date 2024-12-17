@@ -87,18 +87,13 @@ const MissionStatement = () => {
         </div>
       </div>
 
-      <div className="mt-[4%] flex items-center justify-end overflow-hidden">
-        <Link href="/about">
-          <motion.p
-            className="text-nowrap font-metrophobic text-sm leading-tight text-white hover:underline sm:mr-2 sm:text-2xl sm:leading-normal"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            LEARN MORE
-          </motion.p>
-        </Link>
-
-        <div>
+      <Link href="/about" className="mt-[4%] flex justify-end overflow-hidden">
+        <motion.div
+          className="flex flex-row items-center gap-3 text-nowrap font-metrophobic text-sm leading-tight text-white hover:underline sm:mr-2 sm:text-2xl sm:leading-normal"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          LEARN MORE
           <Image
             src={ArrowImg}
             alt="Arrow"
@@ -106,8 +101,8 @@ const MissionStatement = () => {
             height={20}
             className="ml-2 h-auto w-[60%] sm:h-7 sm:w-auto"
           />
-        </div>
-      </div>
+        </motion.div>
+      </Link>
     </div>
   );
 };

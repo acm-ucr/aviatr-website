@@ -7,9 +7,33 @@ import BMSLeftBorder from "@/../public/about/BMSLeftBorder.webp";
 import BMSRightBorder from "@/../public/about/BMSRightBorder.webp";
 import CenteredLineTitle from "@/components/CenteredLineTitle";
 import MemberDetail from "@/components/about/MemberDetail";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 
-import { AnimatePresence } from "motion/react";
+const animateScaleUp = {
+  hidden: { opacity: 0, scale: 0, y: 100 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    rotateY: 0,
+    transition: { duration: 0.4 },
+  },
+};
+
+const slideIn = {
+  hidden: { opacity: 0, scale: 1, y: 200 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    rotateY: 0,
+    transition: { duration: 0.8 },
+  },
+};
+
+const transition = {
+  duration: 0.7,
+};
 
 const BoardMemberSection = () => {
   // State to manage which member is selected
@@ -40,34 +64,11 @@ const BoardMemberSection = () => {
     }
   }, [popup]);
 
-  const animateScaleUp = {
-    hidden: { opacity: 0, scale: 0, y: 100 },
-    show: {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      rotateY: 0,
-      transition: { duration: 0.4 },
-    },
-  };
-
-  const slideIn = {
-    hidden: { opacity: 0, scale: 1, y: 200 },
-    show: {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      rotateY: 0,
-      transition: { duration: 0.8 },
-    },
-  };
-
-  const transition = {
-    duration: 0.7,
-  };
-
   return (
-    <div className="text-accent relative mx-auto mb-10 w-5/6 px-4 py-10 text-center sm:px-10 md:px-24 lg:px-8 xl:px-20 2xl:px-48">
+    <div
+      className="text-accent relative mx-auto mb-10 w-5/6 px-4 py-10 text-center sm:px-10 md:px-24 lg:px-8 xl:px-20 2xl:px-48"
+      id="board"
+    >
       {/* Decorative Borders */}
       <div className="absolute bottom-0 left-0 h-28 w-28 sm:h-48 sm:w-48">
         <Image src={BMSRightBorder} alt="Border" />
@@ -100,7 +101,7 @@ const BoardMemberSection = () => {
         </div>
       </motion.div>
 
-      <div className="flex w-full flex-wrap justify-center pb-6">
+      <div className="flex grid w-full grid-cols-2 justify-center pb-6 lg:grid-cols-3">
         {boardMemberList.map((member, index) => (
           <div
             onClick={() =>
