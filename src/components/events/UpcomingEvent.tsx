@@ -1,11 +1,8 @@
-// Define the props type
-import TitleComponent from "@/components/CenteredLineTitle";
+import React from "react";
 
 interface UpcomingEventProps {
   day: string;
-  dayTextStroke: string;
   date: string;
-  dateTextColor: string;
   time: string;
   title: string;
   description: string;
@@ -13,28 +10,19 @@ interface UpcomingEventProps {
 
 const UpcomingEvent: React.FC<UpcomingEventProps> = ({
   day,
-  dayTextStroke,
   date,
-  dateTextColor,
   time,
   title,
   description,
 }) => {
   return (
     <>
-      <div className="flex justify-center">
-        <TitleComponent
-          text="Upcoming Event"
-          textColor="text-white"
-          lineColor="bg-white"
-          lineWidth="w-1/2"
-        />
-      </div>
+      <div className="mt-20 flex justify-center"></div>
       <div className="grid grid-cols-7 font-jost text-white">
         <div className="col-span-2 grid grid-rows-2 font-bungee-hairline">
           <div className="relative">
             <p
-              className={`absolute bottom-0 left-1/2 -translate-x-1/2 transform ${dayTextStroke} text-3xl stroke-weight-[4px] md:text-5xl md:stroke-weight-[5px] lg:text-7xl`}
+              className={`absolute bottom-0 left-1/2 -translate-x-1/2 transform text-3xl text-stroke-aviatr-pink-200 stroke-weight-[4px] md:text-5xl md:stroke-weight-[5px] lg:text-7xl`}
             >
               {day}
             </p>
@@ -44,7 +32,7 @@ const UpcomingEvent: React.FC<UpcomingEventProps> = ({
           </div>
           <div className="justify-items-center">
             <p
-              className={`${dateTextColor} text-lg stroke-weight-[1px] md:text-3xl lg:text-5xl`}
+              className={`text-lg text-stroke-aviatr-pink-200 stroke-weight-[1px] md:text-3xl lg:text-5xl`}
             >
               {date}
             </p>
@@ -52,7 +40,7 @@ const UpcomingEvent: React.FC<UpcomingEventProps> = ({
         </div>
         <div className="col-span-5 mr-[5%] font-jost">
           <div className="flex items-center">
-            <p className="pb-2 font-metrophobic text-xl text-stroke-white stroke-weight-[1px] sm:pb-4 md:text-3xl lg:pb-6 lg:text-4xl">
+            <p className="pb-2 font-metrophobic text-sm text-stroke-white stroke-weight-[1px] sm:pb-4 md:text-3xl lg:pb-6 lg:text-4xl">
               {title}
             </p>
             <div className="mb-1 ml-[3%] flex-grow border-t-2 border-white sm:mb-3 lg:mb-4"></div>

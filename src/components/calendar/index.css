@@ -1,0 +1,37 @@
+.rbc-calendar {
+  background-color: #000000;
+}
+
+.rbc-header {
+  background-color: #ffffff;
+  border-color: black;
+  padding: 10px;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #000000;
+  border-bottom: 5px solid #000000;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.rbc-header:last-child {
+  border-right: 2px solid transparent;
+}
+
+.rbc-day-bg {
+  border-right: 2px solid #000000;
+  border-left: 2px solid #ffffff;
+  border-top: transparent;
+  border-bottom: 2px solid #000000;
+}
+
+.rbc-day-bg:last-child {
+  border-right: 2px solid transparent;
+}
+
+.rbc-event {
+  background-color: transparent;
+  color: #000000;
+  border-radius: 5px;
+  padding: 4px 8px;
+  text-align: left;
+}

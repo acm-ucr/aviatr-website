@@ -29,7 +29,7 @@ const Eagle = () => {
       {/* left side */}
       <motion.div
         className="mb-7 w-[90%] lg:mb-0 lg:w-2/6"
-        variants={animationRight}
+        variants={animationLeft}
         transition={{ ...transition, delay: 0.2 }}
         initial="hidden"
         whileInView="show"
@@ -51,14 +51,14 @@ const Eagle = () => {
             from competition and poses as one of the largest motivations for
             improvement in the student world.
           </p>
-          <LearnMoreButton color="bg-aviatr-blue-300" link="/projects" />
+          <LearnMoreButton color="bg-aviatr-blue-300" link="/projects#eagle" />
         </div>
       </motion.div>
 
       {/* right side */}
       <motion.div
         className="clip-slope relative flex overflow-hidden lg:h-[800px]"
-        variants={animationLeft}
+        variants={animationRight}
         transition={{ ...transition, delay: 0.2 }}
         initial="hidden"
         whileInView="show"
