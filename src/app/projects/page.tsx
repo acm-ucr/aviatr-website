@@ -12,7 +12,7 @@ const Projects = () => {
       const section = document.querySelector(hash); // returns the first element identified by the hash, < id="#..">...</>
       if (section instanceof HTMLElement) {
         window.scrollTo({
-          top: section.offsetTop - 100,
+          top: section.offsetTop - 150,
           behavior: "smooth",
         });
       }
