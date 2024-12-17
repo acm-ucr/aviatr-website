@@ -36,10 +36,7 @@ const transition = {
 
 const HummingBird = () => {
   return (
-    <div
-      className="my-[8%] flex w-full flex-col gap-[8%] px-[8%] text-white md:my-[5%] md:items-center lg:flex-row"
-      id="hummingbird"
-    >
+    <div className="my-[8%] flex w-full flex-col gap-[8%] px-[8%] text-white md:my-[5%] md:items-center lg:flex-row">
       {/* left */}
       <div className="lg:w-2/4">
         <motion.div
