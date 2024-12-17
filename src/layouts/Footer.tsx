@@ -17,7 +17,7 @@ const Footer = () => {
               PROJECTS
             </p>
             <div className="text-xs md:text-sm lg:text-lg">
-              <Link href="/projects#projectpuffin">
+              <Link href="/projects">
                 <motion.p
                   className="hover:underline"
                   whileHover={{ scale: 1.05 }}
@@ -26,7 +26,7 @@ const Footer = () => {
                   PROJECT PUFFIN
                 </motion.p>
               </Link>
-              <Link href="/projects#hummingbird">
+              <Link href="/projects#hummingBird">
                 <motion.p
                   className="hover:underline"
                   whileHover={{ scale: 1.05 }}
@@ -44,8 +44,6 @@ const Footer = () => {
                   EAGLE
                 </motion.p>
               </Link>
-              {/* <p>HUMMINGBIRD</p>
-              <Link href="/projects#eagle">EAGLE</Link> */}
             </div>
           </div>
           <div>
