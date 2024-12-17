@@ -3,12 +3,12 @@ import UpcomingEvents from "../events/UpcomingEvent";
 
 const Events = ({ events }) => {
   return (
-    <div className="itmems-center flex w-full flex-col justify-center">
+    <div className="flex w-full flex-col justify-center">
       {events !== null && events.length > 0 ? (
         events
           .sort((a, b) => a.start - b.start)
           .filter((event) => event.start > new Date())
-          .slice(0, 4)
+          .slice(0, 2)
           .map((event) => {
             let formattedString = "";
             if (event.allDay) {
@@ -39,12 +39,15 @@ const Events = ({ events }) => {
             return (
               <UpcomingEvents
                 key={event.id}
-                day={event.start.getDate()}
-                dayTextStroke={event.start.getDate()}
-                date={formattedString}
-                dateTextColor={formattedString}
+                day={event.start.toLocaleDateString("en-US", {
+                  weekday: "short",
+                })}
+                date={event.start.toLocaleDateString("en-US", {
+                  month: "2-digit",
+                  day: "2-digit",
+                })}
                 time={formattedString}
-                title={event.title}
+                title={event.summary}
                 description={event.description}
               />
             );
