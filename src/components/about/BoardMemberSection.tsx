@@ -65,10 +65,7 @@ const BoardMemberSection = () => {
   }, [popup]);
 
   return (
-    <div
-      className="text-accent relative mx-auto mb-10 w-5/6 px-4 py-10 text-center sm:px-10 md:px-24 lg:px-8 xl:px-20 2xl:px-48"
-      id="board"
-    >
+    <div className="text-accent relative mx-auto mb-10 w-5/6 px-4 py-10 text-center sm:px-10 md:px-24 lg:px-8 xl:px-20 2xl:px-48">
       {/* Decorative Borders */}
       <div className="absolute bottom-0 left-0 h-28 w-28 sm:h-48 sm:w-48">
         <Image src={BMSRightBorder} alt="Border" />

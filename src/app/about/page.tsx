@@ -27,6 +27,8 @@ const Events = () => {
       <div className="flex flex-col items-center gap-24">
         <WhoWeAre />
         <WhatWeDo />
+      </div>
+      <div id="board" className="pt-24">
         <BoardMemberSection />
       </div>
     </div>

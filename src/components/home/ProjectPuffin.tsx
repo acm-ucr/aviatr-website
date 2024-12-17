@@ -44,10 +44,7 @@ const ProjectPuffin = () => {
             of the 2 unit class, students will be able to assemble their own
             drones and understand the parts and basic theory behind them.
           </p>
-          <LearnMoreButton
-            color="bg-aviatr-pink-100"
-            link="/projects#projectpuffin"
-          />
+          <LearnMoreButton color="bg-aviatr-pink-100" link="/projects" />
         </motion.div>
       </div>
 
