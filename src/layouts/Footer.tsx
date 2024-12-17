@@ -55,15 +55,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="sm:grid sm:grid-cols-9">
-          <div className="sm:col-span-4 sm:col-start-6">
-            <Image
-              src={Logo}
-              alt="Club Logo with Purple Ring"
-              className="mb-[5%] pl-[75%] pr-[3%] sm:pl-0 sm:pr-[13.5%] sm:pt-[82.5%] lg:pt-[50%] 2xl:pt-[30%]"
-              width={1817}
-              height={569}
-            />
+        <div className="mr-[5%] flex justify-end md:mr-[8%]">
+          <div className="my-10 mt-[5%] w-2/5 md:mt-[10%] xl:w-3/5 2xl:w-2/5">
+            <div className="flex items-center justify-center rounded-full bg-white px-[1%] py-[4.5%]">
+              <Image src={Logo} alt="RecurringLogo" width={687} height={376} />
+            </div>
           </div>
         </div>
       </div>
