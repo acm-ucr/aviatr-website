@@ -1,4 +1,5 @@
 "use client";
+import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import EagleImg1 from "@/../public/projects/Eagle1.webp";
 import EagleImg2 from "@/../public/projects/Eagle2.webp";
@@ -6,29 +7,28 @@ import EagleImg3 from "@/../public/projects/Eagle3.webp";
 import ShiftedLineTitle from "@/components/ShiftedLineTitle";
 import Link from "next/link";
 import { motion, useInView } from "motion/react";
-import { useRef } from "react";
+
+const imageVariants = {
+  hidden: { opacity: 0, scale: 0.9, y: 50 },
+  visible: { opacity: 1, scale: 1, y: 0 },
+};
+
+const animateFadeRight = {
+  hidden: { opacity: 0, x: -100 },
+  show: { opacity: 1, x: 0 },
+};
+
+const animateFadeUp = {
+  hidden: { opacity: 0, y: 50 },
+  show: { opacity: 1, y: 0 },
+};
 
 const Eagle = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
 
-  const imageVariants = {
-    hidden: { opacity: 0, scale: 0.9, y: 50 },
-    visible: { opacity: 1, scale: 1, y: 0 },
-  };
-
-  const animateFadeRight = {
-    hidden: { opacity: 0, x: -100 },
-    show: { opacity: 1, x: 0 },
-  };
-
-  const animateFadeUp = {
-    hidden: { opacity: 0, y: 50 },
-    show: { opacity: 1, y: 0 },
-  };
-
   return (
-    <div className="mx-[8%] my-[5%] font-jost text-white">
+    <div className="mx-[8%] my-[5%] font-jost text-white" id="eagle">
       <motion.div
         className="mb-[8%] sm:mb-[6%]"
         variants={animateFadeRight}

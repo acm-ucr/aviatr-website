@@ -110,6 +110,7 @@ const Navbar = () => {
                 >
                   <Link
                     href={item.link}
+                    target={`${item.name === "JOIN" ? "_blank" : ""}`}
                     className={`hover:underline ${
                       item.name === "JOIN" &&
                       "rounded-full bg-aviatr-blue-100 px-6 py-1 lg:px-8 xl:px-10 xl:py-2"
