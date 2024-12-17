@@ -35,9 +35,8 @@ const HummingbirdHomepage = () => {
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{
-                duration: 1,
+                duration: 0.7,
                 delay: 0.2,
-                type: "spring",
               }}
               className="mb-[7%] ml-[4%] sm:ml-0"
             >
@@ -101,9 +100,8 @@ const HummingbirdHomepage = () => {
                 opacity: 1,
               }}
               transition={{
-                duration: 1,
+                duration: 0.7,
                 delay: 0.2,
-                type: "spring",
               }}
               className="text-md mx-[10%] mt-[8%] flex flex-col gap-8 font-jost leading-relaxed text-white sm:text-xl lg:mx-0 lg:pl-[10%]"
             >
@@ -174,7 +172,6 @@ const HummingbirdHomepage = () => {
               transition={{
                 duration: 1,
                 delay: 0.2,
-                type: "spring",
               }}
               className="mb-[8%] mt-[6%] lg:mb-[12%] lg:ml-[14%] lg:mt-0 xl:ml-[8%]"
             >
@@ -192,9 +189,8 @@ const HummingbirdHomepage = () => {
                 opacity: 1,
               }}
               transition={{
-                duration: 1,
+                duration: 0.7,
                 delay: 0.2,
-                type: "spring",
               }}
               className="text-md mx-[6%] flex flex-col gap-8 pl-0 font-jost text-lg leading-relaxed text-white lg:mx-0 lg:pl-[10%] lg:text-xl"
             >

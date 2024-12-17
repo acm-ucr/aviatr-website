@@ -15,9 +15,8 @@ const ProjectPuffin = () => {
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
-            duration: 1,
+            duration: 0.7,
             delay: 0.2,
-            type: "spring",
           }}
           className="mb-[7%] mr-[4%] sm:mr-0 md:mb-[12%] lg:mr-[14%] lg:mt-0"
         >
@@ -35,9 +34,8 @@ const ProjectPuffin = () => {
             opacity: 1,
           }}
           transition={{
-            duration: 1,
+            duration: 0.7,
             delay: 0.2,
-            type: "spring",
           }}
           className="ml-[7%]"
         >
