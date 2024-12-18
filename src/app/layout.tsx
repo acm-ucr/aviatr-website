@@ -45,6 +45,7 @@ export default function RootLayout({ children }: LayoutProps) {
         className={`bg-black ${jost.variable} ${metrophobic.variable} ${bungee_hairline.variable}`}
       >
         <NavBar />
+        <div className="h-12"></div>
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
         <Footer />
       </body>
