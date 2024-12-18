@@ -68,7 +68,7 @@ const Navbar = () => {
   }, [nav]);
 
   return (
-    <div className={`sticky top-0 z-50`}>
+    <div className={`fixed top-0 z-50`}>
       <div
         className={`flex w-full items-center py-2 transition-all duration-300 ${
           isHomePage && !isScrolled && !nav
