@@ -51,7 +51,11 @@ const WhatWeDo = () => {
         look forward to getting to know you better and hope you will join us
         soon. If you&apos;re interested in becoming a part of our team, please
         visit our recruitment survey&nbsp;
-        <Link href="#" className="hover:cursor underline">
+        <Link
+          href="https://docs.google.com/forms/d/e/1FAIpQLSerYpQ5bufrCaoheBi_cFsyUo4caJT1ViOLeQ_LqnHROiJCrQ/viewform"
+          target="_blank"
+          className="hover:cursor underline"
+        >
           here
         </Link>
         .
