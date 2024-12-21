@@ -9,7 +9,7 @@ import Wayman from "@/../public/about/board_members/Wayman_Mathis.webp";
 const List = [
   {
     name: "Christian Kim",
-    position: "POSITION",
+    position: "EE Lead",
     image: Christian.src,
     hobby: "Robots, Video Games, Cooking, Films, Audio Doohickies",
     year: "Junior",
@@ -19,7 +19,7 @@ const List = [
   },
   {
     name: "Salem Guevara Moctezuma",
-    position: "POSITION",
+    position: "EE Lead",
     image: Salem.src,
     hobby: "Embedded Systems, Autonomous Systems, PCB Designing",
     year: "Junior",
@@ -29,7 +29,7 @@ const List = [
   },
   {
     name: "Brian Altamirano",
-    position: "POSITION",
+    position: "Mechanical Lead",
     image: Brian.src,
     hobby: "Pickleball, Hiking, Adventures",
     year: "Senior",
@@ -39,7 +39,7 @@ const List = [
   },
   {
     name: "Evan Goldman",
-    position: "POSITION",
+    position: "Computer Vision Lead",
     image: Evan.src,
     hobby:
       "Autonomous Systems, UAV Technology, Advanced Computer Vision Techniques, Reinforcement Learning Algorithms",
@@ -50,7 +50,7 @@ const List = [
   },
   {
     name: "Nicholas Poon",
-    position: "POSITION",
+    position: "VP and EE Lead",
     image: Nicholas.src,
     hobby: "Avionics, Automated Vehicles",
     year: "Sophomore",
@@ -60,7 +60,7 @@ const List = [
   },
   {
     name: "Jonathan Setiabudi",
-    position: "POSITION",
+    position: "VP and CV Lead",
     image: Jonathan.src,
     hobby: "Badminton, Video Games",
     year: "Sophomore",
@@ -70,7 +70,7 @@ const List = [
   },
   {
     name: "Wayman Mathis",
-    position: "POSITION",
+    position: "EE Lead",
     image: Wayman.src,
     hobby: "Playing with my Jazz Combo",
     year: "Senior",
