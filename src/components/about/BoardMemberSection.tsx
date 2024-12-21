@@ -98,9 +98,10 @@ const BoardMemberSection = () => {
         </div>
       </motion.div>
 
-      <div className="flex grid w-full grid-cols-2 justify-center pb-6 lg:grid-cols-3">
+      <div className="flex flex-wrap place-items-center justify-center pb-6 sm:w-full lg:col-span-3">
         {boardMemberList.map((member, index) => (
           <div
+            className="flex w-[48%] justify-center md:w-auto"
             onClick={() =>
               handleMemberClick({
                 name: member.name,

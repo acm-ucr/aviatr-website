@@ -65,7 +65,7 @@ const Footer = () => {
               CONTACT US
             </p>
             <div className="flex flex-row gap-1.5 md:gap-3 lg:gap-5">
-              <Link href="https://discord.gg/87GntrMY" target="_blank">
+              <Link href="https://discord.gg/2WQa3V4m5F" target="_blank">
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}

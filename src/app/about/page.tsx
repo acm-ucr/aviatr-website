@@ -21,9 +21,7 @@ const Events = () => {
 
   return (
     <div>
-      <div>
-        <RecurringLogo />
-      </div>
+      <RecurringLogo />
       <div className="flex flex-col items-center gap-24">
         <WhoWeAre />
         <WhatWeDo />
