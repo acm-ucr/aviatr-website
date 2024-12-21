@@ -34,3 +34,7 @@
   padding: 4px 8px;
   text-align: left;
 }
+
+.rbc-event.rbc-selected {
+  background-color: transparent;
+}
