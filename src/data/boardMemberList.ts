@@ -9,7 +9,7 @@ import Wayman from "@/../public/about/board_members/Wayman_Mathis.webp";
 const List = [
   {
     name: "Christian Kim",
-    position: "EE Lead",
+    position: "Electrical Engineering Lead",
     image: Christian.src,
     hobby: "Robots, Video Games, Cooking, Films, Audio Doohickies",
     year: "Junior",
@@ -19,7 +19,7 @@ const List = [
   },
   {
     name: "Salem Guevara Moctezuma",
-    position: "EE Lead",
+    position: "Electrical Engineering Lead",
     image: Salem.src,
     hobby: "Embedded Systems, Autonomous Systems, PCB Designing",
     year: "Junior",
@@ -50,7 +50,7 @@ const List = [
   },
   {
     name: "Nicholas Poon",
-    position: "VP and EE Lead",
+    position: "Vice President and Electrical Engineering Lead",
     image: Nicholas.src,
     hobby: "Avionics, Automated Vehicles",
     year: "Sophomore",
@@ -60,7 +60,7 @@ const List = [
   },
   {
     name: "Jonathan Setiabudi",
-    position: "VP and CV Lead",
+    position: "Vice President and Computer Vision Lead",
     image: Jonathan.src,
     hobby: "Badminton, Video Games",
     year: "Sophomore",
@@ -70,7 +70,7 @@ const List = [
   },
   {
     name: "Wayman Mathis",
-    position: "EE Lead",
+    position: "Electrical Engineering Lead",
     image: Wayman.src,
     hobby: "Playing with my Jazz Combo",
     year: "Senior",
