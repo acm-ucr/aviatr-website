@@ -9,6 +9,36 @@ import Eric from "@/../public/about/board_members/Eric_Thueson.webp";
 
 const List = [
   {
+    name: "Eric Thueson",
+    position: "President",
+    image: Eric.src,
+    hobby: "Aviation",
+    year: "Grad Student",
+    major: "Mechanical Engineering",
+    description:
+      "My name is Eric. I completed my undergrad in mechanical engineering in June of 2024. I started grad school in September of 2024. I wanted to join this organization to help bring more of an aerospace presence to UCR. The organization we are helping to mold brings together people from a variety of engineering disciplines and other areas. Each of us are learning various aspects about creating a drone that we intend to use in competition. I welcome those with a passion for aviation, and thank you for taking the time to check out our organization.",
+  },
+  {
+    name: "Nicholas Poon",
+    position: "Vice President and Electrical Engineering Lead",
+    image: Nicholas.src,
+    hobby: "Avionics, Automated Vehicles",
+    year: "Sophomore",
+    major: "Electrical Engineering",
+    description:
+      "My name is Nicholas, and I am a sophomore studying Electrical Engineering at the University of California, Riverside. I specialize in machine learning and robotic integrations, with a keen interest in avionics and automated vehicles. My passion for unmanned aerial vehicles (UAVs) has been a driving force in my academic journey, particularly stemming from my prior experience with RC drones. I recognize that this endeavor will be challenging, but I am excited to embrace it and look forward to the journey ahead.",
+  },
+  {
+    name: "Jonathan Setiabudi",
+    position: "Vice President and Computer Vision Lead",
+    image: Jonathan.src,
+    hobby: "Badminton, Video Games",
+    year: "Sophomore",
+    major: "Computer Engineering",
+    description:
+      "I'm a second-year B.S. + M.S. student in Computer Engineering here at the University of California, Riverside. I've been keen on aviation since I was a little kid, understanding the parts of airplanes and their purposes and even playing some simple flight simulators before entering high school. While the realm of UAVs is somewhat of an uncharted territory for me, I'm excited to code, design, and fly these creations of ours. I'm particularly looking forward to partaking in the CV team here at Aviat'R. I understand it will not be easy or smooth from here, but I take challenges to heart and make it my goal to overcome them no matter what. Things I enjoy include exchanging engineering information with peers, playing badminton and video games, or just quality time with friends.",
+  },
+  {
     name: "Christian Kim",
     position: "Electrical Engineering Lead",
     image: Christian.src,
@@ -50,26 +80,6 @@ const List = [
       "My name is Evan, and I'm currently a second-year graduate student in Electrical Engineering at the University of California, Riverside, with a focus on intelligent systems. My primary interest lies in the development of autonomous systems, and I am excited to gain experience within the realm of unmanned aerial vehicles (UAVs). I am keen to explore the intricate aspects of UAV technology, including advanced computer vision techniques and reinforcement learning algorithms that enable autonomous decision-making. With a solid foundation in software development, I bring expertise across various domains, including embedded systems, full-stack development, and machine learning. I am eager to apply my skills to the cutting-edge challenges in UAV technology, driving innovation in autonomous aerial systems.",
   },
   {
-    name: "Nicholas Poon",
-    position: "Vice President and Electrical Engineering Lead",
-    image: Nicholas.src,
-    hobby: "Avionics, Automated Vehicles",
-    year: "Sophomore",
-    major: "Electrical Engineering",
-    description:
-      "My name is Nicholas, and I am a sophomore studying Electrical Engineering at the University of California, Riverside. I specialize in machine learning and robotic integrations, with a keen interest in avionics and automated vehicles. My passion for unmanned aerial vehicles (UAVs) has been a driving force in my academic journey, particularly stemming from my prior experience with RC drones. I recognize that this endeavor will be challenging, but I am excited to embrace it and look forward to the journey ahead.",
-  },
-  {
-    name: "Jonathan Setiabudi",
-    position: "Vice President and Computer Vision Lead",
-    image: Jonathan.src,
-    hobby: "Badminton, Video Games",
-    year: "Sophomore",
-    major: "Computer Engineering",
-    description:
-      "I'm a second-year B.S. + M.S. student in Computer Engineering here at the University of California, Riverside. I've been keen on aviation since I was a little kid, understanding the parts of airplanes and their purposes and even playing some simple flight simulators before entering high school. While the realm of UAVs is somewhat of an uncharted territory for me, I'm excited to code, design, and fly these creations of ours. I'm particularly looking forward to partaking in the CV team here at Aviat'R. I understand it will not be easy or smooth from here, but I take challenges to heart and make it my goal to overcome them no matter what. Things I enjoy include exchanging engineering information with peers, playing badminton and video games, or just quality time with friends.",
-  },
-  {
     name: "Wayman Mathis",
     position: "Electrical Engineering Lead",
     image: Wayman.src,
@@ -78,16 +88,6 @@ const List = [
     major: "Electrical Engineering",
     description:
       "My name is Wayman Mathis, and I'm a 4th-year Electrical Engineering student at the University of California, Riverside. Currently, I'm expanding my skill set in UAV technology, applying my background in circuit design and power management to help advance our team's unmanned aerial systems. I'm always eager to tackle new challenges, pushing myself to find innovative solutions that build my expertise. In my free time, you'll often find me playing with my jazz combo or unwinding with friends.",
-  },
-  {
-    name: "Eric Thueson",
-    position: "President",
-    image: Eric.src,
-    hobby: "Aviation",
-    year: "Grad Student",
-    major: "Mechanical Engineering",
-    description:
-      "My name is Eric. I completed my undergrad in mechanical engineering in June of 2024. I started grad school in September of 2024. I wanted to join this organization to help bring more of an aerospace presence to UCR. The organization we are helping to mold brings together people from a variety of engineering disciplines and other areas. Each of us are learning various aspects about creating a drone that we intend to use in competition. I welcome those with a passion for aviation, and thank you for taking the time to check out our organization.",
   },
 ];
 
