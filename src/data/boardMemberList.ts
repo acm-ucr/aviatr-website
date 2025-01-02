@@ -5,11 +5,12 @@ import Evan from "@/../public/about/board_members/Evan_Goldman.webp";
 import Nicholas from "@/../public/about/board_members/Nicholas_Poon.webp";
 import Jonathan from "@/../public/about/board_members/Jonathan_Setiabudi.webp";
 import Wayman from "@/../public/about/board_members/Wayman_Mathis.webp";
+import Eric from "@/../public/about/board_members/Eric_Thueson.webp";
 
 const List = [
   {
     name: "Christian Kim",
-    position: "POSITION",
+    position: "Electrical Engineering Lead",
     image: Christian.src,
     hobby: "Robots, Video Games, Cooking, Films, Audio Doohickies",
     year: "Junior",
@@ -19,7 +20,7 @@ const List = [
   },
   {
     name: "Salem Guevara Moctezuma",
-    position: "POSITION",
+    position: "Electrical Engineering Lead",
     image: Salem.src,
     hobby: "Embedded Systems, Autonomous Systems, PCB Designing",
     year: "Junior",
@@ -29,7 +30,7 @@ const List = [
   },
   {
     name: "Brian Altamirano",
-    position: "POSITION",
+    position: "Mechanical Lead",
     image: Brian.src,
     hobby: "Pickleball, Hiking, Adventures",
     year: "Senior",
@@ -39,7 +40,7 @@ const List = [
   },
   {
     name: "Evan Goldman",
-    position: "POSITION",
+    position: "Computer Vision Lead",
     image: Evan.src,
     hobby:
       "Autonomous Systems, UAV Technology, Advanced Computer Vision Techniques, Reinforcement Learning Algorithms",
@@ -50,7 +51,7 @@ const List = [
   },
   {
     name: "Nicholas Poon",
-    position: "POSITION",
+    position: "Vice President and Electrical Engineering Lead",
     image: Nicholas.src,
     hobby: "Avionics, Automated Vehicles",
     year: "Sophomore",
@@ -60,7 +61,7 @@ const List = [
   },
   {
     name: "Jonathan Setiabudi",
-    position: "POSITION",
+    position: "Vice President and Computer Vision Lead",
     image: Jonathan.src,
     hobby: "Badminton, Video Games",
     year: "Sophomore",
@@ -70,13 +71,23 @@ const List = [
   },
   {
     name: "Wayman Mathis",
-    position: "POSITION",
+    position: "Electrical Engineering Lead",
     image: Wayman.src,
     hobby: "Playing with my Jazz Combo",
     year: "Senior",
     major: "Electrical Engineering",
     description:
       "My name is Wayman Mathis, and I'm a 4th-year Electrical Engineering student at the University of California, Riverside. Currently, I'm expanding my skill set in UAV technology, applying my background in circuit design and power management to help advance our team's unmanned aerial systems. I'm always eager to tackle new challenges, pushing myself to find innovative solutions that build my expertise. In my free time, you'll often find me playing with my jazz combo or unwinding with friends.",
+  },
+  {
+    name: "Eric Thueson",
+    position: "President",
+    image: Eric.src,
+    hobby: "Aviation",
+    year: "Grad Student",
+    major: "Mechanical Engineering",
+    description:
+      "My name is Eric. I completed my undergrad in mechanical engineering in June of 2024. I started grad school in September of 2024. I wanted to join this organization to help bring more of an aerospace presence to UCR. The organization we are helping to mold brings together people from a variety of engineering disciplines and other areas. Each of us are learning various aspects about creating a drone that we intend to use in competition. I welcome those with a passion for aviation, and thank you for taking the time to check out our organization.",
   },
 ];
 

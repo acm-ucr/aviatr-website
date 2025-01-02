@@ -20,9 +20,9 @@ const BoardMember = ({
           className="object-cover object-top"
         />
       </div>
-      <div className="text-sm sm:text-xl">
+      <div className="w-[70%] text-sm sm:w-[90%] sm:text-xl">
         <div className="font-bold text-white">{name}</div>
-        <div className="text-gray-200">{position}</div>
+        <div className="text-wrap text-gray-200 sm:text-lg">{position}</div>
       </div>
     </div>
   );
